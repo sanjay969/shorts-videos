@@ -3,7 +3,7 @@
 There are two scheduled tasks:
 
 - **BUILD**: starts around 10:40 AM IST. It makes 3 shorts and pushes them to `queue/YYYY-MM-DD/`.
-- **UPLOAD**: starts around 7:22 PM IST. It uploads that day's queue to YouTube as public.
+- **UPLOAD**: starts around 6:52 PM IST, so the videos are live by about 7:00 PM. It uploads that day's queue to YouTube as public.
 
 ## Hard rules (never break)
 
