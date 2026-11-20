@@ -1,0 +1,41 @@
+{
+  "title": "The Town America Left Behind",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "lead": 0.3,
+  "outro": 1.4,
+  "gap": 0.16,
+  "music": "tension",
+  "sources": [
+    "Wikipedia, 'Centralia, Pennsylvania': coal mine fire burning beneath the borough since 1962; population fell from about 1,000 in 1980 to five in 2020; ZIP code discontinued in 2002; analysts disagree about the exact cause",
+    "Pennsylvania DEP chronology: fire began May 1962; trenching, flushing and other control projects had limited results; Congress appropriated $42 million for relocation",
+    "David DeKok via Wikipedia / ScienceBlog: most likely started when firefighters burned the town landfill, an old strip-mine pit, in May 1962",
+    "Australian Mining Review / Slate (Atlas Obscura): Feb 14, 1981, a sinkhole opened under 12-year-old Todd Domboski; he clung to tree roots and was pulled out by his cousin",
+    "ScienceBlog / werelate: more than 1,000 people moved and about 500 structures were demolished",
+    "Christian Science Monitor / Discovery UK: enough coal to keep burning for about 250 years"
+  ],
+  "lines": [
+    { "text": "Imagine a town where the ground is so hot," },
+    { "text": "smoke pours out of the cracks in the road." },
+    { "text": "Well, that town is real." },
+    { "text": "It's Centralia, Pennsylvania," },
+    { "text": "and it's been burning underground since 1962.", "caps": "and it's | been | burning | underground | since | 1962.~nineteen" },
+    { "text": "See, it most likely started with a trash fire," },
+    { "text": "when the town burned garbage in an old mine pit," },
+    { "text": "and the flames slipped into the coal tunnels below." },
+    { "text": "They dug, they flooded, they tried everything," },
+    { "text": "but the fire just kept spreading." },
+    { "text": "Then in 1981, the ground opened up", "caps": "Then | in 1981,~nineteen | the ground | opened up" },
+    { "text": "under a twelve-year-old boy.", "caps": "under a | 12-year-old~twelve-year-old | boy." },
+    { "text": "He grabbed a tree root," },
+    { "text": "and his cousin pulled him out just in time." },
+    { "text": "So the government paid forty-two million dollars", "caps": "So the | government | paid | $42 million~forty-two | dollars" },
+    { "text": "to move everyone out." },
+    { "text": "Houses were torn down," },
+    { "text": "and the town even lost its ZIP code." },
+    { "text": "Today, only about five people live there,", "caps": "Today, | only | about | 5~five | people | live there," },
+    { "text": "and the fire could keep burning" },
+    { "text": "for another two hundred and fifty years.", "caps": "for | another | 250~two | years." },
+    { "text": "So... would you have stayed?", "gap": 0.3 }
+  ]
+}

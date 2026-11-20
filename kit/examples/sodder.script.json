@@ -1,0 +1,41 @@
+{
+  "title": "The Sodder Children: Gone on Christmas Eve",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "lead": 0.3,
+  "outro": 1.4,
+  "gap": 0.16,
+  "music": "tension",
+  "sources": [
+    "Smithsonian (Karen Abbott) via Doe Network: Christmas Eve 1945, Fayetteville WV; George and Jennie Sodder and nine of their ten children at home; Fire Chief F.J. Morris and the 'phone tree'; billboard on Route 16 for nearly four decades",
+    "The Clio: around 1:00 a.m. Dec 25 1945 the house was in flames; four of nine children escaped; fire department only 2.5 miles away; no signs of the children found in the ashes",
+    "Postcard History / The Line Up: fire department did not arrive until about 7 a.m.; missing ladder, trucks that would not start, dead phone line; official cause faulty wiring",
+    "The Collector: authorities found the phone line had been cut",
+    "Strange Outdoors: billboard stayed up until shortly after Jennie Sodder died in 1989",
+    "The Line Up: the five children were Maurice, Martha, Louis, Jennie and Betty, aged 5 to 14; official explanation is that they died in the fire"
+  ],
+  "lines": [
+    { "text": "On Christmas Eve, 1945, in a small West Virginia town,", "caps": "On | Christmas | Eve, | 1945,~nineteen | in a | small | West | Virginia | town," },
+    { "text": "the Sodder family went to bed," },
+    { "text": "with nine of their ten children at home.", "caps": "with | 9~nine | of their | 10~ten | children | at home." },
+    { "text": "But around one in the morning," },
+    { "text": "their house caught fire." },
+    { "text": "The parents and four of the kids got out," },
+    { "text": "but five of them never came out." },
+    { "text": "And that night, everything went wrong." },
+    { "text": "The phone line was dead," },
+    { "text": "the ladder was missing," },
+    { "text": "and the trucks wouldn't start." },
+    { "text": "The fire station was just two and a half miles away,", "caps": "The | fire | station | was just | 2.5~two | miles | away," },
+    { "text": "but help didn't come until seven in the morning.", "caps": "but | help | didn't | come | until | 7 AM.~seven" },
+    { "text": "By then, the house was ash." },
+    { "text": "Officials said the five children died in the fire," },
+    { "text": "but no remains were ever found." },
+    { "text": "So their parents never stopped searching." },
+    { "text": "They put up a billboard by the highway," },
+    { "text": "and it stood there for almost forty years.", "caps": "and it | stood | there | for | almost | 40 years.~forty" },
+    { "text": "Now, more than eighty years later,", "caps": "Now, | more than | 80 years~eighty | later," },
+    { "text": "nobody knows what really happened to the Sodder children." },
+    { "text": "So... were they lost in the fire, or taken that night?", "gap": 0.3 }
+  ]
+}

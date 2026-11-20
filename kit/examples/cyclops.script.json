@@ -1,0 +1,40 @@
+{
+  "title": "The American Ship That Vanished Without a Trace",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "lead": 0.3,
+  "outro": 1.4,
+  "gap": 0.16,
+  "music": "tension",
+  "sources": [
+    "Wikipedia, 'USS Cyclops': 306 crew and passengers lost without a trace sometime after March 4, 1918; unscheduled stop in Barbados, water over the Plimsoll line (overloaded); no wreckage ever found",
+    "Tara Ross (TDIH) / SNAC: 10,800 long tons (about 11,000 tons) of manganese ore, much denser than coal; Wilson: 'Only God and the sea know what happened to the great ship'",
+    "SNAC / Daily Kos (US Navy photo): left Barbados March 4, 1918 with her starboard engine inoperative due to a cracked cylinder, bound for Baltimore",
+    "History UK / Naval History magazine (USNI): largest loss of life outside of combat in US Navy history",
+    "NHHC H-Gram 016: sister ships Proteus and Nereus vanished in 1941 with cargoes of bauxite ore",
+    "Wikipedia: declared lost by the Navy on June 1, 1918"
+  ],
+  "lines": [
+    { "text": "In March 1918, a giant US Navy ship sailed out of Barbados,", "caps": "In March | 1918,~nineteen | a giant | US Navy | ship | sailed | out of | Barbados," },
+    { "text": "with three hundred and six people on board,", "caps": "with | 306~three | people | on board," },
+    { "text": "and then it simply vanished." },
+    { "text": "No distress call, no wreckage, no bodies," },
+    { "text": "nothing, ever." },
+    { "text": "She was the USS Cyclops," },
+    { "text": "a coal ship carrying almost eleven thousand tons of heavy ore,", "caps": "a coal | ship | carrying | almost | 11,000 tons~eleven | of heavy | ore," },
+    { "text": "so heavy she sat below her safety line." },
+    { "text": "And one of her two engines was broken," },
+    { "text": "so she limped north toward Baltimore on just one." },
+    { "text": "The Navy searched and searched," },
+    { "text": "but found nothing." },
+    { "text": "Even President Wilson said only God and the sea know what happened to her." },
+    { "text": "But here's the creepy part:" },
+    { "text": "in 1941, two of her sister ships,", "caps": "in 1941,~nineteen | two | of her | sister | ships," },
+    { "text": "also carrying heavy ore," },
+    { "text": "vanished too, without a trace." },
+    { "text": "It's still the Navy's biggest loss of life outside of combat," },
+    { "text": "and more than a hundred years later," },
+    { "text": "no one has ever found her." },
+    { "text": "So... where did the Cyclops go?", "gap": 0.3 }
+  ]
+}

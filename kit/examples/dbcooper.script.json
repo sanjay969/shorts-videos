@@ -1,0 +1,43 @@
+{
+  "title": "The Man Who Jumped Out of a Plane With $200,000",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "lead": 0.3,
+  "outro": 1.4,
+  "gap": 0.16,
+  "music": "tension",
+  "sources": [
+    "Wikipedia, 'D. B. Cooper': Nov 24 1971, Northwest Orient Flight 305, Boeing 727, Portland to Seattle; FBI suspended active investigation July 2016",
+    "Biography.com: called himself Dan Cooper, paid $18.52 cash for a one-way ticket; plane then took off for Mexico City",
+    "History.com: handed flight attendant a note 'I have a bomb in my briefcase'; demanded $200,000 and four parachutes",
+    "The Week: landed Seattle 5:40 pm, released the 36 passengers",
+    "Britannica: lowered the rear steps and jumped around 8 pm, near Ariel, Washington",
+    "HistoryLink: dark and stormy Thanksgiving Eve; 'D. B.' was a reporter's mistake",
+    "HistoryLink / KIRO7: Feb 10 1980, 8-year-old Brian Ingram found $5,800 of ransom money on Tena Bar, Columbia River",
+    "Biography.com: hundreds of suspects considered, hijacker never identified"
+  ],
+  "lines": [
+    { "text": "In November 1971, a calm man in a suit bought a plane ticket for eighteen dollars,", "caps": "In | November | 1971,~nineteen | a calm | man | in a suit | bought | a plane | ticket | for | $18~eighteen | dollars," },
+    { "text": "under the name Dan Cooper." },
+    { "text": "Right after takeoff, he handed the flight attendant a note:" },
+    { "text": "I have a bomb in my briefcase." },
+    { "text": "He wanted two hundred thousand dollars,", "caps": "He | wanted | $200,000~two | dollars," },
+    { "text": "and four parachutes.", "caps": "and | 4~four | parachutes." },
+    { "text": "In Seattle, he got them," },
+    { "text": "let all thirty-six passengers go,", "caps": "let all | 36~thirty-six | passengers | go," },
+    { "text": "and told the pilots to fly to Mexico." },
+    { "text": "But somewhere over the dark, rainy forests of Washington," },
+    { "text": "he lowered the back stairs of the jet," },
+    { "text": "and jumped out into the night." },
+    { "text": "He was never seen again." },
+    { "text": "The FBI searched for forty-five years,", "caps": "The FBI | searched | for | 45 years,~forty-five" },
+    { "text": "checked hundreds of suspects," },
+    { "text": "and found almost nothing," },
+    { "text": "except one thing:" },
+    { "text": "in 1980, an eight-year-old boy digging by a river", "caps": "in | 1980,~nineteen | an | 8-year-old~eight-year-old | boy | digging | by a | river" },
+    { "text": "found five thousand eight hundred dollars of the ransom money.", "caps": "found | $5,800~five | of the | ransom | money." },
+    { "text": "The rest of the money? Still missing." },
+    { "text": "So did D.B. Cooper die that night,", "caps": "So | did | D.B. Cooper~d | die | that | night," },
+    { "text": "or get away with the perfect crime?", "gap": 0.3 }
+  ]
+}
