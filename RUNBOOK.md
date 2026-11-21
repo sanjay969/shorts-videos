@@ -3,7 +3,7 @@
 There are two scheduled tasks:
 
 - **BUILD**: starts around 10:40 AM IST. It makes 3 shorts and pushes them to `queue/YYYY-MM-DD/`.
-- **UPLOAD**: starts around 6:52 PM IST, so the videos are live by about 7:00 PM. It uploads that day's queue to YouTube as public.
+- **UPLOAD**: starts around 6:56 PM IST, does its checks, then waits until exactly 7:00 PM IST before uploading. The videos must go public at 7:00 PM, never earlier (the owner asked for this).
 
 ## Hard rules (never break)
 
@@ -73,7 +73,8 @@ There are two scheduled tasks:
 
 1. Run `git pull`, then read `queue/YYYY-MM-DD/meta.json` for today (IST date).
 2. For each entry, the video URL is `https://raw.githubusercontent.com/sanjay969/shorts-videos/main/queue/YYYY-MM-DD/<file>`. Check it first with `curl -sSI` and expect a 200.
-3. Upload with Zapier: `execute_zapier_write_action`
+3. Wait until 19:00:00 IST (sleep) before the first upload call. Never upload earlier.
+   Upload with Zapier: `execute_zapier_write_action`
    - selected_api `YouTubeV4CLIAPI`
    - action `upload_video`
    - tool_name `youtube_upload_video`
