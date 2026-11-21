@@ -25,15 +25,21 @@ There are two scheduled tasks:
 
 ## BUILD (one run = 3 videos)
 
-1. Pick 3 topics that are trending now. Use web search and/or vidIQ trending/outliers. Good topics are:
+1. **Monitor first.** Read the last 7 days of `queue/*/uploaded.json` and `meta.json`. Get each video's views, likes and comments with vidIQ (`vidiq_video_stats` or `vidiq_channel_videos`). Append one line per video to `stats.md` (date, title, topic type, views, likes). Note which topic types are doing best (for example mystery vs funny history vs current news) and lean toward them when picking today's topics, but keep at least one different type so the channel keeps testing.
+2. **Find trending topics.** Do this every run; anniversaries alone are not enough:
+   - vidIQ: `vidiq_trending_videos` and `vidiq_outliers` for mystery, history, true story and "what happened to" niches; `vidiq_keyword_research` to check search interest for each candidate.
+   - Web search (extended mode) for what is in the news or viral this week that has a story angle.
+   - Anniversaries this week are a fallback or a tie-breaker.
+
+   Pick 3 topics. Good topics are:
    - unsolved mysteries
    - strange true stories
    - anniversaries this week
    - viral "what happened to…" history
    - big current news with a story angle (only if it's not tragic or sensitive)
 
-   Topics must be English-language and US/global appeal. They must not be in `topics-done.txt`.
-2. For each topic, use the faceless-shorts skill in the Tall Tale 3D style:
+   Topics must be English-language and US/global appeal. They must not be in `topics-done.txt`. In the final summary, say for each topic why it was picked (the trend signal).
+3. For each topic, use the faceless-shorts skill in the Tall Tale 3D style:
    1. Run `bash $S/scripts/new_video.sh tall-tale <slug>`. Then overlay this repo's kit:
       `cp -r kit/tall-tale/{tools,src,index.html,sheet.html} ~/faceless-shorts/<slug>/`
       The kit has the extra props, sea.js, town.js, winter.js and sky.js. See `kit/examples/*.shots.js` for full shot lists to learn from (don't copy them).
@@ -54,14 +60,14 @@ There are two scheduled tasks:
    8. Render: `SOFTWARE_GL=1 QS='&res=1&aa=1&shadow=2048' FPS=24 node tools/capture.mjs video renders/final.mp4`. This takes about 75 min. Run it in the foreground in chunks, or in the background with sleep/poll inside the same turn. If time is short, use `res=0.8`.
    9. Make the share copy: `ffmpeg -i renders/final.mp4 -c:v libx264 -crf 27 -preset slow -c:a aac -b:a 128k renders/share.mp4`
    10. Do the final QA: `ffmpeg -i renders/share.mp4 -vf "fps=1,scale=150:-1,tile=11x6" -frames:v 1 renders/qa.jpg`. Look at it.
-3. Copy each `share.mp4` to `queue/YYYY-MM-DD/N-<slug>.mp4` (N = 1, 2, 3).
-4. Write `queue/YYYY-MM-DD/meta.json` as a list of `{file, title, description, tags}`:
+4. Copy each `share.mp4` to `queue/YYYY-MM-DD/N-<slug>.mp4` (N = 1, 2, 3).
+5. Write `queue/YYYY-MM-DD/meta.json` as a list of `{file, title, description, tags}`:
    - The title is curiosity-driven, under 70 chars and has no clickbait lies.
    - The description is 1–2 lines with a question to the viewer and ends with 4–5 hashtags plus `#shorts`.
    - Tags are 5–8 words without `#`.
-5. Append the topics to `topics-done.txt`.
-6. Commit and push to `main`. Use `git -c push.negotiate=true push origin main`.
-7. If a video fails, push the ones that worked. Never pad the queue with a low-quality video.
+6. Append the topics to `topics-done.txt`.
+7. Commit and push to `main`. Use `git -c push.negotiate=true push origin main`.
+8. If a video fails, push the ones that worked. Never pad the queue with a low-quality video.
 
 ## UPLOAD
 
