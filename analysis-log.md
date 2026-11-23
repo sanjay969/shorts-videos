@@ -1,0 +1,1 @@
+- 2026-11-23: 7d 12.6K views, 22 subs (1.7/1k), US 9.8%; best TV Dinner 1,416, worst John Titor 13; one of 3 shorts dies daily because all 3 publish together at 8:30 AM ET — stagger to 6/7:30/9 PM ET, cut to 25-30s; top pick Thanksgiving body short.
