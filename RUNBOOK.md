@@ -35,12 +35,14 @@ Scheduled tasks:
    - Web search (extended mode) for what is in the news or viral this week that has a story angle.
    - Anniversaries this week are a fallback or a tie-breaker.
 
+   **Owner preference (23 Nov 2026): lead with big trending news.** Every day, at least 2 of the 3 topics must come from the biggest US/global news stories of the last 1–3 days that people are searching for. Good examples are a famous CEO fired and rehired, a stock crash or surge, a huge company deal, a viral tech, business, sports or pop-culture moment, or a surprising court or government decision. Example: Nvidia CEO Jensen Huang out and back in 11 days, Nov 2026. Find them with web search (extended mode: "biggest news today", "stock market today", "trending this week") and confirm the interest with vidIQ `vidiq_keyword_research` or `vidiq_trending_videos`. Tell each one as a story: what happened, the twist, and the numbers. Verify every fact and number in 2 or more sources dated this week, and say "alleged" for anything not proven. The rule below still applies: skip deaths, disasters, violence, and stories that are mainly about a scandal in someone's private life. A big news story can fill 2–3 videos with different angles (the event, the money or market side, the person's backstory). Use the same toon for the same person across those videos. The 3rd slot can be a mystery or strange-history topic so the channel keeps testing.
+
    Pick 3 topics. Good topics are:
+   - big trending news with a story angle (first choice; see above)
    - unsolved mysteries
    - strange true stories
    - anniversaries this week
    - viral "what happened to…" history
-   - big current news with a story angle (only if it's not tragic or sensitive)
 
    Topics must be English-language and US/global appeal. They must not be in `topics-done.txt`. In the final summary, say for each topic why it was picked (the trend signal).
 3. For each topic, use the faceless-shorts skill in the Tall Tale 3D style:
