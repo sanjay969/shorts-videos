@@ -1,0 +1,28 @@
+{
+  "title": "Nvidia Gained $1 Trillion in One Day. Here's Why",
+  "voice": "am_michael",
+  "speed": 1.07,
+  "lead": 0.05,
+  "outro": 0.5,
+  "gap": 0.12,
+  "music": "tension",
+  "sources": [
+    "Motley Fool, 'Stock Market Today, Nov. 23: Nvidia Surges 31%, Adding Nearly $1 Trillion in Market Value as Jensen Huang Reclaims CEO Role' (23 Nov 2026)",
+    "Benzinga, 'Nvidia Adds Record $888 Billion as Jensen Huang Returns' (Nov 2026): a record one-day market value gain",
+    "Notebookcheck / CBN: Nvidia gains nearly $1 trillion in market value after board reinstates Huang",
+    "Yahoo Finance / BeInCrypto, 23 Nov 2026: Huang resigned Nov 12; board chair said Nov 17 the board does not intend to reinstate him; shares about $155 on Nov 17, $125.53 close Nov 20 (about a fifth lower)",
+    "ABC News (Reuters/AFP), 24 Nov 2026: reinstated effective immediately; shares up more than 30% in pre-market"
+  ],
+  "lines": [
+    { "text": "Nvidia just gained almost a trillion dollars in one day.", "caps": "Nvidia | just | gained | almost | $1 trillion~a | dollars | in one | day." },
+    { "text": "And it took one man in a leather jacket." },
+    { "text": "See, on November twelfth, its CEO, Jensen Huang, quit,", "caps": "See, | on | November | 12th,~twelfth | its CEO, | Jensen | Huang, | quit," },
+    { "text": "and the board said he was gone for good." },
+    { "text": "So the stock slid, about a fifth in one week." },
+    { "text": "Then on day eleven, the board brought him back.", "caps": "Then | on | day 11,~day | the board | brought | him back." },
+    { "text": "Subscribe for more crazy money stories." },
+    { "text": "And the stock rocketed thirty-one percent,", "caps": "And the | stock | rocketed | 31%~thirty-one" },
+    { "text": "one of the biggest one-day gains ever." },
+    { "text": "That's why on November twenty-third,", "caps": "That's | why | on | November | 23rd,~twenty-third,", "gap": 0.2 }
+  ]
+}
