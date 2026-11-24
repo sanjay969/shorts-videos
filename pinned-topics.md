@@ -17,15 +17,15 @@ Same character in all 3 videos (owner asked): one generic cartoon toon. Build it
   - Nov 23, 2026 (day 11): Huang reinstated as CEO and chairman after the White House told the board it did not see him as a security risk. Nvidia stock rose about 30% that day and the Nasdaq rose 6.5%, its best day since April 2025.
   - Marketplace: a record for a public company. Sam Altman's OpenAI return took 5 days.
 - Sources: https://www.marketplace.org/story/2026/11/23/why-huang-was-reinstated-as-nvidia-ceo-11-days-after-resigning , https://abcnews.com/Business/timeline-stunning-fall-powerful-nvidia-ceo-jensen-huang/story?id=138041659 , https://www.cnn.com/2026/11/23/markets/us-stocks-rebound-intl , https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html
-- Status: pending
+- Status: [done] built 2026-11-24
 
 ### Video 2 — The Nvidia stock rollercoaster
 - Hook idea: Nvidia lost about 40% while its CEO was gone, then jumped about 30% in one day when he came back.
 - Angle: what a CEO's exit and return did to the stock and the whole market. The Nasdaq had its worst week in over 6 years, then its best day since April 2025 (+6.5%) on Nov 23. Show it with a big rollercoaster/chart prop and the same toon riding it.
 - Re-check the exact numbers (fall %, day-of gain %, market value) with a web search on the build day. Say "about" wherever the sources disagree. No investing advice.
-- Status: pending
+- Status: [done] built 2026-11-24
 
 ### Video 3 — From a Denny's booth to a trillion-dollar company (his origin story)
 - Hook idea: the man Wall Street begged to come back once washed dishes at Denny's.
 - Facts to verify: born in Taiwan in 1963; moved to the US as a child; worked at Denny's as a teen; co-founded Nvidia in 1993 with Chris Malachowsky and Curtis Priem, planned in a Denny's booth in San Jose; the leather jacket is his trademark. End with the Nov 2026 11-day comeback as the loop back to the start.
-- Status: pending
+- Status: [done] built 2026-11-24
