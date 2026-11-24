@@ -40,12 +40,22 @@ Channel medians: engaged views (28d, shorts >100 views) ≈ 605; public views of
 
 Baseline kept: US target audience, English only (American English voice, titles, captions), one niche (curiosity / what-if / mystery), no unrelated hashtags, title <50 chars with curiosity gap, 20–30s so the short loops, payoff in the last second that leads back to the start, one clear subscribe prompt, uploads at 6:00 / 7:30 / 9:00 PM ET.
 
+## Extra analysis (vidIQ out of credits — web trend check, 24 Nov)
+YouTube itself is blocked from this sandbox, and the Zapier YouTube connector only has upload. So trends came from web sources:
+- **Black Friday fact check (History.com):** the shopping meaning came from **Philadelphia police in the 1950s**, who hated the crowds before the Army-Navy game; in 1961 the city tried to rebrand it "Big Friday" and failed. The "in the black" retail story is the official version but **inaccurate**. The "slave sale" claim is false — do not use it.
+- **Viral right now (Daily Dot, 23 Nov):** TikTok "fresh produce rained down on our house" childhood mystery, 31K+ likes — proof that "unexplained thing happened to a normal family" is hot.
+- **Mystery lists trending (BuzzFeed, Nov 2026):** Kenny Veach vanished searching for the "M cave" in Nevada (Nov 10, 2014); JFK "Babushka Lady" whose film was never found (JFK anniversary was 22 Nov); Voynich manuscript at Yale.
+- Exploding Topics US list (Nov 2026) is mostly products/lattes — nothing usable for the niche.
+- Sources: history.com/articles/black-friday-thanksgiving-origins-history · dailydot.com (produce mystery, 23 Nov 2026) · buzzfeed.com/crystalro/terrifying-things-i-learned-november-2026 · explodingtopics.com/blog/trending-topics
+
 ## Topic ideas (ranked) — for the next non-pinned builds
 | # | Topic | Suggested title | Why |
 |---|---|---|---|
-| 1 | Why "Black Friday" got its name (1950s–60s Philadelphia police hated the post-Thanksgiving crowds) | Black Friday Was Named by Angry Cops | Black Friday = Fri 27 Nov; US holiday curiosity is the channel's #1 winner type |
-| 2 | Tad Lincoln begged his father to spare the family's Christmas turkey (1863), the pardon legend | Lincoln's Son Begged Him to Spare a Turkey | Thanksgiving week; US history + holiday; pardon happens this week |
-| 3 | Dolly Oesterreich hid her lover in the attic (1913–1922, Milwaukee/LA) | She Hid a Man in Her Attic for 10 Years | Last run: 6.9x outlier, 62K views in 1 day at 24s; US strange true story |
-| 4 | Winchester Mystery House: built nonstop for 38 years, stairs to nowhere (San Jose) | She Built Stairs That Lead to Nowhere | Classic US mystery, visual, easy loop |
-| 5 | Civil War bullets that collided mid-air (Petersburg/Gettysburg "interlocked bullets") | Two Civil War Bullets Collided Mid-Air | Last run: 32K views in 2 days on a 563-sub US channel |
-| 6 | What if you never cut your nails again? | What If You Never Cut Your Nails Again? | Body what-if; last run: 80K views, 16% engagement, 34s |
+| 1 | Black Friday got its name from angry Philadelphia cops (1950s, Army-Navy game crowds; 1961 "Big Friday" rebrand flopped) | Black Friday Was Named by Angry Cops | Black Friday = Fri 27 Nov; fact confirmed by History.com; US holiday = #1 winner type |
+| 2 | Tad Lincoln begged his father to spare the family's turkey (1863), the pardon legend | Lincoln's Son Begged Him to Spare a Turkey | Thanksgiving Thu 26 Nov; pardon happens this week |
+| 3 | JFK's "Babushka Lady" filmed the assassination; her film was never found | She Filmed JFK's Death and Then Vanished | JFK anniversary 22 Nov; on Nov 2026 mystery lists; core US mystery |
+| 4 | Dolly Oesterreich hid her lover in the attic (1913–1922, Milwaukee/LA) | She Hid a Man in Her Attic for 10 Years | Last run: 6.9x outlier, 62K views in 1 day at 24s |
+| 5 | Kenny Veach went looking for the "M cave" in Nevada and vanished (Nov 10, 2014) | He Went Looking for a Cave and Vanished | Trending mystery list; US desert mystery, comment-bait |
+| 6 | Winchester Mystery House: built nonstop for 38 years, stairs to nowhere | She Built Stairs That Lead to Nowhere | Classic US mystery, visual, easy loop |
+
+Backups: Two Civil War bullets that collided mid-air · What if you never cut your nails again?
