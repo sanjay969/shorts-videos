@@ -1,0 +1,55 @@
+{
+  "title": "He Washed Dishes at Denny's. Now He Runs Nvidia",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "lead": 0.05,
+  "outro": 0.5,
+  "gap": 0.12,
+  "music": "bounce",
+  "sources": [
+    "Wikipedia, 'Jensen Huang': born 1963 in Tainan, Taiwan; in 1973, at nine, sent with his brother to the US and the Oneida Baptist Institute in Kentucky; co-founded Nvidia in April 1993 with Chris Malachowsky and Curtis Priem",
+    "Fortune, 'How Nvidia's billionaire CEO went from Denny's dishwasher...': at 15 he worked at Denny's as a dishwasher, busboy and waiter",
+    "NVIDIA Blog, 'Jensen Huang Returns to Denny's Where NVIDIA Launched a Trillion-Dollar Vision' (Sept 2023): Nvidia was planned in a booth at a Denny's in East San Jose; the booth now has a plaque",
+    "ABC News / Motley Fool, 23-24 Nov 2026: Huang resigned Nov 12 and was reinstated as CEO Nov 23, 11 days later; Nvidia worth trillions"
+  ],
+  "lines": [
+    {
+      "text": "He washed dishes at Denny's, and now he runs Nvidia."
+    },
+    {
+      "text": "Jensen Huang was born in Taiwan,"
+    },
+    {
+      "text": "and at nine, he was sent to school in Kentucky.",
+      "caps": "and at | 9,~nine, | he was | sent | to school | in | Kentucky."
+    },
+    {
+      "text": "At fifteen, he got a job at Denny's,",
+      "caps": "At | 15,~fifteen, | he got | a job | at | Denny's,"
+    },
+    {
+      "text": "washing dishes, then busing and waiting tables."
+    },
+    {
+      "text": "In 1993, he planned Nvidia with two friends",
+      "caps": "In | 1993,~nineteen | he | planned | Nvidia | with two | friends"
+    },
+    {
+      "text": "in a Denny's booth in San Jose.",
+      "caps": "in a | Denny's | booth | in San | Jose."
+    },
+    {
+      "text": "Subscribe for more wild true stories."
+    },
+    {
+      "text": "Today, that booth has a plaque,"
+    },
+    {
+      "text": "and this month, Wall Street begged him to come back."
+    },
+    {
+      "text": "Not bad for a guy who...",
+      "gap": 0.2
+    }
+  ]
+}
