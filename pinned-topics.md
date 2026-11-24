@@ -9,7 +9,7 @@ Same character in all 3 videos (owner asked): one generic cartoon toon. Build it
 ### Video 1 — Nvidia CEO Jensen Huang's 11-day exit and comeback
 - Owner asked for this on 23 Nov 2026. Angle: **business story only**: out as CEO, back in 11 days, stock crash then rally, record-fast comeback.
 - Mention the scandal in ONE neutral line only (e.g. "a personal scandal and spy allegations he denies"). Say "alleged". No details of the affairs. China called the spy claim groundless.
-- No real likeness: use a generic silhouette CEO in a leather-jacket shape, a stock chart, a calendar counting days, a boardroom. No Nvidia logo.
+- No real likeness: use the shared toon above, a stock chart, a calendar counting days, a boardroom. No Nvidia logo.
 - Facts (re-check with a web search before writing):
   - Nov 12, 2026: Nvidia said Huang resigned as CEO; CFO Colette Kress became interim CEO.
   - The board first said he was not coming back. A "Stand with Jensen" letter got 200,000+ signatures.
