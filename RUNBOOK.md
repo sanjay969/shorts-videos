@@ -25,6 +25,22 @@ Scheduled tasks:
   - something on screen that contradicts the narration
 - Topics must not repeat anything in `topics-done.txt`.
 
+## ANIMATION RULES (owner asked 23 Nov 2026: "make the animation interesting")
+
+Problem in past shorts: the toon mostly stands in the middle facing the camera, the same framing repeats, and one scene sits there for 3-4 s while only the caption changes. Fix it with these rules for every `shots.js`:
+
+1. **The toon must act, not just stand.** In at least 60% of shots the toon is DOING something: `legs: 'walk'|'run'|'jump'`, pointing or grabbing with `armL/armR`, picking up or throwing a prop (`holdL/holdR`), leaning in (`lean`), squash-and-stretch on landings (`squash`). Change `mood` on every story beat (shock → worried → smug ...), and use `sweat`/`tears`/`look` for reactions. Never use the same pose in 2 shots in a row.
+2. **Move the camera in every shot.** Use push-in, pull-out, pan, orbit, crane up/down, low angle for power and high angle for defeat, a tilted (Dutch) angle for tension, and a fast whip-pan or zoom-through to cut between scenes. No two shots in a row with the same framing (alternate wide / medium / close-up / extreme close-up on a prop or face).
+3. **Something new every 1 s.** A cut, a new prop flying in, a label popping in with a bounce (`eob`), a counter ticking, a chart line drawing itself, or a reaction. A single setup may last at most 2 s.
+4. **Make the numbers physical.** Money is a stack that grows or bursts. Stock moves are a giant line chart the toon rides like a rollercoaster or falls off. Days are calendar pages flying off. Big numbers slam in with a camera shake and an impact SFX.
+5. **Cartoon FX.** Use speed lines when running, impact stars, a "!" or "?" above the head, a dust puff on landing, and confetti, sparks or money rain on big wins. Use a quick colour or light change for mood (a red tint on a crash, a warm glow on a comeback).
+6. **Use 2+ characters when the story has them.** Boardroom, crowd, reporter or rival toons that react to the main toon (generic looks, never real likenesses).
+7. **Sync sound to motion.** Every pop-in, slam, whoosh and landing gets its SFX cue (`node tools/capture.mjs cues` picks them up).
+8. **Motion check (required).** On the final `share.mp4`, run
+   `python3 kit/tall-tale/tools/motion_check.py <video>` (or the copy in the video folder's `tools/`). Any `DEAD` stretch (over 1 s with almost no motion) must be fixed with a camera move, action or new prop, then re-rendered. Also look at the QA sheet: if 3 frames in a row look the same, fix that too.
+
+Long videos: apply rules 1-7 as well, with a visual change every 3-4 s.
+
 ## BUILD (one run = 3 videos)
 
 0. **Lock (only one build per day).** Before anything else: `D=$(TZ=America/New_York date +%F)`. If `queue/$D/BUILD.lock` already exists on origin/main, or `queue/$D/meta.json` already lists 3 videos, STOP and build nothing (another build run already owns today). Otherwise create `queue/$D/BUILD.lock` (contents: start time), commit and `git push origin main`. If that push is rejected because main moved, `git pull --rebase` and re-check: if a lock now exists, STOP.
@@ -59,13 +75,13 @@ Scheduled tasks:
 
       Numbers in caps use the `'shown~spoken'` form, e.g. `"$18~eighteen"`.
    3. Generate the voice and word timings: `$S/scripts/py $S/scripts/voice.py .` then `$S/scripts/py $S/scripts/words.py .`
-   4. Write `src/shots.js`. Aim for about 15–20 shots: something visibly changes every 1–2 s, hand gestures, and on-screen labels (ribbon/pill/counter/stamp). Keep overlays above y=1150.
+   4. Write `src/shots.js` following the **ANIMATION RULES** above. Aim for about 18–25 shots: something visibly changes every 1–2 s, hand gestures, and on-screen labels (ribbon/pill/counter/stamp). Keep overlays above y=1150.
    5. Check timing: `SOFTWARE_GL=1 QS='&res=0.6&aa=0&shadow=1024' node tools/capture.mjs check`
    6. Make the QA sheet: `node tools/capture.mjs sheet review/all.jpg 0.7 11`. Look at it, fix problems, then re-check key frames with `node tools/capture.mjs frames review/<newdir> "t1,t2"`. Use a new directory each time, because rm is blocked.
    7. Build sound: `node tools/capture.mjs cues`, then `$S/scripts/py tools/mix.py .`
    8. Render: `SOFTWARE_GL=1 QS='&res=1&aa=1&shadow=2048' FPS=24 node tools/capture.mjs video renders/final.mp4`. This takes about 75 min. Run it in the foreground in chunks, or in the background with sleep/poll inside the same turn. If time is short, use `res=0.8`.
    9. Make the share copy: `ffmpeg -i renders/final.mp4 -c:v libx264 -crf 27 -preset slow -c:a aac -b:a 128k renders/share.mp4`
-   10. Do the final QA: `ffmpeg -i renders/share.mp4 -vf "fps=1,scale=150:-1,tile=11x6" -frames:v 1 renders/qa.jpg`. Look at it.
+   10. Do the final QA: `ffmpeg -i renders/share.mp4 -vf "fps=1,scale=150:-1,tile=11x6" -frames:v 1 renders/qa.jpg`. Look at it, and run `python3 tools/motion_check.py renders/share.mp4` (it must report no DEAD stretches).
 4. Copy each `share.mp4` to `queue/YYYY-MM-DD/N-<slug>.mp4` (N = 1, 2, 3).
 5. Write `queue/YYYY-MM-DD/meta.json` as a list of `{file, title, description, tags}`:
    - The title is curiosity-driven, under 50 chars and has no clickbait lies.
