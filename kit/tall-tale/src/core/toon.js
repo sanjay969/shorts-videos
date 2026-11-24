@@ -129,6 +129,11 @@ function drawPattern(g, L, bx, top, bot, bw) {
     g.strokeStyle = shadeOf(g.fillStyle, 0.75); g.lineWidth = 4; g.setLineDash([8, 7]); g.strokeRect(bx - 48, top + 124, 96, 80); g.setLineDash([]);
     g.fillStyle = L.patCol || '#3E5FA8'; g.fillRect(bx - 58, top, 16, 120); g.fillRect(bx + 42, top, 16, 120);
     g.fillStyle = '#F1C24B'; [[-50, 118], [50, 118]].forEach(([dx, dy]) => { g.beginPath(); g.arc(bx + dx, top + dy, 8, 0, 7); g.fill(); });
+  } else if (L.pattern === 'jacket') {                    // open jacket over a tee (patCol = tee colour)
+    g.fillStyle = L.patCol || '#16151A'; g.beginPath(); g.moveTo(bx - 46, top - 6); g.lineTo(bx + 46, top - 6); g.lineTo(bx + 30, bot + 20); g.lineTo(bx - 30, bot + 20); g.closePath(); g.fill();
+    g.strokeStyle = shadeOf(L.body, 1.8); g.lineWidth = 5; [-1, 1].forEach((s2) => { g.beginPath(); g.moveTo(bx + s2 * 50, top - 4); g.lineTo(bx + s2 * 92, top + 70); g.lineTo(bx + s2 * 40, top + 150); g.stroke(); });
+    g.fillStyle = 'rgba(255,255,255,0.16)'; g.beginPath(); g.ellipse(bx - 86, top + 120, 16, 70, 0.15, 0, 7); g.fill(); g.beginPath(); g.ellipse(bx + 92, top + 150, 10, 50, -0.1, 0, 7); g.fill();
+    g.fillStyle = '#B8BCC6'; g.fillRect(bx + 36, top + 150, 6, 110);
   } else if (L.pattern === 'vest') {
     g.fillStyle = L.patCol || '#3B3346';
     g.beginPath(); g.moveTo(bx - 140, top - 10); g.lineTo(bx - 8, top + 120); g.lineTo(bx - 8, bot + 20); g.lineTo(bx - 140, bot + 20); g.fill();
@@ -239,7 +244,16 @@ function drawHat(g, L, hx, hy, r) {
   const c = L.hatCol || '#7A5236', top = hy - r * 0.97;
   g.strokeStyle = INK; g.lineWidth = LW; g.fillStyle = c;
   const band = (y, w, col) => { g.fillStyle = col; g.fillRect(hx - w, y - 12, w * 2, 24); g.strokeRect(hx - w, y - 12, w * 2, 24); };
-  if (L.hat === 'cap') {                                  // newsboy cap
+  if (L.hat === 'hair') {                                 // short dark hair with a side part (generic)
+    const hc = L.hatCol || '#26232B';
+    g.fillStyle = hc; g.beginPath(); g.moveTo(hx - r * 1.0, hy - 6);
+    g.bezierCurveTo(hx - r * 1.08, top - 40, hx + r * 0.9, top - 46, hx + r * 1.02, hy - 14);
+    g.quadraticCurveTo(hx + r * 0.86, top + 70, hx + r * 0.2, top + 52);
+    g.quadraticCurveTo(hx - r * 0.3, top + 76, hx - r * 0.72, top + 60);
+    g.quadraticCurveTo(hx - r * 0.86, top + 90, hx - r * 0.84, hy - 4); g.closePath(); g.fill(); g.stroke();
+    g.strokeStyle = shadeOf(hc, 1.9); g.lineWidth = 5; g.beginPath(); g.moveTo(hx - r * 0.35, top + 4); g.quadraticCurveTo(hx + r * 0.1, top - 14, hx + r * 0.55, top + 10); g.stroke();
+    g.strokeStyle = INK; g.lineWidth = LW;
+  } else if (L.hat === 'cap') {                                  // newsboy cap
     g.beginPath(); g.ellipse(hx + 6, top + 34, r * 0.98, 62, -0.05, Math.PI, 0); g.closePath(); g.fill(); g.stroke();
     g.fillStyle = shadeOf(c, 0.75); g.beginPath(); g.ellipse(hx - 24, top + 40, r * 0.78, 22, 0.05, 0, Math.PI); g.fill(); g.stroke();
     g.fillStyle = shadeOf(c, 1.15); g.beginPath(); g.arc(hx + 6, top - 26, 12, 0, 7); g.fill(); g.stroke();

@@ -1,0 +1,56 @@
+{
+  "title": "Nvidia's CEO Quit, Then Came Back in 11 Days",
+  "voice": "am_michael",
+  "speed": 1.1,
+  "lead": 0.05,
+  "outro": 0.5,
+  "gap": 0.12,
+  "music": "tension",
+  "sources": [
+    "ABC News (Reuters/AFP), 24 Nov 2026: Huang departed Nov 12; reinstated effective immediately; affairs reports incl. a businesswoman US authorities suspected of spying for China; Beijing denied the spying allegations; petition for reinstatement passed 180,000 signatures",
+    "Yahoo Finance / BeInCrypto, 23 Nov 2026: CFO Colette Kress interim CEO since Nov 12; on the Nov 17 earnings call the board chair said the board 'does not intend to reinstate Jensen as CEO'; reinstated Monday, 11 days after resigning; board got input from senior levels of the US government and is confident his return 'poses no national security risk'",
+    "Motley Fool, 23 Nov 2026: Nvidia surged about 31% on Nov 23, adding nearly $1 trillion in market value",
+    "Tom's Hardware, 23 Nov 2026: unanimous board vote; stock fell during the 11-day exit"
+  ],
+  "lines": [
+    {
+      "text": "In just eleven days, Nvidia's CEO quit and came back.",
+      "caps": "In just | 11 days,~eleven | Nvidia's | CEO | quit | and | came back."
+    },
+    {
+      "text": "On November twelfth, Jensen Huang resigned,",
+      "caps": "On | November | 12th,~twelfth | Jensen | Huang | resigned,"
+    },
+    {
+      "text": "after a scandal and alleged spy ties, which China denied."
+    },
+    {
+      "text": "The board said he was not coming back,"
+    },
+    {
+      "text": "and Nvidia's stock slid."
+    },
+    {
+      "text": "But a hundred eighty thousand people petitioned for him.",
+      "caps": "But | 180,000~a | people | petitioned | for him."
+    },
+    {
+      "text": "Then U.S. officials said he was no security risk,",
+      "caps": "Then | U.S. | officials | said | he was | no | security | risk,"
+    },
+    {
+      "text": "so the board voted him back in."
+    },
+    {
+      "text": "Subscribe for more wild comebacks."
+    },
+    {
+      "text": "And the stock jumped thirty-one percent in one day!",
+      "caps": "And the | stock | jumped | 31%~thirty-one | in one | day!"
+    },
+    {
+      "text": "The whole wild ride took...",
+      "gap": 0.2
+    }
+  ]
+}
