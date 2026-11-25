@@ -11,7 +11,22 @@ Target audience: **United States** (owner's decision, 22 Nov 2026).
 Scheduled tasks:
 
 - **BUILD**: starts ~3:43 PM IST (~5:13 AM ET). Makes 3 shorts and pushes them to `queue/YYYY-MM-DD/` before 5:00 PM ET.
-- **UPLOAD**: three separate runs, ONE short each, at **6:00 PM, 7:30 PM and 9:00 PM ET**. Never upload all 3 together (that left one short with ~0 views).
+- **UPLOAD** (since 25 Nov 2026): free GitHub Actions uploader (`.github/workflows/youtube-upload.yml`), no Zapier. One video per slot, never together: backlog Shorts 12:00 & 3:00 PM ET, today's Shorts **6:00 / 7:30 / 9:00 PM ET**, long video 8:15 PM ET. It skips anything already on the channel (same title). Shorts descriptions get a link to the newest long video automatically.
+
+## GROWTH PLAYBOOK — US audience (owner asked 25 Nov 2026: "professional, go viral in the US")
+
+Data so far (insights.md): US viewers watch longer (38 s vs 28 s), US-rooted stories convert best to subs (D.B. Cooper, Centralia, Titanic), staggered evening uploads all stayed alive, 95% of views come from the Shorts feed. So:
+
+1. **Topic mix every day:** 2 US-rooted mysteries / strange true stories plus 1 timely US hook (holiday, news, anniversary this week). Never 3 of the same theme (no more single-person "pinned" days unless the owner pins them).
+2. **First 1 second decides everything:** the strangest fact with a number, spoken and on screen, and frame 1 already in motion. No intro, no title card.
+3. **Retention:** 20-30 s, a visual change every 1-2 s, captions on every word, and the last line loops into the first so the replay counts.
+4. **Comment bait:** the description and the last on-screen beat ask one simple either/or question ("Would you have brought him back?"). Comments push Shorts in the feed.
+5. **Subscriber conversion:** one 2-second subscribe beat at ~70%, phrased as a promise ("Follow for a new unsolved case every night"), never at the start.
+6. **Series identity:** keep the same character style, caption style and music bed, so a viewer recognises the channel in 1 frame.
+7. **Shorts → long funnel:** pick long-video topics that expand the best-performing Short, and reference that Short's story. The uploader links the newest long video in every Short's description.
+8. **Titles:** under 50 characters, [specific person/thing] + [number] + [unexplained twist], no emoji, no clickbait that the video doesn't pay off.
+9. **Kill what flops:** after 48 h, any topic type under half the channel median gets dropped for a week (the analysis job tracks this in insights.md).
+10. **Never** re-upload the same video, upload several at once, or use copyrighted music/footage. These hurt reach more than any trick helps.
 
 ## Hard rules (never break)
 

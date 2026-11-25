@@ -2,9 +2,10 @@ name: YouTube upload (free, no Zapier)
 
 on:
   schedule:
-    # every 15 min, 22:00-03:59 UTC = US Eastern evening (EST 5-11 PM, EDT 6 PM-midnight).
-    # The script itself decides by the ET clock: Shorts at 6:00 / 7:30 / 9:00 PM ET, one per slot.
-    - cron: '*/15 22,23,0,1,2,3 * * *'
+    # every 15 min, 16:00-03:59 UTC = US Eastern 11 AM-11 PM (EST) / noon-midnight (EDT).
+    # The script decides by the ET clock: backlog Shorts 12:00 & 3:00 PM, today's Shorts 6:00 / 7:30 / 9:00 PM,
+    # long video 8:15 PM. One upload per run.
+    - cron: '*/15 16-23,0-3 * * *'
   workflow_dispatch:
     inputs:
       force:
