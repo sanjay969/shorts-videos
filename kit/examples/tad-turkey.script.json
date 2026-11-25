@@ -1,0 +1,28 @@
+{
+  "title": "A Crying Kid Started the Turkey Pardon",
+  "voice": "af_heart",
+  "speed": 1.1,
+  "lead": 0.05,
+  "outro": 0.4,
+  "gap": 0.12,
+  "music": "bounce",
+  "sources": [
+    "Smithsonian Magazine, 'The History of Pardoning Turkeys Began With Tad Lincoln': in 1863 a live turkey was sent to the White House for a holiday dinner; Lincoln's son Tad, about ten, named it Jack and made it a pet; when told it would be killed, Tad tearfully pleaded and Lincoln wrote a reprieve, and the turkey was spared",
+    "Snopes, 'Turkey Pardon' and UNC Law Library, 'Saved from Fowl Play: a Brief History of Turkey Pardoning': the Tad Lincoln story is the earliest pardon tale; the formal annual presidential pardon became official in 1989",
+    "President Lincoln's Cottage (lincolncottage.org): Tad Lincoln and the turkey Jack"
+  ],
+  "lines": [
+    { "text": "A crying ten-year-old started the turkey pardon.", "caps": "A crying | 10-year-old~ten-year-old | started | the turkey | pardon." },
+    { "text": "In eighteen sixty-three,", "caps": "In 1863,~eighteen" },
+    { "text": "a live turkey was sent to the White House for dinner." },
+    { "text": "But Lincoln's son, Tad, named him Jack," },
+    { "text": "and made him his pet." },
+    { "text": "Then Tad heard Jack was about to be cooked." },
+    { "text": "He burst in on his dad, sobbing," },
+    { "text": "begging him to save Jack." },
+    { "text": "Subscribe for more wild true stories." },
+    { "text": "So the President wrote the turkey a pardon," },
+    { "text": "and Jack got to live." },
+    { "text": "So next time a President pardons a turkey, remember:", "gap": 0.2 }
+  ]
+}

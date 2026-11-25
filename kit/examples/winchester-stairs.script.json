@@ -1,0 +1,29 @@
+{
+  "title": "Why She Built Stairs Into the Ceiling",
+  "voice": "af_heart",
+  "speed": 1.1,
+  "lead": 0.05,
+  "outro": 0.4,
+  "gap": 0.12,
+  "music": "tension",
+  "sources": [
+    "Wikipedia, 'Winchester Mystery House' and 'Sarah Winchester': widow of William Wirt Winchester (Winchester Repeating Arms); inherited about $20 million; bought an unfinished farmhouse in San Jose, California in 1886; building continued until her death in 1922; about 160 rooms; stairs that lead to the ceiling, doors that open onto walls; legend of spirits, disputed by historians",
+    "Mental Floss, '14 Haunting Facts About the Winchester Mystery House': staircase to the ceiling, door to a wall, window in the floor; the spirit legend has no solid evidence",
+    "History Hit, '10 Facts About the Winchester Mystery House'; ABC7 News, 'Top 10 mind-bending facts about the Winchester Mystery House'"
+  ],
+  "lines": [
+    { "text": "Why would anyone build stairs that lead into the ceiling?" },
+    { "text": "Sarah Winchester did." },
+    { "text": "Her late husband's family made the Winchester rifle," },
+    { "text": "and she inherited about twenty million dollars.", "caps": "and she | inherited | about | $20 million~twenty | dollars." },
+    { "text": "In eighteen eighty-six, she bought a farmhouse in San Jose,", "caps": "In | 1886,~eighteen | she | bought | a | farmhouse | in San | Jose," },
+    { "text": "and kept building for thirty-six years.", "caps": "and kept | building | for | 36 years.~thirty-six" },
+    { "text": "It grew to about a hundred and sixty rooms,", "caps": "It | grew | to about | 160~a | rooms," },
+    { "text": "with doors that open onto walls," },
+    { "text": "and a window in the floor." },
+    { "text": "Subscribe for more strange true stories." },
+    { "text": "Legend says spirits told her to never stop building." },
+    { "text": "Historians think she just loved designing." },
+    { "text": "But nobody knows for sure, so...", "gap": 0.2 }
+  ]
+}

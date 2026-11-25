@@ -19,7 +19,7 @@ function draw(t) {
   const blit = () => ctx.drawImage(GL, 0, 0, W, H);
   ctx.save(); sh.draw(lt, d, t, blit); ctx.restore();
   ctx.globalAlpha = 1; ctx.letterSpacing = '0px';
-  const fade = Math.min(clamp(t / 0.25), clamp((T.dur - t) / 0.4));
+  const fade = 1; // no fade: frame 0 must show the hook visual, and the end loops straight back
   if (fade < 1) { ctx.fillStyle = '#000'; ctx.globalAlpha = 1 - fade; ctx.fillRect(0, 0, W, H); ctx.globalAlpha = 1; }
   drawCaption(t);
 }

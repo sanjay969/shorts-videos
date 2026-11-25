@@ -1,0 +1,30 @@
+{
+  "title": "Black Friday Was Named by Angry Cops",
+  "voice": "af_heart",
+  "speed": 1.1,
+  "lead": 0.05,
+  "outro": 0.4,
+  "gap": 0.12,
+  "music": "bounce",
+  "sources": [
+    "History.com (Sarah Pruitt), 'The Real History of Black Friday': in the 1950s Philadelphia police used 'Black Friday' for the chaos the day after Thanksgiving, when suburban shoppers and tourists flooded the city before the Army-Navy game on Saturday; officers could not take the day off and worked extra-long shifts; in 1961 merchants tried to rebrand it 'Big Friday' and failed; the 'in the black' profit explanation spread only in the late 1980s",
+    "Britannica, 'Why Is It Called Black Friday?': Philadelphia police origin, 1950s-60s",
+    "Philadelphia Inquirer archive / Barry Popik, 'Black Friday (Big Friday)': 1961 Philadelphia 'Big Friday' rebrand attempt"
+  ],
+  "lines": [
+    { "text": "Black Friday was named by angry cops." },
+    { "text": "Not by stores." },
+    { "text": "In the nineteen fifties, in Philadelphia,", "caps": "In the | 1950s,~nineteen | in | Philadelphia," },
+    { "text": "the day after Thanksgiving was total chaos." },
+    { "text": "Shoppers flooded downtown," },
+    { "text": "and football fans poured in for the Army-Navy game." },
+    { "text": "Police couldn't take the day off," },
+    { "text": "and worked extra-long shifts in the traffic jams." },
+    { "text": "So they called it Black Friday." },
+    { "text": "Subscribe for more weird history." },
+    { "text": "Stores hated that name, and in nineteen sixty-one, tried Big Friday.", "caps": "Stores | hated | that | name, | and in | 1961,~nineteen | tried | Big | Friday." },
+    { "text": "It flopped." },
+    { "text": "Years later, stores spun a happier story about profits," },
+    { "text": "but the truth is:", "gap": 0.2 }
+  ]
+}
