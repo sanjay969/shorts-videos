@@ -75,7 +75,7 @@ Long videos: apply rules 1-7 as well, with a visual change every 3-4 s.
       - 20–30 s total (the last line leads back into the first so it loops)
       - the first line (0–1.5 s) is the most shocking fact or a direct question; no intro
       - 10–14 short lines, one short subscribe prompt ~70% through
-      - voice `am_michael`
+      - voice `af_heart` (female voice, owner preference; never am_michael)
       - music `tension` for mysteries
       - sources listed
 
