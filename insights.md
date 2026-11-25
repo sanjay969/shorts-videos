@@ -1,5 +1,31 @@
-# Insights — 2026-11-24 (Tue)
+# Insights — 2026-11-25 (Wed)
 
+**NO FRESH DATA TODAY: vidIQ account has 1 credit left; every analytics/video/trend call costs 5 and was refused (no credits charged).** No WIN/FLOP for the 24 Nov night uploads (Jensen Huang pinned set), no US share update, no outlier pull. Rules below are carried from 24 Nov — nothing in the data disproves them. Owner must top up / wait for vidIQ credit reset for tomorrow's run to work.
+
+## Rules for the next build (2026-11-25)
+1. **Keep the 6:00 / 7:30 / 9:00 PM ET staggered uploads (23:00 / 00:30 / 02:00 UTC) and 25–30s length, hard cap 35s** (~70–80 spoken words). Proven on 23 Nov (all 3 alive, best launch ever 2,537 in 5h).
+2. **Back to the niche after the pinned Jensen Huang day.** Tonight = Thanksgiving Eve, tomorrow Thanksgiving (Thu 26), then Black Friday (Fri 27): do US holiday curiosities + US mysteries. **Stop:** India-specific topics, Hinglish, non-US mysteries, internet lore, cute/funny history, business news.
+3. **Title formula (<50 chars, no emoji, no #shorts):** [Specific person/thing] + [number] + [unexplained twist].
+4. **Hook (first 2 sec):** strangest fact + a number, spoken AND on-screen, zero intro. One subscribe prompt only, right before the payoff; last line loops into the first.
+5. **Subs are the weak spot (1.6 per 1,000 views on 24 Nov):** US-rooted stories converted best (D.B. Cooper, Centralia, Titanic 3–4 subs each) — prefer them over global trivia.
+
+Baseline kept: US target audience, English only (American English voice, titles, captions), one niche (curiosity / what-if / mystery), no unrelated hashtags, title <50 chars with curiosity gap, 20–30s so the short loops, payoff in the last second that leads back to the start, one clear subscribe prompt, uploads at 6:00 / 7:30 / 9:00 PM ET.
+
+## Topic ideas (ranked) — for tonight's build
+| # | Topic | Suggested title | Why |
+|---|---|---|---|
+| 1 | Tad Lincoln begged his father to spare the family's turkey (1863), the pardon legend | Lincoln's Son Begged Him to Spare a Turkey | Uploads tonight = Thanksgiving Eve; pardon is in the news this week |
+| 2 | Black Friday got its name from angry Philadelphia cops (1950s, Army-Navy crowds; 1961 "Big Friday" rebrand flopped) | Black Friday Was Named by Angry Cops | Black Friday Fri 27 Nov; confirmed by History.com |
+| 3 | JFK's "Babushka Lady" filmed the assassination; her film was never found | She Filmed JFK's Death and Then Vanished | Core US mystery, on Nov 2026 mystery lists |
+| 4 | Dolly Oesterreich hid her lover in the attic (1913–1922) | She Hid a Man in Her Attic for 10 Years | Earlier outlier: 6.9x, 62K views in 1 day at 24s |
+| 5 | Kenny Veach vanished looking for the "M cave" in Nevada (Nov 10, 2014) | He Went Looking for a Cave and Vanished | Trending mystery list; US desert mystery |
+| 6 | Winchester Mystery House: built nonstop for 38 years, stairs to nowhere | She Built Stairs That Lead to Nowhere | Classic US mystery, visual, easy loop |
+
+Backups: Two Civil War bullets that collided mid-air · What if you never cut your nails again?
+(Ideas unchanged from 24 Nov — no new trend data possible today. Re-verify facts with a web search at build time.)
+
+---
+## Last available data (pulled 24 Nov — still the latest)
 Data: vidIQ / YouTube Analytics, 7d = 17–23 Nov, 28d = 27 Oct–23 Nov (pulled 04:08 UTC 24 Nov). Analytics lags 2–3 days, so shorts from 21 Nov onward use PUBLIC views/likes.
 Channel medians: engaged views (28d, shorts >100 views) ≈ 605; public views of recent shorts ≈ 1,230.
 **vidIQ credits ran out (1 left) — no fresh outlier/trend data today.** Topic ideas below come from the channel's own winners + last run's outlier list + calendar (Thanksgiving Thu 26 Nov, Black Friday Fri 27 Nov).
@@ -31,15 +57,6 @@ Channel medians: engaged views (28d, shorts >100 views) ≈ 605; public views of
 5. **Subs:** still weak at 1.6/1k; King Tut got 1,374 views and 0 subs. D.B. Cooper / Centralia / Titanic got 3–4 each — US-rooted stories convert best.
 6. **Today's build is pinned to Jensen Huang / Nvidia (owner request).** That is business news, outside the curiosity/mystery niche — expect lower retention. Keep the curiosity framing hard (number + twist in title, payoff loop), and return to the niche right after.
 
-## Rules for the next build (2026-11-24)
-1. **Keep the 6:00 / 7:30 / 9:00 PM ET staggered uploads (23:00 / 00:30 / 02:00 UTC) and 25–30s length, hard cap 35s** (~70–80 spoken words). Proven last night.
-2. **Topics — do more:** US holiday curiosities this week (Thanksgiving Thu 26, Black Friday Fri 27), US unsolved mysteries, US strange true stories, body what-ifs. **Stop:** India-specific topics, Hinglish, non-US mysteries, internet lore, cute/funny history.
-3. **Title formula (<50 chars, no emoji, no #shorts):** [Specific person/thing] + [number] + [unexplained twist]. e.g. "Lincoln's Son Begged Him to Spare a Turkey".
-4. **Hook (first 2 sec):** strangest fact + a number, spoken AND on-screen, zero intro ("In 1955, a doctor took Einstein's brain home."). One subscribe prompt only, right before the payoff; last line loops into the first.
-5. **Pinned Jensen Huang shorts today:** frame each as a curiosity story (e.g. "11 days", "40% drop", "Denny's booth"), not news recap; American English VO; same rules on length/hook/loop.
-
-Baseline kept: US target audience, English only (American English voice, titles, captions), one niche (curiosity / what-if / mystery), no unrelated hashtags, title <50 chars with curiosity gap, 20–30s so the short loops, payoff in the last second that leads back to the start, one clear subscribe prompt, uploads at 6:00 / 7:30 / 9:00 PM ET.
-
 ## Extra analysis (vidIQ out of credits — web trend check, 24 Nov)
 YouTube itself is blocked from this sandbox, and the Zapier YouTube connector only has upload. So trends came from web sources:
 - **Black Friday fact check (History.com):** the shopping meaning came from **Philadelphia police in the 1950s**, who hated the crowds before the Army-Navy game; in 1961 the city tried to rebrand it "Big Friday" and failed. The "in the black" retail story is the official version but **inaccurate**. The "slave sale" claim is false — do not use it.
@@ -47,15 +64,3 @@ YouTube itself is blocked from this sandbox, and the Zapier YouTube connector on
 - **Mystery lists trending (BuzzFeed, Nov 2026):** Kenny Veach vanished searching for the "M cave" in Nevada (Nov 10, 2014); JFK "Babushka Lady" whose film was never found (JFK anniversary was 22 Nov); Voynich manuscript at Yale.
 - Exploding Topics US list (Nov 2026) is mostly products/lattes — nothing usable for the niche.
 - Sources: history.com/articles/black-friday-thanksgiving-origins-history · dailydot.com (produce mystery, 23 Nov 2026) · buzzfeed.com/crystalro/terrifying-things-i-learned-november-2026 · explodingtopics.com/blog/trending-topics
-
-## Topic ideas (ranked) — for the next non-pinned builds
-| # | Topic | Suggested title | Why |
-|---|---|---|---|
-| 1 | Black Friday got its name from angry Philadelphia cops (1950s, Army-Navy game crowds; 1961 "Big Friday" rebrand flopped) | Black Friday Was Named by Angry Cops | Black Friday = Fri 27 Nov; fact confirmed by History.com; US holiday = #1 winner type |
-| 2 | Tad Lincoln begged his father to spare the family's turkey (1863), the pardon legend | Lincoln's Son Begged Him to Spare a Turkey | Thanksgiving Thu 26 Nov; pardon happens this week |
-| 3 | JFK's "Babushka Lady" filmed the assassination; her film was never found | She Filmed JFK's Death and Then Vanished | JFK anniversary 22 Nov; on Nov 2026 mystery lists; core US mystery |
-| 4 | Dolly Oesterreich hid her lover in the attic (1913–1922, Milwaukee/LA) | She Hid a Man in Her Attic for 10 Years | Last run: 6.9x outlier, 62K views in 1 day at 24s |
-| 5 | Kenny Veach went looking for the "M cave" in Nevada and vanished (Nov 10, 2014) | He Went Looking for a Cave and Vanished | Trending mystery list; US desert mystery, comment-bait |
-| 6 | Winchester Mystery House: built nonstop for 38 years, stairs to nowhere | She Built Stairs That Lead to Nowhere | Classic US mystery, visual, easy loop |
-
-Backups: Two Civil War bullets that collided mid-air · What if you never cut your nails again?
