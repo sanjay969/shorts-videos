@@ -104,14 +104,14 @@ def reconcile(now, feed):
     for day in queue_days(now):
         qd = os.path.join(ROOT, 'queue', day); meta = load(os.path.join(qd, 'meta.json'), None)
         if not meta: continue
-        upath = os.path.join(qd, 'uploaded.json'); done = load(upath, []); have = {d.get('file') for d in done}
+        upath = os.path.join(qd, 'uploaded.json'); done = load(upath, []); have = {d.get('file') for d in done}; dc = False
         for m in meta:
             hit = feed.get(norm(m['title']))
             if m['file'] not in have and hit:
                 done.append({'file': m['file'], 'title': m['title'], 'video_id': hit[0], 'url': f'https://www.youtube.com/watch?v={hit[0]}',
                              'privacy': 'public', 'via': 'already-on-channel', 'uploaded_at': hit[1]})
-                print('already on channel, skipping:', day, m['file']); changed = True
-        if changed and not DRY: save(upath, done)
+                print('already on channel, skipping:', day, m['file']); changed = dc = True
+        if dc and not DRY: save(upath, done)
     lp = os.path.join(ROOT, 'long', 'uploaded.json'); arr = load(lp, []); lc = False
     for e in arr:
         hit = feed.get(norm(e.get('title')))
