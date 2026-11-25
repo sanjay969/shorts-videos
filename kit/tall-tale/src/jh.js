@@ -170,8 +170,12 @@ export function boardroom(E) {
   const table = new THREE.Group(); const wood = WD.mat({ map: WD.T.planks('#5A3420', [2, 1]) });
   const top = new THREE.Mesh(new THREE.BoxGeometry(5.6, 0.12, 1.8), wood); top.position.y = 0.86; top.castShadow = top.receiveShadow = true; table.add(top);
   [[-2.4, -0.6], [2.4, -0.6], [-2.4, 0.6], [2.4, 0.6]].forEach(([x, z]) => { const l = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.8, 0.14), wood); l.position.set(x, 0.4, z); l.castShadow = true; table.add(l); });
+  // modesty panel on the camera side so legs of people seated behind the table are hidden
+  const pnl = new THREE.Mesh(new THREE.BoxGeometry(5.4, 0.74, 0.06), wood); pnl.position.set(0, 0.45, 0.82); pnl.castShadow = pnl.receiveShadow = true; table.add(pnl);
+  // table spans z -5.1 .. -3.3: seat people at z <= -5.4 (behind) and walk people at z >= -2.9 (in front); never in between
   table.position.set(0, 0, -4.2); R.scene.add(table);
-  const scr = screen(4.2, 2.3); scr.position.set(0, 2.55, -7.9); R.scene.add(scr);
+  // screen sits in front of the window frame (frame front is z -7.8) and covers the whole window, so they never overlap
+  const scr = screen(4.2, 2.3); scr.position.set(0, 2.1, -7.7); R.scene.add(scr);
   R.sun.key.target.position.set(0, 0, -4); R.sun.key.position.set(3, 6, 0);
   return { ...R, table, screen: scr };
 }

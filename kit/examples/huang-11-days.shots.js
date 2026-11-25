@@ -35,7 +35,7 @@ export function buildShots(E) {
   const BR = boardroom(E);
   const chair = person('chair'), mem = ['m1', 'm2', 'm3'].map((k) => person(k)); const bCeo = person('ceo');
   [chair, ...mem, bCeo].forEach((p) => BR.scene.add(p.group));
-  const seats = [[-1.8, -5.3], [-0.6, -5.3], [0.6, -5.3], [1.8, -5.3]]; [chair, ...mem].forEach((p, i) => p.at(seats[i][0], 0, seats[i][1]));
+  const seats = [[-1.8, -5.45], [-0.6, -5.45], [0.6, -5.45], [1.8, -5.45]]; [chair, ...mem].forEach((p, i) => p.at(seats[i][0], 0, seats[i][1]));
   const brPeople = [chair, ...mem, bCeo];
   const scr = (k, big) => BR.screen.draw((g, w, h) => drawPrice(g, w, h, PRICE, k, 'NVDA', big));
 
@@ -117,10 +117,10 @@ export function buildShots(E) {
   { const st = cut(3), wn = Wd('not', 3);
     add({ id: 'S04', at: st, note: 'boardroom, low Dutch angle: the chair slams the table on "not"; red stamp NOT COMING BACK', draw(lt, d, t, blit) {
       const k = eio(clamp(lt / d)); bCeo.group.visible = false; scr(0.3, '');
-      const sl = t > wn; chair.at(-0.6, 0, -5.0); chair.set({ mood: sl ? 'angry' : 'neutral', armL: sl ? [40, 10] : [100, -40], armR: sl ? [40, 10] : [100, -40], lean: sl ? 12 : 0, talk: talk(t), blink: blink(t) });
-      mem.forEach((p, i) => { p.at([-1.9, 0.6, 1.8][i], 0, -5.3); p.set({ mood: sl ? 'shock' : 'neutral', armL: [10, 6], armR: [10, 6], look: [i === 0 ? 0.7 : -0.7, 0], blink: blink(t, i) }); });
+      const sl = t > wn; chair.at(-0.6, 0, -5.45); chair.set({ mood: sl ? 'angry' : 'neutral', armL: sl ? [40, 10] : [100, -40], armR: sl ? [40, 10] : [100, -40], lean: sl ? 12 : 0, talk: talk(t), blink: blink(t) });
+      mem.forEach((p, i) => { p.at([-1.9, 0.6, 1.8][i], 0, -5.45); p.set({ mood: sl ? 'shock' : 'neutral', armL: [10, 6], armR: [10, 6], look: [i === 0 ? 0.7 : -0.7, 0], blink: blink(t, i) }); });
       const sh = shake(t, wn, 0.12);
-      shoot(BR.scene, brPeople, V3(-1.6, 1.75, -1.2).add(sh), V3(-1.0, 1.65, -2.0).add(sh), V3(-0.4, 1.55, -5.0), null, k, { ...LK.room, fov: 50 }, undefined, 0.14);
+      shoot(BR.scene, brPeople, V3(-1.6, 1.75, -1.2).add(sh), V3(-1.0, 1.65, -2.0).add(sh), V3(-0.4, 1.55, -5.45), null, k, { ...LK.room, fov: 50 }, undefined, 0.14);
       blit(); stamp(['NOT COMING', 'BACK'], (t - wn) / 0.2, { y: 470, rot: -0.1, size: 96 });
     } });
     cue(st, 'whoosh'); cue(wn, 'slam', { gain: 0.9 }); cue(wn + 0.02, 'stamp', { gain: 0.8 }); }
@@ -129,8 +129,8 @@ export function buildShots(E) {
   { const st = cut(4), ws = Wd('slid', 4);
     add({ id: 'S05', at: st, note: 'push in past the board to the wall screen: the NVDA line falls red; red tint on "slid"', draw(lt, d, t, blit) {
       const k = eio(clamp(lt / d)); bCeo.group.visible = false; scr(lerp(0.15, 0.72, clamp(lt / d)), '');
-      chair.at(-0.6, 0, -5.0); chair.set({ mood: 'worried', sweat: 1, look: [0, -0.8], armL: [20, 10], armR: [20, 10] });
-      mem.forEach((p, i) => { p.at([-1.9, 0.6, 1.8][i], 0, -5.3); p.set({ mood: t > ws ? 'shock' : 'worried', armL: t > ws ? [130, 0] : [10, 6], armR: t > ws ? [130, 0] : [10, 6], look: [0, -0.8] }); });
+      chair.at(-0.6, 0, -5.45); chair.set({ mood: 'worried', sweat: 1, look: [0, -0.8], armL: [20, 10], armR: [20, 10] });
+      mem.forEach((p, i) => { p.at([-1.9, 0.6, 1.8][i], 0, -5.45); p.set({ mood: t > ws ? 'shock' : 'worried', armL: t > ws ? [130, 0] : [10, 6], armR: t > ws ? [130, 0] : [10, 6], look: [0, -0.8] }); });
       shoot(BR.scene, brPeople, V3(0, 1.9, -0.6), V3(0, 2.3, -4.6), V3(0, 2.0, -7.9), V3(0, 2.5, -7.9), k, { ...LK.room, fov: 50 });
       blit(); tint(clamp((t - ws) / 0.3));
     } });
@@ -178,9 +178,9 @@ export function buildShots(E) {
   { const st = cut(7), wv = Wd('voted', 7), wb = Wd('back', 7);
     add({ id: 'S08', at: st, note: 'boardroom: every hand shoots up on "voted"; the CEO strides in grinning; confetti; pill UNANIMOUS', draw(lt, d, t, blit) {
       const k = eio(clamp(lt / d)); scr(0.78, ''); const up = t > wv;
-      chair.at(-0.6, 0, -5.0); chair.set({ mood: up ? 'happy' : 'neutral', armR: up ? [160, 0] : [10, 6], armL: [10, 6] });
-      mem.forEach((p, i) => { p.at([-1.9, 0.6, 1.8][i], 0, -5.3); p.set({ mood: up ? 'happy' : 'neutral', armR: up && t > wv + i * 0.1 ? [160, 0] : [10, 6], armL: [10, 6] }); });
-      bCeo.group.visible = true; const a = eo(clamp((t - wb + 0.3) / 0.6)); bCeo.at(lerp(2.6, 0.9, a), 0, -3.4); bCeo.set({ mood: 'smug', legs: a > 0 && a < 1 ? 'walk' : 'stand', phase: t * 7, armR: [20, 10], armL: [20, 10], look: [-0.7, 0], blink: blink(t) });
+      chair.at(-0.6, 0, -5.45); chair.set({ mood: up ? 'happy' : 'neutral', armR: up ? [160, 0] : [10, 6], armL: [10, 6] });
+      mem.forEach((p, i) => { p.at([-1.9, 0.6, 1.8][i], 0, -5.45); p.set({ mood: up ? 'happy' : 'neutral', armR: up && t > wv + i * 0.1 ? [160, 0] : [10, 6], armL: [10, 6] }); });
+      bCeo.group.visible = true; const a = eo(clamp((t - wb + 0.3) / 0.6)); bCeo.at(lerp(2.6, 0.9, a), 0, -2.7); bCeo.set({ mood: 'smug', legs: a > 0 && a < 1 ? 'walk' : 'stand', phase: t * 7, armR: [20, 10], armL: [20, 10], look: [-0.7, 0], blink: blink(t) });
       shoot(BR.scene, brPeople, V3(1.2, 2.0, 0.6), V3(0.8, 1.85, -0.2), V3(0.6, 1.4, -4.4), null, k, { ...LK.room, fov: 52 });
       blit(); pill('UNANIMOUS VOTE', (t - wv) / 0.25, 300, 'rgba(31,28,51,0.9)', 58); if (t > wb) confetti(t, wb, 50);
     } });
@@ -189,9 +189,9 @@ export function buildShots(E) {
   // 9 · "Subscribe for more wild comebacks." CEO points at the camera; SUBSCRIBE button gets clicked
   { const st = cut(8);
     add({ id: 'S09', at: st, note: 'CEO in the boardroom points at camera, pull-out; a big SUBSCRIBE button gets clicked', draw(lt, d, t, blit) {
-      const k = eio(clamp(lt / d)); scr(0.78, ''); bCeo.group.visible = true; bCeo.at(1.6, 0, -3.0);
+      const k = eio(clamp(lt / d)); scr(0.78, ''); bCeo.group.visible = true; bCeo.at(1.6, 0, -2.6);
       bCeo.set({ mood: 'happy', armR: [95, 0], armL: [20, 10], talk: talk(t), blink: blink(t) });
-      shoot(BR.scene, brPeople, V3(1.3, 1.5, -1.0), V3(1.0, 1.6, 0.0), V3(1.6, 1.3, -3.0), null, k, { ...LK.room, fov: 44 }, 2.4);
+      shoot(BR.scene, brPeople, V3(1.3, 1.5, -1.0), V3(1.0, 1.6, 0.0), V3(1.6, 1.3, -2.6), null, k, { ...LK.room, fov: 44 }, 2.4);
       blit(); subscribe(lt / 0.5 + (lt > 0.8 ? (lt - 0.8) * 1.5 : 0), t, 330);
     } });
     cue(st, 'pop', { gain: 0.6 }); cue(cut(8) + 1.3, 'ding', { gain: 0.6 }); }

@@ -34,7 +34,7 @@ export function buildShots(E) {
   const chair = person('chair'), mem = ['m1', 'm2', 'm3'].map((k) => person(k)); const bCeo = person('ceo');
   [chair, ...mem, bCeo].forEach((p) => BR.scene.add(p.group));
   const brPeople = [chair, ...mem, bCeo];
-  const seatMem = () => mem.forEach((p, i) => p.at([-1.9, 0.6, 1.8][i], 0, -5.3));
+  const seatMem = () => mem.forEach((p, i) => p.at([-1.9, 0.6, 1.8][i], 0, -5.45));
   const scr = (k) => BR.screen.draw((g, w, h) => drawPrice(g, w, h, PRICE, k, 'NVDA', ''));
 
   // ═══ SHOTS ═══
@@ -77,7 +77,7 @@ export function buildShots(E) {
   // 3a · "See, on November twelfth, its CEO," rewind: boardroom, ribbon NOV 12
   { const st = cut(2), wn = Wd('november', 2);
     add({ id: 'S03a', at: st, note: 'rewind flash: wide boardroom, the board seated; gold ribbon NOV 12', draw(lt, d, t, blit) {
-      const k = eio(clamp(lt / d)); scr(0.25); seatMem(); chair.at(-0.6, 0, -5.0); bCeo.group.visible = true; bCeo.at(1.6, 0, -3.0);
+      const k = eio(clamp(lt / d)); scr(0.25); seatMem(); chair.at(-0.6, 0, -5.45); bCeo.group.visible = true; bCeo.at(1.6, 0, -2.6);
       chair.set({ mood: 'neutral', armL: [10, 6], armR: [10, 6], blink: blink(t) }); mem.forEach((p, i) => p.set({ mood: 'neutral', armL: [10, 6], armR: [10, 6], blink: blink(t, i), look: [0.7, 0] }));
       bCeo.set({ mood: 'tired', armL: [20, 10], armR: [20, 10], look: [-0.6, 0.3], blink: blink(t) });
       shoot(BR.scene, brPeople, V3(-0.4, 2.5, 1.4), V3(0.2, 2.0, 0.4), V3(0.5, 1.4, -4.0), null, k, { ...LK.room, fov: 54 });
@@ -87,7 +87,7 @@ export function buildShots(E) {
   // 3b · "Jensen Huang, quit," he slaps a letter on the table; QUIT stamp
   { const st = Wd('jensen', 2) - 0.12, wq = Wd('quit', 2);
     add({ id: 'S03b', at: st, note: 'medium: the CEO slaps a resignation letter down on "quit", the board flinches; red QUIT stamp', draw(lt, d, t, blit) {
-      const k = eio(clamp(lt / d)); scr(0.25); seatMem(); chair.at(-0.6, 0, -5.0); bCeo.group.visible = true; bCeo.at(1.6, 0, -3.0); const sl = t > wq;
+      const k = eio(clamp(lt / d)); scr(0.25); seatMem(); chair.at(-0.6, 0, -5.45); bCeo.group.visible = true; bCeo.at(1.6, 0, -2.6); const sl = t > wq;
       bCeo.set({ mood: sl ? 'sad' : 'worried', armR: sl ? [50, 10] : [120, -40], holdR: sl ? null : PROPS.paper('RESIGN'), v: 'r' + sl, armL: [20, 10], lean: sl ? 10 : 0, blink: blink(t) });
       [chair, ...mem].forEach((p, i) => p.set({ mood: sl ? 'shock' : 'neutral', armL: [10, 6], armR: [10, 6], look: [0.8, 0] }));
       const sh = shake(t, wq, 0.1);
@@ -99,10 +99,10 @@ export function buildShots(E) {
   // 4 · "and the board said he was gone for good." the chair stamps GONE FOR GOOD; members shake heads
   { const st = cut(3), wg = Wd('gone', 3);
     add({ id: 'S04', at: st, note: 'low tilted angle on the board chair, he stands and points to the door; GONE FOR GOOD stamp', draw(lt, d, t, blit) {
-      const k = eio(clamp(lt / d)); scr(0.3); seatMem(); bCeo.group.visible = false; chair.at(-0.6, 0, -5.0);
+      const k = eio(clamp(lt / d)); scr(0.3); seatMem(); bCeo.group.visible = false; chair.at(-0.6, 0, -5.45);
       chair.set({ mood: 'angry', armR: [100, 0], armL: [20, 10], talk: talk(t), blink: blink(t), lean: -6 });
       mem.forEach((p, i) => p.set({ mood: 'sly', look: [Math.sin(t * 8 + i) * 0.8, 0], armL: [10, 6], armR: [10, 6] }));
-      shoot(BR.scene, brPeople, V3(-1.8, 1.4, -1.4), V3(-1.3, 1.3, -2.2), V3(-0.6, 1.7, -5.0), null, k, { ...LK.room, fov: 48 }, undefined, 0.12);
+      shoot(BR.scene, brPeople, V3(-1.8, 1.4, -1.4), V3(-1.3, 1.3, -2.2), V3(-0.6, 1.7, -5.45), null, k, { ...LK.room, fov: 48 }, undefined, 0.12);
       blit(); stamp(['GONE', 'FOR GOOD'], (t - wg) / 0.2, { y: 470, size: 100 });
     } });
     cue(st, 'whoosh'); cue(wg, 'stamp', { gain: 1 }); }
@@ -138,8 +138,8 @@ export function buildShots(E) {
   // 6b · "the board brought him back." the CEO strides into the boardroom, hands up, confetti
   { const st = Wd('board', 5) - 0.3, wb = Wd('back', 5);
     add({ id: 'S06b', at: st, note: 'boardroom: the CEO strides in, the board jumps up cheering, confetti; BACK! stamp', draw(lt, d, t, blit) {
-      const k = eio(clamp(lt / d)); scr(0.8); seatMem(); chair.at(-0.6, 0, -5.0); bCeo.group.visible = true; const a = eo(clamp(lt / 0.8));
-      bCeo.at(lerp(2.6, 0.8, a), 0, -3.2); bCeo.set({ mood: 'laugh', legs: a < 1 ? 'walk' : 'stand', phase: t * 7, armR: a < 1 ? [20, 10] : [150, 10], armL: [20, 10], blink: blink(t) });
+      const k = eio(clamp(lt / d)); scr(0.8); seatMem(); chair.at(-0.6, 0, -5.45); bCeo.group.visible = true; const a = eo(clamp(lt / 0.8));
+      bCeo.at(lerp(2.6, 0.8, a), 0, -2.6); bCeo.set({ mood: 'laugh', legs: a < 1 ? 'walk' : 'stand', phase: t * 7, armR: a < 1 ? [20, 10] : [150, 10], armL: [20, 10], blink: blink(t) });
       [chair, ...mem].forEach((p, i) => p.set({ mood: t > wb ? 'laugh' : 'shock', armL: t > wb ? [150, 10] : [10, 6], armR: t > wb ? [150, 10] : [10, 6], legs: t > wb && Math.sin(t * 9 + i) > 0.3 ? 'jump' : 'stand' }));
       shoot(BR.scene, brPeople, V3(1.4, 1.9, 0.8), V3(0.9, 1.8, 0.0), V3(0.6, 1.4, -4.2), null, k, { ...LK.room, fov: 52 });
       blit(); stamp(['BACK!'], (t - wb) / 0.2, { y: 430, col: '#2F7A3A', size: 140, fill: 'rgba(240,255,235,0.94)' }); confetti(t, wb, 50);
@@ -149,10 +149,10 @@ export function buildShots(E) {
   // 7 · "Subscribe for more crazy money stories." CEO points at the camera; subscribe button clicked
   { const st = cut(6);
     add({ id: 'S07', at: st, note: 'CEO grins and points at the camera, push-in; SUBSCRIBE button clicked at the top', draw(lt, d, t, blit) {
-      const k = eio(clamp(lt / d)); scr(0.8); seatMem(); bCeo.group.visible = true; bCeo.at(1.5, 0, -3.2);
+      const k = eio(clamp(lt / d)); scr(0.8); seatMem(); bCeo.group.visible = true; bCeo.at(1.5, 0, -2.6);
       bCeo.set({ mood: 'happy', armR: [95, 0], armL: [20, 10], talk: talk(t), blink: blink(t) });
       [chair, ...mem].forEach((p) => p.set({ mood: 'happy', armL: [10, 6], armR: [10, 6] }));
-      shoot(BR.scene, brPeople, V3(1.2, 1.5, -0.6), V3(1.3, 1.5, -1.4), V3(1.5, 1.35, -3.2), null, k, { ...LK.room, fov: 44 }, 2.0);
+      shoot(BR.scene, brPeople, V3(1.2, 1.5, -0.6), V3(1.3, 1.5, -1.4), V3(1.5, 1.35, -2.6), null, k, { ...LK.room, fov: 44 }, 2.0);
       blit(); subscribe(lt / 0.5 + (lt > 0.8 ? (lt - 0.8) * 1.5 : 0), t, 330);
     } });
     cue(st, 'pop', { gain: 0.6 }); cue(cut(6) + 1.3, 'ding', { gain: 0.6 }); }

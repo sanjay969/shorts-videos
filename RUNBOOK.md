@@ -29,6 +29,12 @@ Scheduled tasks:
   - an empty or black frame
   - a leftover object from another shot
   - something on screen that contradicts the narration
+  - **broken shapes (owner complaint 24 Nov 2026)**: a head or arm with a flat, sliced edge; a body sliced by a table, counter or booth; two people overlapping each other; legs showing under a table; a wall screen overlapping a window frame; a cart passing through the track. Check every such frame at full size with `capture.mjs frames` before the final render.
+- STAGING RULES (prevent broken shapes):
+  - Leave at least 1.1 m between people's positions, and never put a person inside the footprint of a table, counter, booth or cart.
+  - Boardroom table spans z -5.1 to -3.3. Seat people at z ≤ -5.4 (behind it) and walk people at z ≥ -2.9 (in front of it).
+  - The camera stays at least 1.3 m from the nearest person. No face that fills more than half the frame, and no shot that ends inside a wall, a screen or a body (black frames).
+  - Use `lean` of 12° or less, and keep raised arms inside the card. Toon cards now have a 128 px margin on each side, which stops edge clipping up to that.
 - Topics must not repeat anything in `topics-done.txt`.
 
 ## ANIMATION RULES (owner asked 23 Nov 2026: "make the animation interesting")

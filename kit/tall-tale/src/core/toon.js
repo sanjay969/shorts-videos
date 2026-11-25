@@ -334,11 +334,12 @@ export class Toon {
   /** height = metres from feet to the top of the head (≈1.75); res = canvas scale (2 = 1024x2048) */
   constructor(look = {}, { height = 1.75, res = 2, castShadow = true } = {}) {
     this.look = look; this.res = res;
-    this.canvas = document.createElement('canvas'); this.canvas.width = 512 * res; this.canvas.height = 1024 * res;
+    this.canvas = document.createElement('canvas'); this.canvas.width = 768 * res;   // 128px margin each side so leans / raised arms never get cut off at the card edge
+    this.canvas.height = 1024 * res;
     this.g = this.canvas.getContext('2d');
     this.tex = new THREE.CanvasTexture(this.canvas); this.tex.colorSpace = THREE.SRGBColorSpace; this.tex.anisotropy = 4;
     const H = height / 0.96, Wd = H / 2;                       // the head top sits ~4% below the canvas top
-    const geo = new THREE.PlaneGeometry(Wd, H); geo.translate(0, H / 2 - H * (24 / 1024), 0);
+    const geo = new THREE.PlaneGeometry(Wd * 1.5, H); geo.translate(0, H / 2 - H * (24 / 1024), 0);
     this.mat = new THREE.MeshBasicMaterial({ map: this.tex, transparent: true, alphaTest: 0.04, side: THREE.DoubleSide, toneMapped: false });
     this.mesh = new THREE.Mesh(geo, this.mat);
     this.mesh.castShadow = castShadow;
@@ -354,7 +355,7 @@ export class Toon {
     if (key === this.key) return this;
     this.key = key; this.st = st;
     const g = this.g; g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    g.scale(this.res, this.res); this.hands = drawToon(g, this.look, st);
+    g.scale(this.res, this.res); g.translate(128, 0); this.hands = drawToon(g, this.look, st);
     this.tex.needsUpdate = true; return this;
   }
   /** turn the cut-out to face the camera (around the vertical axis only) */
