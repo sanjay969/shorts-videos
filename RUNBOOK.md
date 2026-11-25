@@ -106,6 +106,9 @@ Long videos: apply rules 1-7 as well, with a visual change every 3-4 s.
 
 ## UPLOAD (one short per run)
 
+**First read `UPLOAD_MODE` at the repo root.** If it says `actions`, do NOT upload anything. The free GitHub Actions uploader (`.github/workflows/youtube-upload.yml` + `scripts/yt_upload.py`) handles Shorts at 6:00 / 7:30 / 9:00 PM ET and pending long videos. Just report what `uploaded.json` shows. Follow the Zapier steps below only when it says `zapier`. If a file named `UPLOAD_LOCKED` exists, the YouTube API audit is still pending: tell the owner to upload manually.
+
+
 1. `git pull`, then read `queue/YYYY-MM-DD/meta.json` for today's **US Eastern** date.
 2. Pick the first file (by name) not already in `queue/YYYY-MM-DD/uploaded.json`. Its URL is `https://raw.githubusercontent.com/sanjay969/shorts-videos/main/queue/YYYY-MM-DD/<file>`. Check it returns 200 (`curl -s -o /dev/null -w "%{http_code}"`).
 3. Sleep until the run's slot (6:00 PM, 7:30 PM or 9:00 PM ET). Never upload earlier. Then `git pull` again and re-check `uploaded.json`.

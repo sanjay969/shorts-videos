@@ -51,7 +51,11 @@ def upload(path, title, description, tags, category='24', thumb=None):
     while res is None:
         st, res = req.next_chunk()
         if st: print(f'  {int(st.progress() * 100)}%')
-    vid = res['id']; print('uploaded', vid, res.get('status', {}).get('privacyStatus'))
+    vid = res['id']; priv = res.get('status', {}).get('privacyStatus'); print('uploaded', vid, priv)
+    if priv != 'public':
+        # new API projects stay "private-locked" until YouTube's API audit passes: stop so no more videos get wasted
+        open(os.path.join(ROOT, 'UPLOAD_LOCKED'), 'w').write(f'{vid} came back {priv}. Pass the YouTube API audit, then delete this file.\n')
+        print('::error::upload came back', priv, '- stopping further uploads (see UPLOAD_LOCKED)')
     if thumb and os.path.exists(thumb):
         try:
             from googleapiclient.http import MediaFileUpload as M
@@ -98,6 +102,9 @@ def do_long(now):
 
 
 if __name__ == '__main__':
+    mode = open(os.path.join(ROOT, 'UPLOAD_MODE')).read().strip() if os.path.exists(os.path.join(ROOT, 'UPLOAD_MODE')) else 'zapier'
+    if mode != 'actions' and not DRY: print('UPLOAD_MODE is', mode, '- Zapier jobs handle uploads, skipping'); sys.exit(0)
+    if os.path.exists(os.path.join(ROOT, 'UPLOAD_LOCKED')) and not DRY: print('::warning::UPLOAD_LOCKED exists - skipping'); sys.exit(0)
     now = dt.datetime.now(ET); print('now ET', now.strftime('%Y-%m-%d %H:%M'))
     changed = do_short(now)
     if not changed: changed = do_long(now)       # at most one upload per run

@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898733+github-actions[bot]@users.noreply.github.com"
-          git add queue/*/uploaded.json long/uploaded.json 2>/dev/null || true
+          for f in queue/*/uploaded.json long/uploaded.json UPLOAD_LOCKED; do [ -e "$f" ] && git add "$f"; done; true
           if git diff --cached --quiet; then echo "nothing to record"; exit 0; fi
           git commit -m "Uploaded via GitHub Actions"
           for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
