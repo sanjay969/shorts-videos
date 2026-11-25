@@ -10,5 +10,18 @@
   "thumbnail_set": true,
   "uploaded_at": "2026-11-22T22:51:47Z",
   "duration_s": 540.8
+ },
+ {
+  "date": "2026-11-25",
+  "file": "long/2026-11-25/lost-colony-roanoke.mp4",
+  "title": "115 People Vanished and Left Only One Word",
+  "video_id": null,
+  "url": null,
+  "status": "NOT UPLOADED: Zapier returned 429 Too Many Requests; retry was blocked by the session's permission check. Needs manual upload (or re-run).",
+  "raw_video": "https://raw.githubusercontent.com/sanjay969/shorts-videos/main/long/2026-11-25/lost-colony-roanoke.mp4",
+  "raw_thumbnail": "https://raw.githubusercontent.com/sanjay969/shorts-videos/main/long/2026-11-25/thumbnail.jpg",
+  "privacy_intended": "public",
+  "made_for_kids": false,
+  "duration_s": 577.8
  }
 ]
