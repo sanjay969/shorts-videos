@@ -1,0 +1,35 @@
+{
+ "file": "lost-colony-roanoke.mp4",
+ "thumbnail": "thumbnail.jpg",
+ "title": "115 People Vanished and Left Only One Word",
+ "description": "In 1590, John White came back to find his entire colony gone: more than 100 people, including his granddaughter. All that was left was one word carved into a post.\nSo what happened to the Lost Colony of Roanoke? The real answer is at the end.\n\nCHAPTERS\n0:00 One word on a post\n0:32 The Colony\n2:02 The War\n3:11 The Return\n5:24 The Theories\n6:20 The Hidden Map\n7:10 The Word On The Post\n8:31 The Real Answer\n\nSources: National Park Service, Fort Raleigh National Historic Site (1590 Voyage; Major Theories of the Lost Colony); History.com, \"What Happened to the Lost Colony of Roanoke?\"; National Geographic (2015, 2020); Stahle et al., Science, 1998 (Lost Colony and Jamestown droughts); John Lawson, A New Voyage to Carolina (1709); Popular Archaeology, \"Lost and Found: The Evidence for the Lost Colony\".\nAll visuals are original illustrations made in code; scenes and maps are illustrative reconstructions, not archival footage. Narration uses an AI voice.\n\n#LostColony #Roanoke #UnsolvedMysteries #AmericanHistory #Croatoan",
+ "tags": [
+  "Lost Colony of Roanoke",
+  "Roanoke colony",
+  "Croatoan",
+  "unsolved mysteries",
+  "American history",
+  "John White",
+  "Virginia Dare",
+  "Hatteras Island",
+  "history documentary",
+  "Outer Banks",
+  "colonial America",
+  "mystery documentary"
+ ],
+ "hook": "In fifteen ninety, a man sailed back to America to find his entire colony gone. More than a hundred men, women and children had simply vanished, including his own granddaughter. There were no bodies. No graves. No sign of a fight. Just one word, carved deep into a wooden post. Croatoan. For more than four hundred years, nobody could say for sure what it meant. So what happened to the Lost Colony of Roanoke? Stay to the end, because the real answer is at the end, and archaeologists may have just dug it out of the sand.",
+ "hook_check": {
+  "first_line_at_s": 0.25,
+  "first_line": "In fifteen ninety, a man sailed back to America to find his entire colony gone.",
+  "big_question_at_s": 23.26,
+  "answer_promise_at_s": 25.98,
+  "subscribe_first_at_s": 316.2,
+  "visual_change_max_s": 3.4,
+  "language": "English only",
+  "thumbnail_text": "ONE WORD LEFT",
+  "no_intro_no_fade": true
+ },
+ "duration_s": 577.797,
+ "voice": "Kokoro am_michael x1.1",
+ "topic": "Lost Colony of Roanoke (expanded from 23 Nov short '115 Colonists Vanished and Left One Word')"
+}
