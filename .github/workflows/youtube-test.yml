@@ -14,7 +14,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install --quiet google-api-python-client google-auth
-      - run: ffmpeg -v error -f lavfi -i color=c=0x1F1C33:s=1080x1920:d=3 -vf "drawtext=text='upload test':fontcolor=white:fontsize=90:x=(w-text_w)/2:y=(h-text_h)/2" -c:v libx264 -pix_fmt yuv420p test.mp4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - run: ffmpeg -v error -f lavfi -i color=c=0x1F1C33:s=1080x1920:d=3 -f lavfi -i anullsrc=r=44100:cl=stereo -t 3 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest test.mp4
       - name: Upload test clip
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
