@@ -1,0 +1,43 @@
+name: YouTube upload TEST (3-second clip)
+
+# Manual only. Uploads a 3-second test clip as PUBLIC to check that the secrets work and whether
+# YouTube private-locks API uploads (audit pending). Delete the test video in YouTube Studio afterwards.
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet google-api-python-client google-auth
+      - run: ffmpeg -v error -f lavfi -i color=c=0x1F1C33:s=1080x1920:d=3 -vf "drawtext=text='upload test':fontcolor=white:fontsize=90:x=(w-text_w)/2:y=(h-text_h)/2" -c:v libx264 -pix_fmt yuv420p test.mp4
+      - name: Upload test clip
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          python - <<'EOF'
+          import os
+          from google.oauth2.credentials import Credentials
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaFileUpload
+          c = Credentials(None, refresh_token=os.environ['YT_REFRESH_TOKEN'], token_uri='https://oauth2.googleapis.com/token',
+                          client_id=os.environ['YT_CLIENT_ID'], client_secret=os.environ['YT_CLIENT_SECRET'],
+                          scopes=['https://www.googleapis.com/auth/youtube.upload'])
+          yt = build('youtube', 'v3', credentials=c, cache_discovery=False)
+          r = yt.videos().insert(part='snippet,status', body={
+                'snippet': {'title': 'Upload test - delete me', 'description': 'automation test', 'categoryId': '24'},
+                'status': {'privacyStatus': 'public', 'selfDeclaredMadeForKids': False}},
+              media_body=MediaFileUpload('test.mp4', mimetype='video/mp4')).execute()
+          p = r['status']['privacyStatus']
+          print(f"RESULT video_id={r['id']} privacy={p} url=https://www.youtube.com/watch?v={r['id']}")
+          if p != 'public':
+              print('::warning::YouTube set it to', p, '- API uploads are private-locked until the API audit passes')
+          else:
+              print('::notice::PUBLIC upload works - ready to switch UPLOAD_MODE to actions')
+          EOF
