@@ -1,27 +1,29 @@
 [
- {
-  "date": "2026-11-23",
-  "file": "long/2026-11-23/king-tut-curse.mp4",
-  "title": "He Opened King Tut's Tomb and Died Within Months",
-  "video_id": "iHvBQoR0ue0",
-  "url": "https://www.youtube.com/watch?v=iHvBQoR0ue0",
-  "privacy": "public",
-  "made_for_kids": false,
-  "thumbnail_set": true,
-  "uploaded_at": "2026-11-22T22:51:47Z",
-  "duration_s": 540.8
- },
- {
-  "date": "2026-11-25",
-  "file": "long/2026-11-25/lost-colony-roanoke.mp4",
-  "title": "115 People Vanished and Left Only One Word",
-  "video_id": null,
-  "url": null,
-  "status": "NOT UPLOADED: Zapier returned 429 Too Many Requests; retry was blocked by the session's permission check. Needs manual upload (or re-run).",
-  "raw_video": "https://raw.githubusercontent.com/sanjay969/shorts-videos/main/long/2026-11-25/lost-colony-roanoke.mp4",
-  "raw_thumbnail": "https://raw.githubusercontent.com/sanjay969/shorts-videos/main/long/2026-11-25/thumbnail.jpg",
-  "privacy_intended": "public",
-  "made_for_kids": false,
-  "duration_s": 577.8
- }
+  {
+    "date": "2026-11-23",
+    "file": "long/2026-11-23/king-tut-curse.mp4",
+    "title": "He Opened King Tut's Tomb and Died Within Months",
+    "video_id": "iHvBQoR0ue0",
+    "url": "https://www.youtube.com/watch?v=iHvBQoR0ue0",
+    "privacy": "public",
+    "made_for_kids": false,
+    "thumbnail_set": true,
+    "uploaded_at": "2026-11-22T22:51:47Z",
+    "duration_s": 540.8
+  },
+  {
+    "date": "2026-11-25",
+    "file": "long/2026-11-25/lost-colony-roanoke.mp4",
+    "title": "115 People Vanished and Left Only One Word",
+    "video_id": "SecdUa-ai6Y",
+    "url": "https://www.youtube.com/watch?v=SecdUa-ai6Y",
+    "raw_video": "https://raw.githubusercontent.com/sanjay969/shorts-videos/main/long/2026-11-25/lost-colony-roanoke.mp4",
+    "raw_thumbnail": "https://raw.githubusercontent.com/sanjay969/shorts-videos/main/long/2026-11-25/thumbnail.jpg",
+    "privacy_intended": "public",
+    "made_for_kids": false,
+    "duration_s": 577.8,
+    "privacy": "public",
+    "via": "already-on-channel",
+    "uploaded_at": "2026-11-25T05:56:31+00:00"
+  }
 ]
