@@ -1,0 +1,53 @@
+{
+ "voice": "af_heart",
+ "speed": 1.1,
+ "lead": 0.05,
+ "outro": 0.4,
+ "gap": 0.12,
+ "music": "tension",
+ "title": "The JFK Witness No One Ever Found",
+ "sources": [
+  "Wikipedia, 'Babushka Lady': unidentified woman in a tan overcoat and headscarf seen in the Zapruder, Nix, Muchmore and Bell films holding a camera to her face; in 1970 Beverly Oliver claimed to be her and said she used a Yashica Super 8, a model not made until 1969; the 1979 House Select Committee photographic panel could not locate the Babushka Lady film",
+  "Mental Floss, 'Who Was the Mysterious Babushka Lady at JFK's Assassination?': she never came forward to law enforcement; her footage has never been found",
+  "The Sixth Floor Museum at Dealey Plaza (jfk.org), images of witnesses in Dealey Plaza"
+ ],
+ "lines": [
+  {
+   "text": "She filmed the JFK assassination up close, and nobody knows who she was."
+  },
+  {
+   "text": "Dallas, November twenty-second, nineteen sixty-three.",
+   "caps": "Dallas, | Nov. 22,~November | 1963.~nineteen"
+  },
+  {
+   "text": "In the photos, a woman in a tan coat and headscarf"
+  },
+  {
+   "text": "holds a camera up to her face."
+  },
+  {
+   "text": "People call her the Babushka Lady."
+  },
+  {
+   "text": "She never came forward."
+  },
+  {
+   "text": "Follow for a new unsolved case every night."
+  },
+  {
+   "text": "In nineteen seventy, a woman said it was her,",
+   "caps": "In | 1970,~nineteen | a woman | said | it was | her,"
+  },
+  {
+   "text": "but her camera model wasn't made until sixty-nine.",
+   "caps": "but her | camera | model | wasn't | made | until | '69.~sixty-nine"
+  },
+  {
+   "text": "Congress investigators searched for the film, and never found it."
+  },
+  {
+   "text": "So all we really know is this:",
+   "gap": 0.2
+  }
+ ]
+}

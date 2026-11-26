@@ -1,0 +1,54 @@
+{
+ "voice": "af_heart",
+ "speed": 1.1,
+ "lead": 0.05,
+ "outro": 0.4,
+ "gap": 0.12,
+ "music": "tension",
+ "title": "No One Can Read This 600-Year-Old Book",
+ "sources": [
+  "Yale Beinecke Rare Book & Manuscript Library, MS 408 (the Voynich Manuscript): written in an unknown script, illustrated with unidentified plants, astronomical diagrams and bathing figures; named after book dealer Wilfrid Voynich, who acquired it in 1912",
+  "Live Science / NBC News (Feb 2011), 'Mystery Book Gives Up a Secret': University of Arizona radiocarbon dating put the vellum at 1404-1438",
+  "Wikipedia, 'Voynich manuscript': about 240 pages; WWII-era codebreakers including William Friedman failed to decipher it; many claimed solutions, none accepted"
+ ],
+ "lines": [
+  {
+   "text": "Nobody on Earth can read this book, and it's six hundred years old.",
+   "caps": "Nobody | on Earth | can read | this | book, | and it's | 600~six | years old."
+  },
+  {
+   "text": "It's called the Voynich manuscript,"
+  },
+  {
+   "text": "about two hundred and forty pages in a language nobody knows,",
+   "caps": "about | 240~two | pages | in a | language | nobody | knows,"
+  },
+  {
+   "text": "next to plants that don't seem to exist,"
+  },
+  {
+   "text": "star maps, and strange green pools."
+  },
+  {
+   "text": "Carbon dating puts it in the early fourteen hundreds.",
+   "caps": "Carbon | dating | puts it | in the | early | 1400s.~fourteen"
+  },
+  {
+   "text": "Follow for more unsolved mysteries."
+  },
+  {
+   "text": "Top World War Two codebreakers tried to crack it, and failed.",
+   "caps": "Top | WWII~World | codebreakers | tried | to crack it, | and | failed."
+  },
+  {
+   "text": "Today it sits in a vault at Yale,"
+  },
+  {
+   "text": "and every few years, someone says they've solved it."
+  },
+  {
+   "text": "They never have. So, for now,",
+   "gap": 0.2
+  }
+ ]
+}

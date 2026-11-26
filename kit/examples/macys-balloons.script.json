@@ -1,0 +1,53 @@
+{
+ "voice": "af_heart",
+ "speed": 1.1,
+ "lead": 0.05,
+ "outro": 0.4,
+ "gap": 0.12,
+ "music": "tension",
+ "title": "Macy's Let Its Giant Balloons Fly Away",
+ "sources": [
+  "Untapped New York, 'Thanksgiving Day Parade balloon release': from 1928 until 1932 the giant balloons were released at the end of the route; rewards for returned balloons; 1928 tiger balloon ripped to pieces on a Richmond Hill roof; 1932 aviation student Annette Gibson flew into the Tom-Cat balloon over Queens, it wrapped her left wing, the plane went into a tailspin and instructor Hugh Copeland recovered it; this ended the releases",
+  "Mental Floss, '16 Fun Facts About the Macy's Thanksgiving Day Parade': 1928 balloons released with a $100 reward for whoever returned them; a tug of war over one on a Long Island roof; one landed in the East River and was pursued by tugboats; last balloon release in 1932",
+  "Smithsonian Magazine, 'The Puppeteer Who Brought Balloons to the Thanksgiving Day Parade'"
+ ],
+ "lines": [
+  {
+   "text": "Macy's once let its giant parade balloons fly away, on purpose.",
+   "caps": "Macy's | once | let its | giant | parade | balloons | fly | away, | on purpose."
+  },
+  {
+   "text": "After the parade, they just let them go,"
+  },
+  {
+   "text": "with a reward of a hundred dollars for each one.",
+   "caps": "with a | reward | of | $100~a | for each | one."
+  },
+  {
+   "text": "So people chased them across rooftops,"
+  },
+  {
+   "text": "fought over one on a roof,"
+  },
+  {
+   "text": "and tugboats raced after one in the East River."
+  },
+  {
+   "text": "Follow for more strange true stories."
+  },
+  {
+   "text": "Then, in nineteen thirty-two, a student pilot flew into one.",
+   "caps": "Then, | in | 1932,~nineteen | a student | pilot | flew | into one."
+  },
+  {
+   "text": "It wrapped around her wing, and the plane spun down."
+  },
+  {
+   "text": "Her instructor saved it, barely."
+  },
+  {
+   "text": "Now they deflate them. But back then,",
+   "gap": 0.2
+  }
+ ]
+}
