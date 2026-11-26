@@ -27,6 +27,7 @@ CHANNEL = 'UCPkLJW0NDXJoMjMCJikWYaw'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DRY = os.environ.get('DRY_RUN') == '1'
 FORCE = os.environ.get('FORCE') == '1'          # manual run: ignore the slot clock (still one video)
+MIN_GAP_MIN = 80                                 # never two Shorts closer than this (late cron + slot trigger can't burst)
 
 
 def load(p, default):
@@ -162,6 +163,11 @@ def do_short(now):
     passed = [s for s in SLOTS if (now.hour, now.minute) >= s]
     allowed = len(SLOTS) if FORCE else len(passed)
     if shorts_today >= allowed: print(f'shorts: {shorts_today} uploaded today, {allowed} slots passed -> wait'); return False
+    last = max((dt.datetime.strptime(r['uploaded_at'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=dt.timezone.utc)
+                for d in queue_days(now) for r in load(os.path.join(ROOT, 'queue', d, 'uploaded.json'), [])
+                if r.get('via') == 'github-actions' and r.get('uploaded_at')), default=None)
+    if last and not FORCE and (now - last).total_seconds() < MIN_GAP_MIN * 60:
+        print(f'shorts: last Short {int((now - last).total_seconds() // 60)} min ago (< {MIN_GAP_MIN}) -> wait'); return False
     if actions_uploads_today(now) >= MAX_PER_DAY: print('daily quota cap reached'); return False
     today = now.strftime('%Y-%m-%d'); backlog = [x for d in reversed(queue_days(now)[1:]) for x in pending(d)]   # oldest first
     prime_time = bool(passed) and passed[-1] in PRIME
