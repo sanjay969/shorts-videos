@@ -1,0 +1,36 @@
+{
+ "file": "db-cooper-jump.mp4",
+ "thumbnail": "thumbnail.jpg",
+ "title": "He Jumped From a Jet With $200,000 and Vanished",
+ "description": "On the night before Thanksgiving 1971, a man hijacked a passenger jet, collected $200,000 and jumped out over the forests of Washington. He was never seen again.\nSo who was \"D.B. Cooper,\" and what really happened after he jumped? The evidence points to an answer most people never hear.\n\nCHAPTERS\n0:00 He jumped and vanished\n0:33 The Passenger\n1:24 The Note\n2:37 Seattle\n3:41 The Jump\n4:38 The Manhunt\n5:34 The River\n6:25 The Suspects\n7:16 The Tie\n7:53 The Parachute in the Shed\n8:28 The Real Answer\n\nSources: FBI, \"A Byte Out of History: D.B. Cooper\" (2006) and NORJAK case updates (2016); Britannica, \"D.B. Cooper\"; HistoryLink.org essay on the Cooper hijacking; History.com, \"Who Was D.B. Cooper?\"; Biography.com; The Week, \"The legend of D.B. Cooper\"; NBC News (2017) on the Citizen Sleuths tie analysis; Hackaday (2024) on the tie particles; Cowboy State Daily (Feb 2026) on the McCoy parachute returned by the FBI; Axios Seattle (Nov 2024).\nAll visuals are original cartoon illustrations made in code; people are generic characters, and scenes, maps, notes and front pages are illustrative reconstructions, not archival material. Theories are labeled as theories. Narration uses an AI voice.\n\n#DBCooper #UnsolvedMysteries #TrueCrime #FBI #AmericanHistory",
+ "tags": [
+  "D.B. Cooper",
+  "DB Cooper",
+  "Dan Cooper",
+  "unsolved mysteries",
+  "Northwest Orient Flight 305",
+  "1971 hijacking",
+  "FBI NORJAK",
+  "true crime documentary",
+  "Richard McCoy",
+  "Brian Ingram money",
+  "mystery documentary",
+  "American history"
+ ],
+ "hook": "On the night before Thanksgiving, nineteen seventy-one, a man jumped out of a passenger jet into a freezing rainstorm, with two hundred thousand dollars strapped to his body. He was never seen again. No body. No parachute. No name. The FBI chased him for forty-five years, looked at more than eight hundred suspects, and still could not say who he was. So who was the man the world calls D.B. Cooper, and what really happened after he jumped? Stay to the end, because the evidence points to an answer most people never hear.",
+ "hook_check": {
+  "first_line_at_s": 0.15,
+  "first_line": "On the night before Thanksgiving, nineteen seventy-one, a man jumped out of a passenger jet into a freezing rainstorm, with two hundred thousand dollars strapped to his body.",
+  "big_question_at_s": 22.501,
+  "answer_promise_at_s": 28.097,
+  "subscribe_first_at_s": 325.234,
+  "visual_change_max_s": 3.7,
+  "language": "English only",
+  "thumbnail_text": "JUMPED. VANISHED.",
+  "no_intro_no_fade": true,
+  "verdict": "PASS: opens on the jump at 0.15 s with no intro; dramatic scene, big unanswered question and 'stay to the end' promise all inside 30 s; first subscribe at ~5:25; title and thumbnail make the same promise"
+ },
+ "duration_s": 583.718,
+ "voice": "Kokoro am_michael x1.1",
+ "topic": "D.B. Cooper hijacking, Nov 24 1971 (expanded from the channel's Short 'The Man Who Jumped Out of a Plane With $200,000', one of the best sub converters)"
+}

@@ -25,5 +25,17 @@
     "privacy": "public",
     "via": "already-on-channel",
     "uploaded_at": "2026-11-25T05:56:31+00:00"
+  },
+  {
+    "date": "2026-11-27",
+    "file": "long/2026-11-27/db-cooper-jump.mp4",
+    "title": "He Jumped From a Jet With $200,000 and Vanished",
+    "video_id": null,
+    "url": null,
+    "raw_video": "https://raw.githubusercontent.com/sanjay969/shorts-videos/main/long/2026-11-27/db-cooper-jump.mp4",
+    "raw_thumbnail": "https://raw.githubusercontent.com/sanjay969/shorts-videos/main/long/2026-11-27/thumbnail.jpg",
+    "privacy_intended": "public",
+    "made_for_kids": false,
+    "duration_s": 583.7
   }
 ]
