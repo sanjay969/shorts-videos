@@ -7,5 +7,15 @@
     "privacy": "public",
     "via": "already-on-channel",
     "uploaded_at": "2026-11-25T01:42:19+00:00"
+  },
+  {
+    "file": "1-huang-11-days.mp4",
+    "title": "Nvidia's CEO Quit, Then Came Back in 11 Days",
+    "video_id": "w8yOncZIrSw",
+    "url": "https://www.youtube.com/watch?v=w8yOncZIrSw",
+    "privacy": "public",
+    "made_for_kids": false,
+    "via": "github-actions",
+    "uploaded_at": "2026-11-27T09:33:19Z"
   }
 ]
