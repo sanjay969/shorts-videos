@@ -171,7 +171,7 @@ def do_short(now):
     if actions_uploads_today(now) >= MAX_PER_DAY: print('daily quota cap reached'); return False
     today = now.strftime('%Y-%m-%d'); backlog = [x for d in reversed(queue_days(now)[1:]) for x in pending(d)]   # oldest first
     prime_time = bool(passed) and passed[-1] in PRIME
-    cands = (pending(today) + backlog) if prime_time else (backlog + pending(today) if (now.hour, now.minute) >= (12, 0) else [])
+    cands = (pending(today) + backlog) if prime_time else (backlog + pending(today) if (now.hour, now.minute) >= (12, 0) or FORCE else [])
     if not cands: print('shorts: nothing pending'); return False
     day, m = cands[0]; qd = os.path.join(ROOT, 'queue', day)
     print(f'slot {passed[-1] if passed else "force"}: uploading {day}/{m["file"]}')
