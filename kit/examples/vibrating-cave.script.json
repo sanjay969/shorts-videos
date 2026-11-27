@@ -1,0 +1,49 @@
+{
+ "voice": "af_heart",
+ "speed": 1.1,
+ "lead": 0.05,
+ "outro": 0.4,
+ "gap": 0.12,
+ "music": "tension",
+ "title": "He Found a Vibrating Cave, Then Vanished",
+ "sources": [
+  "Wikipedia, 'Disappearance of Kenny Veach': Las Vegas hiker and YouTuber; in 2014 wrote in a YouTube comment about an M-shaped cave entrance in the Sheep Range that made his body vibrate more the closer he got, and he went back to his car scared; a second trip in October 2014 failed; last seen November 10, 2014 near Nellis Air Force Base; his car was found at the trailhead and his phone on November 22, 2014 near an old mine shaft; never found",
+  "Nevada Magazine (Sept-Oct 2019), 'M Cave and the unexplained disappearance of Kenny Veach' (travelnevada.com)",
+  "The Charley Project, 'Kenneth Lee Veach'"
+ ],
+ "lines": [
+  {
+   "text": "He found a cave that made his whole body vibrate, and then he vanished."
+  },
+  {
+   "text": "In twenty fourteen, Las Vegas hiker Kenny Veach wrote about it online,",
+   "caps": "In | 2014,~twenty | Las Vegas | hiker | Kenny | Veach | wrote | about it | online,"
+  },
+  {
+   "text": "a cave with an M-shaped entrance, out in the Nevada desert."
+  },
+  {
+   "text": "The closer he got, the stronger it shook him,"
+  },
+  {
+   "text": "so he ran back to his car."
+  },
+  {
+   "text": "People wanted proof, so he went back to find it."
+  },
+  {
+   "text": "On November tenth, he set out again, and never came home.",
+   "caps": "On | Nov. 10,~november | he set | out | again, | and | never | came | home."
+  },
+  {
+   "text": "Follow for more unsolved mysteries."
+  },
+  {
+   "text": "Searchers found his car, then his phone, near an old mine shaft."
+  },
+  {
+   "text": "Kenny was never found, and neither was the cave, the one where",
+   "gap": 0.2
+  }
+ ]
+}

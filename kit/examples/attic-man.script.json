@@ -1,0 +1,51 @@
+{
+ "voice": "af_heart",
+ "speed": 1.1,
+ "lead": 0.05,
+ "outro": 0.4,
+ "gap": 0.12,
+ "music": "tension",
+ "title": "He Lived in Her Attic for 10 Years",
+ "sources": [
+  "Wikipedia, 'Walburga Oesterreich': met sewing-machine repairman Otto Sanhuber in 1913 in Milwaukee; he lived hidden in the attic, read and wrote stories she mailed to publishers, did housework by day; moved to the attic of the couple's Los Angeles home; Fred Oesterreich was shot in August 1922 and Walburga was found locked in a closet; the secret came out in 1930; the press called Sanhuber 'The Bat Man'; manslaughter conviction but freed by the statute of limitations",
+  "Atlas Obscura, 'The Married Woman Who Kept Her Lover in the Attic'",
+  "LAist, 'Hidden History of LA: the lover who lived in a Silver Lake attic' (2016)"
+ ],
+ "lines": [
+  {
+   "text": "A man lived in her attic for ten years, and her husband never found him.",
+   "caps": "A man | lived | in her | attic | for 10~ten | years, | and her | husband | never | found him."
+  },
+  {
+   "text": "In nineteen thirteen, Dolly Oesterreich met Otto, a young repairman,",
+   "caps": "In | 1913,~nineteen | Dolly | Oesterreich | met | Otto, | a young | repairman,"
+  },
+  {
+   "text": "and hid him upstairs."
+  },
+  {
+   "text": "By day, he cleaned her house. By night, he wrote stories."
+  },
+  {
+   "text": "When they moved to Los Angeles, he got a new attic."
+  },
+  {
+   "text": "Then, in nineteen twenty-two, her husband was shot,",
+   "caps": "Then, | in | 1922,~nineteen | her | husband | was shot,"
+  },
+  {
+   "text": "and police found Dolly locked in a closet."
+  },
+  {
+   "text": "Follow for more strange true stories."
+  },
+  {
+   "text": "The case went cold for eight years, until the secret came out.",
+   "caps": "The case | went cold | for 8~eight | years, | until | the secret | came out."
+  },
+  {
+   "text": "Otto confessed, and the papers named him the Bat Man, because",
+   "gap": 0.2
+  }
+ ]
+}

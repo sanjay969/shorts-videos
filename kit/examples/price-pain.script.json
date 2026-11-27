@@ -1,0 +1,21 @@
+{
+ "voice": "af_heart", "speed": 1.1, "lead": 0.05, "outro": 0.4, "gap": 0.12, "music": "bounce",
+ "title": "Your Brain Feels Prices Like Pain",
+ "sources": [
+  "Knutson, Rick, Wimmer, Prelec & Loewenstein (2007), 'Neural predictors of purchases', Neuron 53(1):147-156 (PMC1876732): 26 people chose whether to buy products in an fMRI scanner; product preference activated the nucleus accumbens, excessive prices activated the insula and deactivated the mesial prefrontal cortex; brain activity predicted purchases above self-report",
+  "Stanford FSI summary of the study (fsi.stanford.edu/node/24816)",
+  "PubMed 17196537"
+ ],
+ "lines": [
+  { "text": "Your brain feels a high price tag like pain." },
+  { "text": "In two thousand seven, Stanford scientists scanned people's brains while they shopped.", "caps": "In | 2007,~two | Stanford | scientists | scanned | people's | brains | while they | shopped." },
+  { "text": "First, they saw something they wanted," },
+  { "text": "and a reward spot deep in the brain lit up." },
+  { "text": "Then they saw the price." },
+  { "text": "Too high, and the insula fired, an area linked to pain." },
+  { "text": "Follow for more weird science." },
+  { "text": "The scans could even predict what people would buy," },
+  { "text": "before they pressed the button." },
+  { "text": "So this Black Friday, when a deal feels amazing, remember,", "gap": 0.2 }
+ ]
+}
