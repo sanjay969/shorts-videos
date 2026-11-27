@@ -207,6 +207,10 @@ if __name__ == '__main__':
     if os.path.exists(os.path.join(ROOT, 'UPLOAD_LOCKED')) and not DRY: print('::warning::UPLOAD_LOCKED exists - skipping'); sys.exit(0)
     now = dt.datetime.now(ET); print('now ET', now.strftime('%Y-%m-%d %H:%M'))
     reconcile(now, channel_feed())
-    changed = do_short(now)
+    # A pending long video gets the last upload of the day: if only one upload is left in today's budget, Shorts wait
+    # (they move to tomorrow's backlog slots) so the long video still goes out at 8:15 PM ET.
+    long_wait = any(not e.get('video_id') and os.path.exists(os.path.join(ROOT, e['file'])) for e in load(os.path.join(ROOT, 'long', 'uploaded.json'), []))
+    if long_wait and actions_uploads_today(now) >= MAX_PER_DAY - 1: print('shorts: holding the last upload of the day for the pending long video'); changed = False
+    else: changed = do_short(now)
     if not changed: changed = do_long(now)       # at most one upload per run
     sys.exit(0)
