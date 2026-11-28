@@ -1,4 +1,6 @@
-# Insights — 2026-11-28 (Sat), 9:07 AM IST run
+# Insights — 2026-11-28 (Sat), 2:07 PM IST run (updates the 9:07 AM run)
+
+**2:07 PM update:** stats workflow re-run at 08:38 UTC — still skipped (`YT_ANALYTICS_REFRESH_TOKEN` not set), so still no view data. No new uploads since the morning run (last: D.B. Cooper long, 02:01 UTC = 9:01 PM ET 27 Nov). Nothing big broke in the trend picks, so the morning topic list and rules stand unchanged. Tonight's build: follow the rules below exactly.
 
 **Data source: FALLBACK (no view numbers).** vidIQ is no longer used (Sanjay, 27 Nov). The new free stats workflow (`.github/workflows/channel-stats.yml` + `scripts/yt_stats.py`) was added today and run once: it skipped because the GitHub secret `YT_ANALYTICS_REFRESH_TOKEN` is not set yet. YouTube's public RSS feed is not reachable from this sandbox either. So the table below has upload times only (from queue/*/uploaded.json), not views.
 
