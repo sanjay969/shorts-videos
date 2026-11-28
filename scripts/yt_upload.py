@@ -19,9 +19,9 @@ from zoneinfo import ZoneInfo
 
 ET = ZoneInfo('America/New_York')
 PRIME = [(18, 0), (19, 30), (21, 0)]
-BACKLOG = [(12, 0), (15, 0)]
+BACKLOG = []                                     # owner, 28 Nov 2026: no backlog uploads, only that day's Shorts
 SLOTS = sorted(PRIME + BACKLOG)
-BACKLOG_DAYS = 4
+BACKLOG_DAYS = 0
 MAX_PER_DAY = 6                                  # YouTube API free quota ~10,000 units = 6 uploads (1,600 each)
 CHANNEL = 'UCPkLJW0NDXJoMjMCJikWYaw'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
