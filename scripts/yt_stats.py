@@ -34,6 +34,9 @@ q('daily_28d', 28, 'views,subscribersGained,subscribersLost', 'day', sort='day')
 q('traffic_7d', 7, 'views', 'insightTrafficSourceType', sort='-views')
 q('geography_7d', 7, 'views', 'country', sort='-views', maxResults=10)
 q('geography_28d', 28, 'views', 'country', sort='-views', maxResults=10)
+for v in vids:
+    if v['duration'].startswith('PT') and 'M' in v['duration'] and int(v['duration'][2:].split('M')[0].split('H')[-1] or 0) >= 3:
+        q(f"long_traffic_{v['id']}", 28, 'views,estimatedMinutesWatched', 'insightTrafficSourceType', filters=f"video=={v['id']}", sort='-views')
 q('retention_by_age_gender_7d', 7, 'viewerPercentage', 'ageGroup,gender')
 try:
     cm = yt.commentThreads().list(allThreadsRelatedToChannelId=ch.get('id') or yt.channels().list(mine=True, part='id').execute()['items'][0]['id'], part='snippet', maxResults=50, order='time').execute()
