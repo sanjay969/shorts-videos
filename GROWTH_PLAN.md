@@ -27,7 +27,7 @@ Diagnosis: the Shorts get pushed to new people (95% Shorts feed), but nobody com
 Daily mix:
 - **Slot 1 (6:00 PM): "What Happens If You…" body/science series.** The only format Studio rates as bringing viewers back. Same title start, same look, same sign-off every day.
 - **Slot 2 (7:30 PM): strange true US story or US mystery**, lesser-known cases preferred.
-- **Slot 3 (9:00 PM): Part 1 of a two-part story, OR the trailer Short for a long video.** A Part 1 ends on a real cliffhanger + "Part 2 tomorrow at 6 PM, follow so you don't miss it". The next day's Slot 2 is Part 2. Part 1/Part 2 is the main tool for returning viewers and subscribers.
+- **Slot 3 (9:00 PM): Part 1 of a two-part story, OR the trailer Short for a long video.** A Part 1 ends on a real cliffhanger + "Part 2 tomorrow, follow so you don't miss it". The next day's Slot 2 is Part 2. Part 1/Part 2 is the main tool for returning viewers and subscribers.
 
 Rules: 25–30 s, first 2 s = strangest fact + number, payoff in the last second loops back to the start, one spoken sign-off "Follow for one strange true story every night", English only, US units, 2–3 on-topic hashtags + #shorts, no off-niche topics (business, India, internet lore). Never flush a backlog; drop the weakest Short instead.
 
