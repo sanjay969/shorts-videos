@@ -26,8 +26,17 @@ The 5-Short burst at 4:33–4:37 AM ET on 27 Nov flopped as a group: **Nvidia CE
 
 Top 7d by Analytics: What Thanksgiving Dinner Really Does to You 3,024 (66.9%, 3 subs) · TV Dinner (1 min) 1,480 (71.3%) · Einstein's brain 1,455 (61.1%, 3 subs) · Roanoke 115 colonists 1,360 (51.6%, 3 subs).
 
-## Long videos — NOT getting traffic
-D.B. Cooper (9:44, 27 Nov) **1 view**; 115 People Vanished (9:38) 5; King Tut long (9:01) 3. Shorts are not sending anyone to the longs. Fix: every Short on the same topic as a long must have the long set as its **Related video**, and pin a comment linking it. Don't make more long videos until a long gets >100 views.
+## Long videos — diagnosis (28 Nov)
+D.B. Cooper long: 2 views in 8h, **CTR 11.1%, avg view duration 4:44 of 9:44 (~49%)**. Packaging and retention are GOOD; YouTube is simply giving it ~20 impressions. Same for King Tut long (3 views) and Roanoke long (5). Root causes:
+1. **No long-form audience.** 99.9% of viewers are new, 0.3% subscribed; Shorts viewers are not shown long videos. A channel with zero long-form watch history gets almost no Browse/Suggested tests.
+2. **No bridge from Shorts.** Each long has a matching Short with ~1.3K views (The Man Who Jumped 2oSlRLq-mcI, King Tut 3pqEJ8mLsiA, Roanoke c5kuP38fqKU), but the longs got ~0 Shorts traffic → the Shorts are not linked. Related video can only be set in Studio (no API), so Sanjay must do it by hand.
+3. **Story titles, not search titles.** New long channels grow from Search first. "He Jumped From a Jet With $200,000 and Vanished" doesn't match what people type ("what happened to DB Cooper"). And the topics (D.B. Cooper, King Tut, Roanoke) have huge competition from big channels/Netflix.
+Rules for long videos:
+- In Studio, set **Related video** on every matching Short → its long (now: 2oSlRLq-mcI → aKttDFRpuCg, 3pqEJ8mLsiA → iHvBQoR0ue0, c5kuP38fqKU → SecdUa-ai6Y), and on every future topic Short.
+- Every long gets a **new trailer Short** posted the next day in a 6–9 PM ET slot: "Full story on the channel", Related video = the long.
+- Long titles = searchable question + hook, e.g. "What Really Happened to D.B. Cooper?"; put the search phrase in the first 5 words.
+- Pick long topics with search demand but fewer big-channel videos (lesser-known US mysteries), not the most famous cases.
+- Pause new long videos until one long passes 100 views; put the effort into Shorts + the bridge.
 
 ## Rules for the next build (2026-11-28)
 1. **Timing:** tonight's 3 slots (6:00 / 7:30 / 9:00 PM ET = 23:00 / 00:30 / 02:00 UTC) belong to the 27 Nov queue (price pain → vibrating cave → attic man). Today's new Shorts will go out Sunday night. No manual upload runs before 5 PM ET.
