@@ -52,6 +52,8 @@ Rules for long videos:
 
 - **Returning viewers = 0 (Studio, 28 Nov): 99.9% new, 0.1% casual, 0% regular.** People watch one Short and leave. The only video Studio rates "Moderate" for bringing viewers back is the body what-if ("What If You Eat On…"); all others are "Low". So: make **one body what-if every day as a named series** — same title start ("What Happens If You…"), same look, same closing line "Part 2 tomorrow / follow for the next one". Give the mystery Shorts the same treatment: same spoken sign-off every time, so viewers recognize the channel.
 
+**GROWTH_PLAN.md is now the master plan** (read it). Daily Short mix from tomorrow: 6:00 PM = "What Happens If You…" series, 7:30 PM = strange true US story / Part 2 of yesterday's two-parter, 9:00 PM = Part 1 of a two-part story (cliffhanger + "Part 2 tomorrow at 6 PM") or a long video's trailer Short.
+
 Baseline kept: US target audience, English only (American English voice, titles, captions), one niche (curiosity / what-if / mystery), on-niche hashtags only, title <50 chars with curiosity gap, 20–30s so it loops, last-second payoff back to the start, one subscribe prompt, uploads one at a time at 6:00 / 7:30 / 9:00 PM ET.
 
 ## Topic ideas (ranked)
