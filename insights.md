@@ -1,45 +1,48 @@
-# Insights — 2026-11-26 (Thu, Thanksgiving)
+# Insights — 2026-11-28 (Sat), 9:07 AM IST run
 
-**NO FRESH ANALYTICS AGAIN (2nd day): vidIQ balance = 1 credit, every analytics/video/trend call costs 5. Credits reset on 22 Dec 2026 (17:02 UTC).** YouTube is blocked from this sandbox, so no public view counts either. Rules below are carried from 24 Nov (last real data) plus fixes from checking the repo's upload log. Until credits reset or are topped up, these runs can only check the repo + web.
+**Data source: FALLBACK (no view numbers).** vidIQ is no longer used (Sanjay, 27 Nov). The new free stats workflow (`.github/workflows/channel-stats.yml` + `scripts/yt_stats.py`) was added today and run once: it skipped because the GitHub secret `YT_ANALYTICS_REFRESH_TOKEN` is not set yet. YouTube's public RSS feed is not reachable from this sandbox either. So the table below has upload times only (from queue/*/uploaded.json), not views.
 
-## WIN / FLOP — shorts from the last 3 days
-| Published (UTC) | Short | Type | Views | Verdict |
+## ⚠️ TIMING PROBLEM (top priority)
+1. **27 Nov, 4:33–4:37 AM ET: 5 Shorts published within 4 minutes** (Nvidia CEO quit, Denny's dishwasher, Winchester stairs, JFK Babushka Lady, Voynich). This came from manual (workflow_dispatch) runs that flushed the backlog. 4:30 AM ET is dead time for a US audience, and 5 at once means they compete with each other. Expect most of them to have flopped.
+2. **Because of that burst, ZERO Shorts went out on Black Friday night (27 Nov).** The uploader counts 6 uploads/day (ET) against the API quota; the 5 morning Shorts used the budget, so the 6:00 / 7:30 PM slots logged "holding the last upload of the day for the pending long video", and the last upload went to the D.B. Cooper long video (9:01 PM ET, fine).
+3. Result: the 27 Nov queue (price pain, vibrating cave, attic man) is **still unpublished** and should take tonight's 6:00 / 7:30 / 9:00 PM ET slots.
+- **Fix:** no manual/forced upload runs outside 5–10 PM ET. If a backlog builds up, let the scheduled slots drain it (1 Short per slot), or drop the oldest/weakest Shorts. Never flush a backlog.
+
+## WIN / FLOP — Shorts from the last 3 days (no view data available)
+| Published (ET) | Short | Type | Views / avg view % | Verdict |
 |---|---|---|---|---|
-| 26 Nov 03:45 (10:45 PM ET, late) | Black Friday Was Named by Angry Cops (gL7PGV1eOUI) | US holiday history | no data | n/a — uploaded 1h45m after the 9 PM ET slot |
-| 26 Nov 00:00 (7 PM ET) | A Crying Kid Started the Turkey Pardon (-wP4No1l0wc) | US holiday true story | no data | n/a |
-| not uploaded yet (as of 04:09 UTC 26 Nov) | Why She Built Stairs Into the Ceiling (queue/2026-11-25/3) | US mystery | — | still in queue |
-| 25 Nov 01:42 | Nvidia Gained Almost $1 Trillion in One Day (R-dVnvXFZhY) | pinned business | no data | n/a |
-| 24 Nov (pinned set) | Jensen Huang 11 days / Denny's origin | pinned business | no data | n/a |
-| 24 Nov 02:00 | A Doctor Stole Einstein's Brain for 43 Years | US strange true story | 761 in ~2h | WIN (last real data) |
-| 24 Nov 00:30 | 115 Colonists Vanished and Left One Word | US mystery | 1,133 in ~3.5h | WIN |
-| 23 Nov 23:00 | What Thanksgiving Dinner Really Does to You | US holiday body what-if | 2,537 in ~5h | WIN – best launch ever |
+| 27 Nov 4:37 AM (off-slot, burst) | No One Can Read This 600-Year-Old Book (GtUzds9Ox-8) | mystery | no data | likely FLOP (timing) |
+| 27 Nov 4:36 AM (off-slot, burst) | The JFK Witness No One Ever Found (BJDfXIyBmNE) | US mystery | no data | likely FLOP (timing) |
+| 27 Nov 4:35 AM (off-slot, burst) | Why She Built Stairs Into the Ceiling (1bThWQbjIa4) | US mystery | no data | likely FLOP (timing) |
+| 27 Nov 4:34 AM (off-slot, burst) | He Washed Dishes at Denny's. Now He Runs Nvidia (f8w64YmA2KA) | business (off-niche) | no data | likely FLOP |
+| 27 Nov 4:33 AM (off-slot, burst) | Nvidia's CEO Quit, Then Came Back in 11 Days (w8yOncZIrSw) | business (off-niche) | no data | likely FLOP |
+| 26 Nov 6:16 PM (on slot) | Macy's Let Its Giant Balloons Fly Away (VRKBvkMlwn0) | US holiday true story | no data | n/a |
+| 25 Nov 10:45 PM (late) | Black Friday Was Named by Angry Cops (gL7PGV1eOUI) | US holiday history | no data | n/a |
+| 25 Nov 7:00 PM | A Crying Kid Started the Turkey Pardon (-wP4No1l0wc) | US holiday true story | no data | n/a |
+| Long, 27 Nov 9:01 PM | He Jumped From a Jet With $200,000 and Vanished (aKttDFRpuCg, 9:44) | US mystery long | no data | n/a |
 
-Last real snapshot (7d to 23 Nov): ~14.1K views, 23 subs = **1.6 subs/1,000 views**, **US share 22.6%**, traffic 95% Shorts feed. Channel median public views ≈ 1,230.
+Last real data (7d to 23 Nov): ~14.1K views, 23 subs = 1.6 subs/1,000 views, US share 22.6%, 95% Shorts feed. Best launch ever: "What Thanksgiving Dinner Really Does to You" (2,537 in 5h, body what-if). Channel median ≈ 1,230 public views.
 
-## Problems found in the repo today
-1. **Upload timing slipped:** 25 Nov set went out at 00:00 UTC (7 PM ET) and 03:45 UTC (10:45 PM ET); short 3 (Winchester) has not uploaded yet. The 6:00 PM ET (23:00 UTC) slot was missed. The new "min 80 min gap" uploader change (2a74ed2) should stop bursts but check that all 3 slots fire tonight.
-2. **Unrelated hashtags:** the turkey pardon and Black Friday descriptions used `#mystery #unsolved` — neither is a mystery. That breaks the baseline rule and confuses the feed about who to show it to.
+## Rules for the next build (2026-11-28)
+1. **Timing:** tonight's 3 slots (6:00 / 7:30 / 9:00 PM ET = 23:00 / 00:30 / 02:00 UTC) belong to the 27 Nov queue (price pain → vibrating cave → attic man). Today's new Shorts will go out Sunday night. No manual upload runs before 5 PM ET.
+2. **Topics:** Black Friday/Thanksgiving is over, so drop holiday angles. Do more US mysteries and strange true US stories (D.B. Cooper, Centralia, Einstein's brain style) plus one body/science what-if per day (the best format so far). **Stop:** business/Nvidia news, India topics, internet lore, cute history.
+3. **Title formula (<50 chars, no emoji):** [specific person/thing] + [number] + [unexplained twist], e.g. "5 Planes Vanished, Then the Rescue Plane Did Too".
+4. **Hook (first 2 sec):** the strangest fact plus a number, spoken AND on screen, no intro. **Length 25–30s** (hard cap 35s, ~70–80 words), one subscribe prompt just before the payoff, last-second payoff that loops back to the first line.
+5. **Hashtags must match the topic** (2–3 + #shorts): only mysteries get #mystery #unsolved; science → #science #whatif; true story → #truestory #history.
 
-## Rules for the next build (2026-11-26)
-1. **Hashtags must match the topic** — 2–3 max, plus #shorts. History/holiday short → `#history #truestory #thanksgiving`; only mysteries get `#mystery #unsolved`.
-2. **Timing:** 6:00 / 7:30 / 9:00 PM ET = 23:00 / 00:30 / 02:00 UTC. If Winchester (yesterday's short 3) is still in the queue, let it take tonight's 6 PM slot and drop today's weakest idea rather than stacking 4.
-3. **Topics: tonight is Thanksgiving night, tomorrow Black Friday.** Lead with one timely US holiday short (parade/Black Friday angle), then two US mysteries / strange true stories. **Stop:** business news, India topics, non-US mysteries, internet lore, cute history.
-4. **Title formula (<50 chars, no emoji):** [specific person/thing] + [number] + [unexplained twist]. **Hook (first 2 sec):** strangest fact + a number, spoken AND on screen, no intro.
-5. **Length 25–30s (hard cap 35s, ~70–80 words)**, payoff in the last second loops to the first line, one subscribe prompt just before the payoff. Prefer US-rooted stories — they converted best for subs (D.B. Cooper, Centralia 3–4 subs each).
-
-Baseline kept: US target audience, English only (American English voice, titles, captions), one niche (curiosity / what-if / mystery), no unrelated hashtags, title <50 chars with curiosity gap, 20–30s so it loops, last-second payoff back to the start, one clear subscribe prompt, uploads at 6:00 / 7:30 / 9:00 PM ET.
+Baseline kept: US target audience, English only (American English voice, titles, captions), one niche (curiosity / what-if / mystery), on-niche hashtags only, title <50 chars with curiosity gap, 20–30s so it loops, last-second payoff back to the start, one subscribe prompt, uploads one at a time at 6:00 / 7:30 / 9:00 PM ET.
 
 ## Topic ideas (ranked)
-| # | Topic | Suggested title | Why |
-|---|---|---|---|
-| 1 | Macy's parade balloons were let go into the sky after the parade (1928–1932), with a reward (~$100) for whoever found and returned them | Macy's Let Its Balloons Fly Away on Purpose | Parade is today; strange true US holiday story; verified (Untapped Cities, Mental Floss) |
-| 2 | Body what-if for Black Friday: what a crowd/deal rush does to your brain (dopamine, stress) | What a Black Friday Crowd Does to Your Brain | Same format as best launch ever (Thanksgiving dinner body what-if); Black Friday is tomorrow |
-| 3 | JFK "Babushka Lady" filmed the assassination; her film was never found | She Filmed JFK's Death and Then Vanished | Core US mystery, on Nov 2026 mystery lists |
-| 4 | Dolly Oesterreich hid her lover in the attic (~1913–1922) | She Hid a Man in Her Attic for 10 Years | Earlier outlier: 6.9x, 62K views in 1 day at 24s |
-| 5 | Kenny Veach vanished looking for the "M cave" in Nevada (Nov 10, 2014) | He Went Looking for a Cave and Vanished | US desert mystery, trending lists |
-| 6 | Voynich manuscript (kept at Yale): ~600 years old, nobody can read it | No One Can Read This 600-Year-Old Book | Classic mystery, US location, easy loop |
+| # | Topic | Suggested title | First-line hook | Why now |
+|---|---|---|---|---|
+| 1 | Flight 19: 5 Navy bombers vanished off Florida on Dec 5, 1945, then a PBM Mariner rescue plane with 13 men also disappeared | 5 Planes Vanished, Then the Rescue Plane Did Too | "Five Navy bombers vanished in 1945, and the plane sent to find them vanished too." | 81st anniversary next Fri (Dec 5); origin of the Bermuda Triangle legend; US mystery (also a strong long-video pick) |
+| 2 | Ann Hodges, Sylacauga AL, Nov 30, 1954: a meteorite crashed through her roof and hit her on the couch, the only confirmed person hit by one | A Meteorite Hit Her While She Napped | "In 1954, a rock from space smashed through her roof and hit her on the couch." | Anniversary Monday (Nov 30); strange true US story |
+| 3 | Brian Shaffer vanished inside a Columbus, Ohio bar in 2006; cameras saw him go in and never come out | He Walked Into a Bar and Never Walked Out | "Cameras saw him walk into a bar, and no camera ever saw him leave." | Featured in the revived Unsolved Mysteries (Nov 2026 news); US mystery |
+| 4 | Body what-if: what happens to your body if you stop sleeping (24h → 72h → 11 days, Randy Gardner 1964) | What 11 Days Without Sleep Does to You | "One teenager stayed awake for eleven days, and this is what happened to his brain." | Body what-if = best format; Randy Gardner is a US story |
+| 5 | Mothman sightings in Point Pleasant, WV (1966–67), which ended with the Silver Bridge collapse on Dec 15, 1967 | People Saw a Winged Creature, Then a Bridge Fell | "For 13 months people reported a red-eyed winged creature, then the bridge fell." | Silver Bridge anniversary Dec 15; classic US legend (verify, present sightings as claims) |
+| 6 | Body what-if: what happens if you swallowed gum (the "7 years" myth) | What Swallowed Gum Really Does Inside You | "Your mom said swallowed gum stays in you for seven years. Here's the truth." | Easy loop, kid-to-adult curiosity, US myth |
 
-Backups: Two Civil War bullets that collided mid-air · What if you never cut your nails again?
-Re-verify every fact with a web search at build time.
+Backups: Two Civil War bullets that fused mid-air · What if you never cut your nails again? · Somerton Man (found Dec 1, 1948; Australia, so lower priority for US).
+Re-verify every fact with a web search at build time. Topics already done (topics-done.txt) are excluded.
 
-Sources: untappedcities.com/2021/11/23/10-facts-macys-thanksgiving-day-parade-balloons/5/ · mentalfloss.com/holidays/thanksgiving/16-fun-facts-about-macys-thanksgiving-day-parade · history.com/articles/black-friday-thanksgiving-origins-history · buzzfeed.com/crystalro/terrifying-things-i-learned-november-2026
+Sources: history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html · history.com/articles/the-mysterious-disappearance-of-flight-19 · encyclopediaofalabama.org/article/hodges-meteorite-strike-sylacauga-aerolite/ · astronomy.com (Nov. 30, 1954: first known human injury via a meteorite) · wosu.org/2026-11-16/true-crime-original-unsolved-mysteries-revived-with-new-host-puts-spotlight-on-columbus-case-joey-labute-brian-shaffer-jordan-murphy
