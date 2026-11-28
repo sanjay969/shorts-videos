@@ -38,7 +38,7 @@ Rules for long videos:
 - Every long gets a **new trailer Short** posted the next day in a 6–9 PM ET slot: "Full story on the channel", Related video = the long.
 - Long titles = searchable question + hook, e.g. "What Really Happened to D.B. Cooper?"; put the search phrase in the first 5 words.
 - Pick long topics with search demand but fewer big-channel videos (lesser-known US mysteries), not the most famous cases.
-- Pause new long videos until one long passes 100 views; put the effort into Shorts + the bridge.
+- Keep making long videos (4/week); each one gets a search-first title + its own trailer Short (bridge). Success check = impressions + views from Shorts/Search, not a fixed view count.
 
 ## Rules for the next build (2026-11-28)
 1. **Timing:** tonight's 3 slots (6:00 / 7:30 / 9:00 PM ET = 23:00 / 00:30 / 02:00 UTC) belong to the 27 Nov queue (price pain → vibrating cave → attic man). Today's new Shorts will go out Sunday night. No manual upload runs before 5 PM ET.
