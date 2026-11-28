@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
     paths: ['edits/pending.json']
+  schedule:
+    - cron: '47 * * * *'
   workflow_dispatch:
 permissions:
   contents: write

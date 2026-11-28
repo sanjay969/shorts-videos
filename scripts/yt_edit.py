@@ -17,6 +17,7 @@ def creds(tok, cid, sec):
         return c, info.get('scope', '')
     except Exception as e:
         return None, f'refresh failed: {e}'
+if not (os.path.exists('edits/pending.json') and json.load(open('edits/pending.json'))): print('no pending edits'); raise SystemExit
 cands = [('analytics', E.get('YT_ANALYTICS_REFRESH_TOKEN'), E.get('YT_ANALYTICS_CLIENT_ID'), E.get('YT_ANALYTICS_CLIENT_SECRET')),
          ('uploader', E.get('YT_REFRESH_TOKEN'), E.get('YT_CLIENT_ID'), E.get('YT_CLIENT_SECRET'))]
 c = None
@@ -25,7 +26,7 @@ for name, tok, cid, sec in cands:
     print(f'token {name}: scopes = {sc}')
     if cc and any(w in sc.split() for w in WRITE) and c is None: c = cc; print('-> using', name)
 if c is None:
-    print('NO TOKEN WITH youtube / youtube.force-ssl SCOPE - edits cannot run'); raise SystemExit(1)
+    print('NO TOKEN WITH youtube / youtube.force-ssl SCOPE - edits waiting (redo OAuth with youtube.force-ssl)'); raise SystemExit(0)
 yt = build('youtube', 'v3', credentials=c, cache_discovery=False)
 P = 'edits/pending.json'
 ops = json.load(open(P)) if os.path.exists(P) else []
