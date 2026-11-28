@@ -3,7 +3,7 @@
 //   node tools/capture.mjs cues                          write data/cues.json (the sound cues, for tools/mix.py)
 //   node tools/capture.mjs sheet review/all.jpg [step=0.5] [cols=9]   contact sheet, a frame every `step` s, time-stamped
 //   node tools/capture.mjs frames review/full "1.2,8.4"  full-size JPEGs of those times
-//   node tools/capture.mjs video renders/out.mp4 [start end] [--draft]   the film (30 fps) with data/mix.wav if it exists
+//   node tools/capture.mjs video renders/out.mp4 [start end] [--draft]   the film (FPS env, default 30; MBLUR=2 adds motion blur) with data/mix.wav if it exists
 //   node tools/capture.mjs preview                       serve the project and print a URL to watch it in a browser
 // CHROME=/path/to/chrome overrides the browser.
 import { spawn, spawnSync } from 'node:child_process';
@@ -105,15 +105,18 @@ else {
     } else if (mode === 'video') {
       const out = path.resolve(ROOT, rest[0] || 'renders/video.mp4'); fs.mkdirSync(path.dirname(out), { recursive: true });
       const mix = path.join(ROOT, 'data/mix.wav'), hasMix = fs.existsSync(mix), a0 = rest[1] ? +rest[1] : 0, a1 = rest[2] ? Math.min(+rest[2], dur) : dur, n = Math.round((a1 - a0) * FPS);
-      const ff = spawn('ffmpeg', ['-v', 'error', '-y', '-f', 'image2pipe', '-framerate', String(FPS), '-i', '-',
+      // MBLUR=n renders n sub-frames per output frame and blends them (real motion blur, n x render time)
+      const MB = flags.has('--draft') ? 1 : Math.max(1, +(process.env.MBLUR || 1));
+      const ff = spawn('ffmpeg', ['-v', 'error', '-y', '-f', 'image2pipe', '-framerate', String(FPS * MB), '-i', '-',
         ...(hasMix ? ['-ss', String(a0), '-t', String(a1 - a0), '-i', mix] : ['-f', 'lavfi', '-i', 'anullsrc=r=48000:cl=stereo']), '-map', '0:v', '-map', '1:a',
-        '-c:v', 'libx264', '-preset', flags.has('--draft') ? 'ultrafast' : 'veryfast', '-crf', flags.has('--draft') ? '28' : '18', '-pix_fmt', 'yuv420p',
+        ...(MB > 1 ? ['-vf', `tmix=frames=${MB},framestep=${MB}`, '-r', String(FPS)] : []),
+        '-c:v', 'libx264', '-preset', flags.has('--draft') ? 'ultrafast' : 'medium', '-tune', 'animation', '-crf', flags.has('--draft') ? '28' : '14', '-pix_fmt', 'yuv420p',
         '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', out], { stdio: ['pipe', 'inherit', 'inherit'] });
       const t0 = Date.now();
-      for (let i = 0; i < n; i++) {
-        const b = jpg(await P.ev(FRAME(a0 + i / FPS, flags.has('--draft') ? 0.8 : 0.93)));
+      for (let i = 0; i < n * MB; i++) {
+        const b = jpg(await P.ev(FRAME(a0 + i / (FPS * MB), flags.has('--draft') ? 0.8 : 0.97)));
         if (!ff.stdin.write(b)) await new Promise((r) => ff.stdin.once('drain', r));
-        if (i % 150 === 0) process.stdout.write(`\r${i}/${n} frames`);
+        if (i % 150 === 0) process.stdout.write(`\r${i}/${n * MB} frames`);
       }
       ff.stdin.end(); await new Promise((r) => ff.on('close', r));
       console.log(`\r${out} (${n} frames, ${hasMix ? 'with data/mix.wav' : 'SILENT: no data/mix.wav'}, ${((Date.now() - t0) / 1000).toFixed(0)} s)`);

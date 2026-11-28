@@ -68,17 +68,33 @@ Problem in past shorts: the toon mostly stands in the middle facing the camera, 
 
 Long videos: apply rules 1-7 as well, with a visual change every 3-4 s.
 
+## SMOOTHNESS + QUALITY RULES (owner asked 28 Nov 2026: "video smooth bane, quality aur animation improve")
+
+Root causes found on 28 Nov: Shorts were rendered at 24 fps and the share copy was re-encoded at CRF 27 (~2 Mbps, blocky); the long video was 24 fps at 1.1 Mbps H.264 (squeezed under GitHub's 100 MB limit). Fixed in the kit:
+1. **30 fps always** (`FPS=30`). Never 24.
+2. **Motion blur:** `MBLUR=2` renders 2 sub-frames per frame and blends them, so fast camera moves and whip-pans look smooth instead of steppy. It doubles render time: use it whenever the build has time (at least for the 6 PM series Short); otherwise render with `MBLUR=1`.
+3. **Final file:** `bash tools/finish.sh renders/final.mp4 renders/share.mp4 short` (upscales to 1440x2560 so YouTube uses its higher-quality encoder, x264 CRF 19, ~15-30 MB). Long videos: `bash tools/finish.sh renders/final.mp4 renders/share.mp4 long` (HEVC 2-pass sized for the 100 MB limit, about twice the quality of the old H.264 file at the same size). Never use CRF 27 or `-preset veryfast` for a final file again.
+4. **Animation smoothness:**
+   - Every move is eased (easeInOutCubic / easeOutBack for pop-ins). No linear starts or stops, no instant position jumps except a deliberate hard cut.
+   - The camera never fully stops: even "still" shots get a slow 2-4% push-in or drift.
+   - Cut on action: start the next shot already in motion; carry camera direction across the cut (pan left → next shot also moving left).
+   - Overlapping action: hair, clothes, props and arms settle 2-4 frames after the body stops (small overshoot + settle).
+   - Characters blink every 2-4 s, breathe (slight scale 1-2%), and their heads turn before their bodies.
+   - Whip-pans and drone dives last 6-10 frames with motion blur; never a 1-frame teleport.
+   - Text pops: scale 0 → 110% → 100% over ~8 frames, never just appear.
+   - Check the QA sheet AND play the draft (`node tools/capture.mjs video renders/draft.mp4 --draft`) at full speed: any stutter, pop or frozen limb gets fixed before the final render.
+
 ## BUILD (one run = 3 videos)
 
 0. **Lock (only one build per day).** Before anything else: `D=$(TZ=America/New_York date +%F)`. If `queue/$D/BUILD.lock` already exists on origin/main, or `queue/$D/meta.json` already lists 3 videos, STOP and build nothing (another build run already owns today). Otherwise create `queue/$D/BUILD.lock` (contents: start time), commit and `git push origin main`. If that push is rejected because main moved, `git pull --rebase` and re-check: if a lock now exists, STOP.
-1. **Monitor first.** Read the last 7 days of `queue/*/uploaded.json` and `meta.json`. Get each video's views, likes and comments with vidIQ (`vidiq_video_stats` or `vidiq_channel_videos`). Append one line per video to `stats.md` (date, title, topic type, views, likes). Note which topic types are doing best (for example mystery vs funny history vs current news) and lean toward them when picking today's topics, but keep at least one different type so the channel keeps testing.
+1. **Monitor first.** Read the last 7 days of `queue/*/uploaded.json` and `meta.json`. Get each video's views, likes and comments from `analytics/latest.json` (free YouTube API stats; vidIQ is NOT used any more, owner rule 27 Nov 2026). Append one line per video to `stats.md` (date, title, topic type, views, likes). Note which topic types are doing best (for example mystery vs funny history vs current news) and lean toward them when picking today's topics, but keep at least one different type so the channel keeps testing.
 1b. **Pinned topics (owner requests).** If `pinned-topics.md` has entries for today's date that are not yet done, build those first, in the order listed (video 1, 2, 3). Pick topics as usual only for the slots left over. Pinned topics override the "keep one different topic type" rule. After building it, mark it `[done]` in `pinned-topics.md`.
 2. **Find trending topics.** Do this every run; anniversaries alone are not enough:
-   - vidIQ: `vidiq_trending_videos` and `vidiq_outliers` for mystery, history, true story and "what happened to" niches; `vidiq_keyword_research` to check search interest for each candidate.
+   - insights.md (twice-daily analysis) and GROWTH_PLAN.md (daily mix: 6 PM "What Happens If You…" series, 7:30 PM strange true US story / Part 2, 9 PM Part 1 cliffhanger or a long video's trailer Short).
    - Web search (extended mode) for what is in the news or viral this week that has a story angle.
    - Anniversaries this week are a fallback or a tie-breaker.
 
-   **Owner preference (23 Nov 2026): lead with big trending news.** Every day, at least 2 of the 3 topics must come from the biggest US/global news stories of the last 1–3 days that people are searching for. Good examples are a famous CEO fired and rehired, a stock crash or surge, a huge company deal, a viral tech, business, sports or pop-culture moment, or a surprising court or government decision. Example: Nvidia CEO Jensen Huang out and back in 11 days, Nov 2026. Find them with web search (extended mode: "biggest news today", "stock market today", "trending this week") and confirm the interest with vidIQ `vidiq_keyword_research` or `vidiq_trending_videos`. Tell each one as a story: what happened, the twist, and the numbers. Verify every fact and number in 2 or more sources dated this week, and say "alleged" for anything not proven. The rule below still applies: skip deaths, disasters, violence, and stories that are mainly about a scandal in someone's private life. A big news story can fill 2–3 videos with different angles (the event, the money or market side, the person's backstory). Use the same toon for the same person across those videos. The 3rd slot can be a mystery or strange-history topic so the channel keeps testing.
+   **SUPERSEDED (28 Nov 2026): data showed business/news Shorts flop (Nvidia CEO 5 views). Follow GROWTH_PLAN.md + insights.md instead; use news only as a hook for an on-niche mystery / true-story / what-if topic. Old text kept for reference:** Owner preference (23 Nov 2026): lead with big trending news. Every day, at least 2 of the 3 topics must come from the biggest US/global news stories of the last 1–3 days that people are searching for. Good examples are a famous CEO fired and rehired, a stock crash or surge, a huge company deal, a viral tech, business, sports or pop-culture moment, or a surprising court or government decision. Example: Nvidia CEO Jensen Huang out and back in 11 days, Nov 2026. Find them with web search (extended mode: "biggest news today", "stock market today", "trending this week")  Tell each one as a story: what happened, the twist, and the numbers. Verify every fact and number in 2 or more sources dated this week, and say "alleged" for anything not proven. The rule below still applies: skip deaths, disasters, violence, and stories that are mainly about a scandal in someone's private life. A big news story can fill 2–3 videos with different angles (the event, the money or market side, the person's backstory). Use the same toon for the same person across those videos. The 3rd slot can be a mystery or strange-history topic so the channel keeps testing.
 
    Pick 3 topics. Good topics are:
    - big trending news with a story angle (first choice; see above)
@@ -106,8 +122,8 @@ Long videos: apply rules 1-7 as well, with a visual change every 3-4 s.
    5. Check timing: `SOFTWARE_GL=1 QS='&res=0.6&aa=0&shadow=1024' node tools/capture.mjs check`
    6. Make the QA sheet: `node tools/capture.mjs sheet review/all.jpg 0.7 11`. Look at it, fix problems, then re-check key frames with `node tools/capture.mjs frames review/<newdir> "t1,t2"`. Use a new directory each time, because rm is blocked.
    7. Build sound: `node tools/capture.mjs cues`, then `$S/scripts/py tools/mix.py .`
-   8. Render: `SOFTWARE_GL=1 QS='&res=1&aa=1&shadow=2048' FPS=24 node tools/capture.mjs video renders/final.mp4`. This takes about 75 min. Run it in the foreground in chunks, or in the background with sleep/poll inside the same turn. If time is short, use `res=0.8`.
-   9. Make the share copy: `ffmpeg -i renders/final.mp4 -c:v libx264 -crf 27 -preset slow -c:a aac -b:a 128k renders/share.mp4`
+   8. Render: `SOFTWARE_GL=1 QS='&res=1&aa=1&shadow=2048' FPS=30 MBLUR=2 node tools/capture.mjs video renders/final.mp4` (use `MBLUR=1` if time is short; see SMOOTHNESS rules). This takes about 75-150 min. Run it in the foreground in chunks, or in the background with sleep/poll inside the same turn. If time is short, use `res=0.8`.
+   9. Make the upload file: `bash tools/finish.sh renders/final.mp4 renders/share.mp4 short` (1440x2560, high quality; never CRF 27).
    10. Do the final QA: `ffmpeg -i renders/share.mp4 -vf "fps=1,scale=150:-1,tile=11x6" -frames:v 1 renders/qa.jpg`. Look at it, and run `python3 tools/motion_check.py renders/share.mp4` (it must report no DEAD stretches).
 4. Copy each `share.mp4` to `queue/YYYY-MM-DD/N-<slug>.mp4` (N = 1, 2, 3).
 5. Write `queue/YYYY-MM-DD/meta.json` as a list of `{file, title, description, tags}`:
