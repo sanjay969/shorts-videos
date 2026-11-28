@@ -1,0 +1,41 @@
+[
+ {
+  "op": "update_title",
+  "video_id": "aKttDFRpuCg",
+  "title": "What Really Happened to D.B. Cooper?"
+ },
+ {
+  "op": "update_title",
+  "video_id": "iHvBQoR0ue0",
+  "title": "Did King Tut's Curse Really Kill Carnarvon?"
+ },
+ {
+  "op": "update_title",
+  "video_id": "SecdUa-ai6Y",
+  "title": "What Really Happened to the Lost Colony of Roanoke?"
+ },
+ {
+  "op": "playlist_add",
+  "playlist_title": "Unsolved American Mysteries",
+  "video_ids": [
+   "aKttDFRpuCg",
+   "SecdUa-ai6Y",
+   "2oSlRLq-mcI",
+   "c5kuP38fqKU"
+  ]
+ },
+ {
+  "op": "playlist_add",
+  "playlist_title": "Strange True History",
+  "video_ids": [
+   "iHvBQoR0ue0",
+   "3pqEJ8mLsiA"
+  ]
+ },
+ {
+  "op": "channel_update",
+  "country": "US",
+  "defaultLanguage": "en",
+  "keywords": "\"unsolved mysteries\" \"true stories\" \"what if\" \"american history\" mystery documentary shorts"
+ }
+]
