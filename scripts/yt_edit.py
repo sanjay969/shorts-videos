@@ -1,4 +1,5 @@
-"""Apply safe metadata edits from edits/pending.json (title, description, tags, playlists).
+"""Apply safe channel edits from edits/pending.json: titles, descriptions, tags, playlists,
+thumbnails, comment replies, holding spam comments, channel description/keywords/country, captions.
 Never deletes videos, never changes privacy, never re-uploads.
 Token: YT_ANALYTICS_REFRESH_TOKEN with scope youtube.force-ssl (+ yt-analytics.readonly)."""
 import os, json, datetime as dt
@@ -43,6 +44,24 @@ for o in ops:
             for vid in o['video_ids']:
                 if vid not in have:
                     yt.playlistItems().insert(part='snippet', body={'snippet': {'playlistId': pid, 'resourceId': {'kind': 'youtube#video', 'videoId': vid}}}).execute()
+        elif o['op'] == 'set_thumbnail':  # image file in repo, <2MB jpg/png
+            from googleapiclient.http import MediaFileUpload
+            yt.thumbnails().set(videoId=o['video_id'], media_body=MediaFileUpload(o['file'])).execute()
+        elif o['op'] == 'reply_comment':  # reply to a top-level comment thread
+            yt.comments().insert(part='snippet', body={'snippet': {'parentId': o['comment_id'], 'textOriginal': o['text']}}).execute()
+        elif o['op'] == 'comment':  # new top-level comment on a video (from the channel)
+            yt.commentThreads().insert(part='snippet', body={'snippet': {'videoId': o['video_id'], 'topLevelComment': {'snippet': {'textOriginal': o['text']}}}}).execute()
+        elif o['op'] == 'hold_comment':  # spam/abuse only: hold for review (not delete)
+            yt.comments().setModerationStatus(id=o['comment_id'], moderationStatus='heldForReview').execute()
+        elif o['op'] == 'channel_update':  # description, keywords, country, defaultLanguage
+            ch = yt.channels().list(mine=True, part='brandingSettings').execute()['items'][0]
+            b = ch['brandingSettings']; rec['old'] = b.get('channel', {})
+            for k in ('description', 'keywords', 'country', 'defaultLanguage', 'unsubscribedTrailer'):
+                if k in o: b.setdefault('channel', {})[k] = o[k]
+            yt.channels().update(part='brandingSettings', body={'id': ch['id'], 'brandingSettings': {'channel': b['channel']}}).execute()
+        elif o['op'] == 'upload_caption':  # .srt/.vtt in repo, English
+            from googleapiclient.http import MediaFileUpload
+            yt.captions().insert(part='snippet', body={'snippet': {'videoId': o['video_id'], 'language': o.get('language', 'en'), 'name': o.get('name', 'English')}}, media_body=MediaFileUpload(o['file'])).execute()
         else:
             raise ValueError('unknown op')
         rec['result'] = 'ok'

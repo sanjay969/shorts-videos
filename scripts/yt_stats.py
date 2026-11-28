@@ -11,7 +11,7 @@ c = Credentials(None, refresh_token=E['YT_ANALYTICS_REFRESH_TOKEN'], token_uri='
 yt = build('youtube', 'v3', credentials=c, cache_discovery=False)
 ya = build('youtubeAnalytics', 'v2', credentials=c, cache_discovery=False)
 today = dt.date.today(); out = {'generated_utc': dt.datetime.utcnow().isoformat() + 'Z', 'errors': []}
-ch = yt.channels().list(mine=True, part='statistics,contentDetails').execute()['items'][0]
+ch = yt.channels().list(mine=True, part='id,statistics,contentDetails').execute()['items'][0]
 out['channel'] = ch['statistics']
 up = ch['contentDetails']['relatedPlaylists']['uploads']
 ids = [i['contentDetails']['videoId'] for i in yt.playlistItems().list(playlistId=up, part='contentDetails', maxResults=50).execute()['items']]
@@ -35,6 +35,11 @@ q('traffic_7d', 7, 'views', 'insightTrafficSourceType', sort='-views')
 q('geography_7d', 7, 'views', 'country', sort='-views', maxResults=10)
 q('geography_28d', 28, 'views', 'country', sort='-views', maxResults=10)
 q('retention_by_age_gender_7d', 7, 'viewerPercentage', 'ageGroup,gender')
+try:
+    cm = yt.commentThreads().list(allThreadsRelatedToChannelId=ch.get('id') or yt.channels().list(mine=True, part='id').execute()['items'][0]['id'], part='snippet', maxResults=50, order='time').execute()
+    out['recent_comments'] = [{'thread_id': t['id'], 'video_id': t['snippet'].get('videoId'), 'author': t['snippet']['topLevelComment']['snippet']['authorDisplayName'], 'text': t['snippet']['topLevelComment']['snippet']['textOriginal'][:300], 'published': t['snippet']['topLevelComment']['snippet']['publishedAt'], 'replies': t['snippet']['totalReplyCount']} for t in cm['items']]
+except Exception as e:
+    out['errors'].append(f'comments: {e}')
 os.makedirs('analytics', exist_ok=True)
 for p in (f'analytics/{today}.json', 'analytics/latest.json'):
     json.dump(out, open(p, 'w'), indent=1)
