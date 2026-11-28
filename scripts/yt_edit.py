@@ -44,12 +44,13 @@ def playlist_id(title):
 for o in ops:
     rec = {'at': dt.datetime.utcnow().isoformat() + 'Z', **o}
     try:
-        if o['op'] in ('update_title', 'update_description', 'update_tags'):
+        if o['op'] in ('update_title', 'update_description', 'update_tags', 'prepend_description'):
             v = yt.videos().list(id=o['video_id'], part='snippet').execute()['items'][0]
             s = v['snippet']; rec['old'] = {'title': s['title'], 'description': s.get('description', ''), 'tags': s.get('tags', [])}
             if o['op'] == 'update_title': s['title'] = o['title'][:100]
             if o['op'] == 'update_description': s['description'] = o['description']
             if o['op'] == 'update_tags': s['tags'] = o['tags']
+            if o['op'] == 'prepend_description' and o['text'] not in s.get('description', ''): s['description'] = o['text'] + '\n\n' + s.get('description', '')
             body = {'id': o['video_id'], 'snippet': {k: s[k] for k in ('title', 'description', 'tags', 'categoryId', 'defaultLanguage', 'defaultAudioLanguage') if k in s}}
             yt.videos().update(part='snippet', body=body).execute()
         elif o['op'] == 'playlist_add':

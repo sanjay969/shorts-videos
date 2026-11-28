@@ -1,1 +1,17 @@
-[]
+[
+ {
+  "op": "prepend_description",
+  "video_id": "2oSlRLq-mcI",
+  "text": "\u25b6 Full story: What Really Happened to D.B. Cooper? https://youtu.be/aKttDFRpuCg"
+ },
+ {
+  "op": "prepend_description",
+  "video_id": "3pqEJ8mLsiA",
+  "text": "\u25b6 Full story: Did King Tut's Curse Really Kill Carnarvon? https://youtu.be/iHvBQoR0ue0"
+ },
+ {
+  "op": "prepend_description",
+  "video_id": "c5kuP38fqKU",
+  "text": "\u25b6 Full story: What Really Happened to the Lost Colony of Roanoke? https://youtu.be/SecdUa-ai6Y"
+ }
+]
