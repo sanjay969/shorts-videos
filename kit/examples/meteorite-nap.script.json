@@ -1,0 +1,73 @@
+{
+ "voice": "af_heart",
+ "speed": 1.2,
+ "lead": 0.05,
+ "outro": 0.3,
+ "gap": 0.1,
+ "music": "tension",
+ "title": "Why She Paid $500 for the Rock That Hit Her",
+ "hi": [
+  "space",
+  "pay",
+  "napping",
+  "meteorite",
+  "radio,",
+  "radio",
+  "hip",
+  "first",
+  "weird",
+  "hers",
+  "lawyer",
+  "keep"
+ ],
+ "sources": [
+  "Encyclopedia of Alabama, 'Hodges Meteorite Strike (Sylacauga Aerolite)': on November 30, 1954, a meteorite crashed through the roof of Ann Hodges' rented house in Oak Grove near Sylacauga, Alabama, bounced off a console radio and struck her as she napped on the couch, leaving a large bruise; landlady Birdie (Bertie) Guy claimed the rock; the Hodgeses settled by paying her $500; the fragment was later donated to the Alabama Museum of Natural History",
+  "Wikipedia, 'Ann Elizabeth Fowler Hodges' (Hodges fragment 3.86 kg / 8.5 lb; struck her upper thigh/hip and hand; first documented case of a person injured by a meteorite)",
+  "Astronomy.com, 'Nov. 30, 1954: The first known human injury via a meteorite'",
+  "National Geographic (2013), Ann Hodges meteorite strike"
+ ],
+ "lines": [
+  {
+   "text": "This rock from space hit her on her couch, and then she had to pay for it.",
+   "caps": "This rock | from | space | hit her | on her | couch, | and then | she had | to *pay | for it."
+  },
+  {
+   "text": "Alabama, nineteen fifty-four.",
+   "caps": "Alabama, | 1954.~nineteen"
+  },
+  {
+   "text": "Ann Hodges was napping under a quilt,"
+  },
+  {
+   "text": "when an eight-pound meteorite punched through the roof,",
+   "caps": "when an | 8-pound~eight-pound | meteorite | punched | through | the roof,"
+  },
+  {
+   "text": "bounced off her radio,"
+  },
+  {
+   "text": "and slammed into her hip."
+  },
+  {
+   "text": "But that's not the weird part."
+  },
+  {
+   "text": "Her landlady said the rock was hers,"
+  },
+  {
+   "text": "and got a lawyer."
+  },
+  {
+   "text": "Follow for a true story every night.",
+   "caps": "Follow | for a | true | story | every | night."
+  },
+  {
+   "text": "In the end, Ann paid her landlady five hundred dollars,",
+   "caps": "In the | end, | Ann | paid | her | landlady | $500~five"
+  },
+  {
+   "text": "just to keep",
+   "gap": 0.05
+  }
+ ]
+}

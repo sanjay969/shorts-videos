@@ -1,0 +1,68 @@
+{
+ "voice": "af_heart",
+ "speed": 1.2,
+ "lead": 0.05,
+ "outro": 0.3,
+ "gap": 0.1,
+ "music": "tension",
+ "title": "He Walked Into a Bar and Never Walked Out",
+ "hi": [
+  "cameras",
+  "never",
+  "escalator",
+  "minutes",
+  "strangest",
+  "miami",
+  "showed",
+  "every",
+  "leaving",
+  "found"
+ ],
+ "sources": [
+  "Wikipedia, 'Disappearance of Brian Shaffer': Brian Randall Shaffer, 27, an Ohio State University College of Medicine student, disappeared in Columbus, Ohio, early on April 1, 2006; security cameras recorded him riding the escalator up to the Ugly Tuna Saloona in the South Campus Gateway at 1:15 AM; he was last seen outside the bar at about 1:55 AM talking with two women; cameras never recorded him leaving; he was due to start a spring break trip to Miami with his girlfriend and missed the Monday flight; he has never been found",
+  "A&E / Investigation Discovery, 'In 2006, Med Student Brian Shaffer Walked Into a Bar and Was Never Seen Again'",
+  "WOSU (Nov 16, 2026), revived Unsolved Mysteries spotlights the Brian Shaffer case",
+  "ABC6 Columbus, cold case coverage of Brian Shaffer and the Ugly Tuna Saloona"
+ ],
+ "lines": [
+  {
+   "text": "Cameras filmed him riding up to this bar, and he never came back down."
+  },
+  {
+   "text": "Columbus, Ohio, two thousand six.",
+   "caps": "Columbus, | Ohio, | 2006.~two"
+  },
+  {
+   "text": "Brian Shaffer, a twenty-seven-year-old med student,",
+   "caps": "Brian | Shaffer, | 27-year-old~twenty-seven-year-old | med | student,"
+  },
+  {
+   "text": "rode the escalator up at one fifteen A.M.",
+   "caps": "rode the | escalator | up | at | 1:15 AM~one"
+  },
+  {
+   "text": "Forty minutes later, he was seen talking to two women.",
+   "caps": "40 minutes~forty | later, | he was | seen | talking | to | two | women."
+  },
+  {
+   "text": "But that's not the strangest part."
+  },
+  {
+   "text": "Two days later, he was due to fly to Miami."
+  },
+  {
+   "text": "He never showed up."
+  },
+  {
+   "text": "Follow for a true mystery every night.",
+   "caps": "Follow | for a | true | mystery | every | night."
+  },
+  {
+   "text": "Not one camera ever caught him leaving."
+  },
+  {
+   "text": "Brian has never been found, and the last time anyone saw him,",
+   "gap": 0.05
+  }
+ ]
+}
