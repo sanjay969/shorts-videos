@@ -1,1 +1,20 @@
-[]
+[
+ {
+  "op": "playlist_add",
+  "playlist_title": "Unsolved American Mysteries",
+  "video_ids": [
+   "aKttDFRpuCg",
+   "SecdUa-ai6Y",
+   "2oSlRLq-mcI",
+   "c5kuP38fqKU"
+  ]
+ },
+ {
+  "op": "playlist_add",
+  "playlist_title": "Strange True History",
+  "video_ids": [
+   "iHvBQoR0ue0",
+   "3pqEJ8mLsiA"
+  ]
+ }
+]

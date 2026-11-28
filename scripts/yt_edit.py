@@ -56,9 +56,12 @@ for o in ops:
             pid = playlist_id(o['playlist_title']); rec['playlist_id'] = pid
             have = set()
             req = yt.playlistItems().list(playlistId=pid, part='contentDetails', maxResults=50)
-            while req:
-                r = req.execute(); have |= {i['contentDetails']['videoId'] for i in r['items']}
-                req = yt.playlistItems().list_next(req, r)
+            try:
+                while req:
+                    r = req.execute(); have |= {i['contentDetails']['videoId'] for i in r['items']}
+                    req = yt.playlistItems().list_next(req, r)
+            except Exception:
+                import time; time.sleep(5)  # brand-new playlist: items list not ready yet
             for vid in o['video_ids']:
                 if vid not in have:
                     yt.playlistItems().insert(part='snippet', body={'snippet': {'playlistId': pid, 'resourceId': {'kind': 'youtube#video', 'videoId': vid}}}).execute()
