@@ -1,6 +1,8 @@
 {
- "generated_utc": "2026-11-28T10:06:41.372927Z",
- "errors": [],
+ "generated_utc": "2026-11-28T10:26:54.342504Z",
+ "errors": [
+  "comments: <HttpError 403 when requesting https://youtube.googleapis.com/youtube/v3/commentThreads?allThreadsRelatedToChannelId=UCPkLJW0NDXJoMjMCJikWYaw&part=snippet&maxResults=50&order=time&alt=json returned \"Request had insufficient authentication scopes.\". Details: \"[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]\">"
+ ],
  "channel": {
   "viewCount": "41140",
   "subscriberCount": "46",
@@ -13,7 +15,7 @@
    "title": "He Jumped From a Jet With $200,000 and Vanished",
    "published": "2026-11-28T02:01:48Z",
    "duration": "PT9M44S",
-   "views": 1,
+   "views": 0,
    "likes": 0,
    "comments": 0
   },
@@ -22,7 +24,7 @@
    "title": "No One Can Read This 600-Year-Old Book",
    "published": "2026-11-27T09:37:38Z",
    "duration": "PT29S",
-   "views": 713,
+   "views": 657,
    "likes": 6,
    "comments": 0
   },
@@ -31,7 +33,7 @@
    "title": "The JFK Witness No One Ever Found",
    "published": "2026-11-27T09:36:48Z",
    "duration": "PT29S",
-   "views": 266,
+   "views": 263,
    "likes": 5,
    "comments": 0
   },
@@ -1473,6 +1475,172 @@
    [
     "MX",
     34
+   ]
+  ]
+ },
+ "geography_28d": {
+  "cols": [
+   "country",
+   "views"
+  ],
+  "rows": [
+   [
+    "US",
+    12050
+   ],
+   [
+    "IN",
+    9577
+   ],
+   [
+    "GB",
+    702
+   ],
+   [
+    "PH",
+    681
+   ],
+   [
+    "CA",
+    486
+   ],
+   [
+    "ZA",
+    435
+   ],
+   [
+    "ID",
+    228
+   ],
+   [
+    "DE",
+    218
+   ],
+   [
+    "AU",
+    212
+   ],
+   [
+    "PK",
+    165
+   ]
+  ]
+ },
+ "long_traffic_aKttDFRpuCg": {
+  "cols": [
+   "insightTrafficSourceType",
+   "views",
+   "estimatedMinutesWatched"
+  ],
+  "rows": []
+ },
+ "long_traffic_SecdUa-ai6Y": {
+  "cols": [
+   "insightTrafficSourceType",
+   "views",
+   "estimatedMinutesWatched"
+  ],
+  "rows": [
+   [
+    "SUBSCRIBER",
+    2,
+    1
+   ],
+   [
+    "YT_CHANNEL",
+    2,
+    0
+   ],
+   [
+    "NO_LINK_OTHER",
+    0,
+    0
+   ]
+  ]
+ },
+ "long_traffic_iHvBQoR0ue0": {
+  "cols": [
+   "insightTrafficSourceType",
+   "views",
+   "estimatedMinutesWatched"
+  ],
+  "rows": [
+   [
+    "YT_SEARCH",
+    2,
+    0
+   ],
+   [
+    "EXT_URL",
+    1,
+    1
+   ],
+   [
+    "NO_LINK_OTHER",
+    0,
+    0
+   ]
+  ]
+ },
+ "long_traffic_Njl5w5xBTBA": {
+  "cols": [
+   "insightTrafficSourceType",
+   "views",
+   "estimatedMinutesWatched"
+  ],
+  "rows": [
+   [
+    "EXT_URL",
+    3,
+    6
+   ],
+   [
+    "YT_SEARCH",
+    1,
+    0
+   ],
+   [
+    "RELATED_VIDEO",
+    1,
+    0
+   ],
+   [
+    "NO_LINK_OTHER",
+    0,
+    0
+   ]
+  ]
+ },
+ "long_traffic_dvjw3Sotilc": {
+  "cols": [
+   "insightTrafficSourceType",
+   "views",
+   "estimatedMinutesWatched"
+  ],
+  "rows": [
+   [
+    "NO_LINK_OTHER",
+    1,
+    0
+   ],
+   [
+    "YT_CHANNEL",
+    1,
+    0
+   ]
+  ]
+ },
+ "long_traffic_MortE31P1yc": {
+  "cols": [
+   "insightTrafficSourceType",
+   "views",
+   "estimatedMinutesWatched"
+  ],
+  "rows": [
+   [
+    "YT_SEARCH",
+    1,
+    3
    ]
   ]
  },
