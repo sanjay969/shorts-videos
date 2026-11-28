@@ -253,6 +253,11 @@ function drawHat(g, L, hx, hy, r) {
     g.quadraticCurveTo(hx - r * 0.86, top + 90, hx - r * 0.84, hy - 4); g.closePath(); g.fill(); g.stroke();
     g.strokeStyle = shadeOf(hc, 1.9); g.lineWidth = 5; g.beginPath(); g.moveTo(hx - r * 0.35, top + 4); g.quadraticCurveTo(hx + r * 0.1, top - 14, hx + r * 0.55, top + 10); g.stroke();
     g.strokeStyle = INK; g.lineWidth = LW;
+  } else if (L.hat === 'pilot') {                               // leather flying helmet + goggles on the forehead
+    g.fillStyle = c; g.beginPath(); g.ellipse(hx, top + 70, r * 1.02, 116, 0, Math.PI, 0); g.closePath(); g.fill(); g.stroke();
+    [-1, 1].forEach((sd) => { g.fillStyle = c; g.beginPath(); g.roundRect(hx + sd * r * 0.86 - 22, top + 60, 44, 110, 18); g.fill(); g.stroke(); });
+    g.fillStyle = shadeOf(c, 0.7); g.fillRect(hx - r * 0.95, top + 22, r * 1.9, 22); g.strokeRect(hx - r * 0.95, top + 22, r * 1.9, 22);
+    [-1, 1].forEach((sd) => { g.fillStyle = '#9FD4E8'; g.beginPath(); g.ellipse(hx + sd * 40, top + 30, 34, 26, 0, 0, 7); g.fill(); g.stroke(); g.fillStyle = 'rgba(255,255,255,0.8)'; g.beginPath(); g.arc(hx + sd * 40 - 10, top + 22, 8, 0, 7); g.fill(); });
   } else if (L.hat === 'cap') {                                  // newsboy cap
     g.beginPath(); g.ellipse(hx + 6, top + 34, r * 0.98, 62, -0.05, Math.PI, 0); g.closePath(); g.fill(); g.stroke();
     g.fillStyle = shadeOf(c, 0.75); g.beginPath(); g.ellipse(hx - 24, top + 40, r * 0.78, 22, 0.05, 0, Math.PI); g.fill(); g.stroke();

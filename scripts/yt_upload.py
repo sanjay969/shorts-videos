@@ -175,7 +175,7 @@ def do_short(now):
     if not cands: print('shorts: nothing pending'); return False
     day, m = cands[0]; qd = os.path.join(ROOT, 'queue', day)
     print(f'slot {passed[-1] if passed else "force"}: uploading {day}/{m["file"]}')
-    vid = upload(os.path.join(qd, m['file']), m['title'], short_description(m), m.get('tags', []))
+    vid = upload(os.path.join(qd, m['file']), m['title'], short_description(m), m.get('tags', []), thumb=os.path.join(qd, m['cover']) if m.get('cover') else None)
     if DRY: return False
     upath = os.path.join(qd, 'uploaded.json'); done = load(upath, [])
     done.append({'file': m['file'], 'title': m['title'], 'video_id': vid, 'url': f'https://www.youtube.com/watch?v={vid}',

@@ -1,0 +1,75 @@
+{
+ "voice": "af_heart",
+ "speed": 1.2,
+ "lead": 0.05,
+ "outro": 0.3,
+ "gap": 0.1,
+ "music": "tension",
+ "title": "27 Men Vanished Off Florida in One Night",
+ "hi": [
+  "vanished",
+  "never",
+  "compasses",
+  "keys",
+  "strangest",
+  "rescue",
+  "flames",
+  "gone",
+  "nothing",
+  "found",
+  "wasn't"
+ ],
+ "sources": [
+  "U.S. Naval History and Heritage Command, H-Gram 057-4, 'The Disappearance of Flight 19 and Training 49, 5 December 1945': five TBM Avenger torpedo bombers with 14 men (6 Navy, 8 Marines) left NAS Fort Lauderdale on a navigation training flight; flight leader LT Charles Taylor radioed that both his compasses were out and believed he was over the Florida Keys; PBM-5 Mariner 'Training 49' left NAS Banana River with 13 men to search and was never heard from after 7:30 PM; tanker SS Gaines Mills reported flames and an explosion on the water around 7:50 PM; a five-day search found no confirmed wreckage of any of the aircraft",
+  "History.com, 'The Mysterious Disappearance of Flight 19' (Evan Andrews)",
+  "Smithsonian Magazine, 'How the Disappearance of Flight 19 Fueled the Legend of the Bermuda Triangle'"
+ ],
+ "lines": [
+  {
+   "text": "Five Navy bombers took off, and not one was ever found.",
+   "caps": "Five | Navy | bombers | took off, | and | not one | was ever | *found."
+  },
+  {
+   "text": "Florida, December fifth, nineteen forty-five.",
+   "caps": "Florida, | Dec. 5,~december | 1945.~nineteen"
+  },
+  {
+   "text": "Fourteen men, on a training flight.",
+   "caps": "14 men,~fourteen | on a | training | flight."
+  },
+  {
+   "text": "Then the leader radioed, both my compasses are out."
+  },
+  {
+   "text": "He thought he was over the Florida Keys."
+  },
+  {
+   "text": "He wasn't."
+  },
+  {
+   "text": "But that's not the strangest part."
+  },
+  {
+   "text": "A rescue plane went after them, with thirteen men,",
+   "caps": "A rescue | plane | went | after | them, | with | 13 men,~thirteen"
+  },
+  {
+   "text": "and it vanished too."
+  },
+  {
+   "text": "Follow for a true mystery every night.",
+   "caps": "Follow | for a | true | mystery | every | night."
+  },
+  {
+   "text": "A passing ship saw flames on the water."
+  },
+  {
+   "text": "Twenty-seven men, gone in one night,",
+   "caps": "27 men,~twenty-seven | gone | in one | night,"
+  },
+  {
+   "text": "and the sea never gave back a single piece of those",
+   "gap": 0.05
+  }
+ ]
+}

@@ -135,7 +135,7 @@ export function makeShoot(E) {
   const cam = camera(40);
   const shoot = (scene, people, from, to, at, at2, k, look, focus, roll = 0) => {
     if (cam.fov !== (look.fov || 40)) { cam.fov = look.fov || 40; cam.updateProjectionMatrix(); }
-    cam.position.copy(mix(from, to, k)); cam.up.set(Math.sin(roll), Math.cos(roll), 0); cam.lookAt(at2 ? mix(at, at2, k) : at);
+    cam.position.copy(to ? mix(from, to, k) : from); cam.up.set(Math.sin(roll), Math.cos(roll), 0); cam.lookAt(at2 ? mix(at, at2, k) : at);
     people.forEach((p) => p.face(cam));
     E.render(scene, cam, { ...look, focus: focus ?? cam.position.distanceTo(at2 ? mix(at, at2, k) : at) });
   };

@@ -107,9 +107,17 @@ def chug(d=2.0, **_):
 def stampit(**_):
     t = tt(0.18); x = np.sin(2 * np.pi * 95 * t) * env(len(t), 0.001, 10) + bp(noise(0.18), 1500, 5000) * env(len(t), 0.001, 14) * 0.6; return x * 0.9
 
-FX = dict(ding=ding, chirp=chirp, chug=chug, stamp=stampit, inhale=inhale, heartbeat=heartbeat, whoosh=whoosh, slide=slide, pop=pop, plop=plop, gulp=gulp, boing=boing, bubbles=bubbles, sizzle=sizzle,
+def riser(d=1.5, **_):
+    n = noise(d); k = np.linspace(0, 1, len(n)); x = np.zeros(len(n)); b = int(len(n) / 8)
+    for j in range(8): seg_ = n[j * b:(j + 1) * b]; x[j * b:j * b + len(seg_)] = bp(seg_, 300 + 500 * j, 900 + 900 * j)
+    x = x * k ** 2 + sweep(180, 900, d) * k ** 2.5 * 0.25
+    return x / (np.abs(x).max() + 1e-9) * 0.6
+def boom(**_):
+    d = 0.9; t = tt(d); x = np.sin(2 * np.pi * (55 * t - 15 * t * t)) * np.exp(-t * 4.5) + lp(noise(d), 300) * np.exp(-t * 7) * 0.5
+    return x / (np.abs(x).max() + 1e-9)
+FX = dict(riser=riser, boom=boom, ding=ding, chirp=chirp, chug=chug, stamp=stampit, inhale=inhale, heartbeat=heartbeat, whoosh=whoosh, slide=slide, pop=pop, plop=plop, gulp=gulp, boing=boing, bubbles=bubbles, sizzle=sizzle,
           sparkle=sparkle, thud=thud, slam=slam, tock=tock, zip=zip_, alarm=alarm)
-LEVEL = dict(ding=-17, chirp=-19, chug=-20, stamp=-12, inhale=-15, heartbeat=-8, whoosh=-17, slide=-19, pop=-14, plop=-15, gulp=-11, boing=-15, bubbles=-21, sizzle=-18, sparkle=-17,
+LEVEL = dict(riser=-16, boom=-8, ding=-17, chirp=-19, chug=-20, stamp=-12, inhale=-15, heartbeat=-8, whoosh=-17, slide=-19, pop=-14, plop=-15, gulp=-11, boing=-15, bubbles=-21, sizzle=-18, sparkle=-17,
              thud=-11, slam=-9, tock=-18, zip=-14, alarm=-17)
 
 

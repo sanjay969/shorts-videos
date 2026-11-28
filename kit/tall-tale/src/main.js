@@ -10,6 +10,7 @@ import { buildShots } from './shots.js';
 const cv = document.getElementById('cv'), GL = document.getElementById('gl');
 setCtx(cv.getContext('2d'));
 const OP = (window.OP = { ready: false });
+const NOCAP = new URLSearchParams(location.search).has('nocap');
 
 function draw(t) {
   t = clamp(t, 0, T.dur - 1e-4);
@@ -21,7 +22,7 @@ function draw(t) {
   ctx.globalAlpha = 1; ctx.letterSpacing = '0px';
   const fade = 1; // no fade: frame 0 must show the hook visual, and the end loops straight back
   if (fade < 1) { ctx.fillStyle = '#000'; ctx.globalAlpha = 1 - fade; ctx.fillRect(0, 0, W, H); ctx.globalAlpha = 1; }
-  drawCaption(t);
+  if (!NOCAP) drawCaption(t);
 }
 
 (async () => {
