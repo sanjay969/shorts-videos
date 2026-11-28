@@ -6,9 +6,26 @@ import os, json, datetime as dt
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 E = os.environ
-c = Credentials(None, refresh_token=E['YT_ANALYTICS_REFRESH_TOKEN'], token_uri='https://oauth2.googleapis.com/token',
-                client_id=E.get('YT_ANALYTICS_CLIENT_ID') or E['YT_CLIENT_ID'],
-                client_secret=E.get('YT_ANALYTICS_CLIENT_SECRET') or E['YT_CLIENT_SECRET'])
+import urllib.request, google.auth.transport.requests as gtr
+WRITE = ('https://www.googleapis.com/auth/youtube', 'https://www.googleapis.com/auth/youtube.force-ssl')
+def creds(tok, cid, sec):
+    if not (tok and cid and sec): return None, ''
+    c = Credentials(None, refresh_token=tok, token_uri='https://oauth2.googleapis.com/token', client_id=cid, client_secret=sec)
+    try:
+        c.refresh(gtr.Request())
+        info = json.load(urllib.request.urlopen('https://oauth2.googleapis.com/tokeninfo?access_token=' + c.token))
+        return c, info.get('scope', '')
+    except Exception as e:
+        return None, f'refresh failed: {e}'
+cands = [('analytics', E.get('YT_ANALYTICS_REFRESH_TOKEN'), E.get('YT_ANALYTICS_CLIENT_ID'), E.get('YT_ANALYTICS_CLIENT_SECRET')),
+         ('uploader', E.get('YT_REFRESH_TOKEN'), E.get('YT_CLIENT_ID'), E.get('YT_CLIENT_SECRET'))]
+c = None
+for name, tok, cid, sec in cands:
+    cc, sc = creds(tok, cid, sec)
+    print(f'token {name}: scopes = {sc}')
+    if cc and any(w in sc.split() for w in WRITE) and c is None: c = cc; print('-> using', name)
+if c is None:
+    print('NO TOKEN WITH youtube / youtube.force-ssl SCOPE - edits cannot run'); raise SystemExit(1)
 yt = build('youtube', 'v3', credentials=c, cache_discovery=False)
 P = 'edits/pending.json'
 ops = json.load(open(P)) if os.path.exists(P) else []
