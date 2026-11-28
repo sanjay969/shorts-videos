@@ -38,8 +38,8 @@ Rules: 25–30 s, first 2 s = strangest fact + number, payoff in the last second
 - Channel About text and keywords focused on the US mystery / what-if niche (queued).
 - Reply to real comments within a day (daily analysis job), short and friendly, ending with a question that invites another reply.
 
-## Pillar 3: Long-form bridge (2 per week: Sunday + Wednesday)
-- Fewer, better longs: every long is made from a topic whose Short already beat the median, so there is a proven audience to send over.
+## Pillar 3: Long-form bridge (4 per week: Sun/Mon/Wed/Fri, as scheduled)
+- Every long is made from a topic whose Short already beat the median where possible, so there is a proven audience to send over. (Recommendation: 2 per week with more polish would be enough; the schedule stays at 4 unless Sanjay changes it.)
 - Search-first title ("What Really Happened to…?"), lesser-known US case, thumbnail rules from the long job.
 - Each long gets a trailer Short (Slot 3 the next day). Sanjay sets "Related video" on the trailer + original topic Short in Studio. This is the one manual step and it matters most.
 - Success check after 7 days: impressions > 1,000 and views from Search + Shorts > 0. If two longs in a row fail this, change the topic type.
