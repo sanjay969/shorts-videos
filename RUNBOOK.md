@@ -5,6 +5,7 @@ Target audience: **United States** (owner's decision, 22 Nov 2026).
 **MAIN GOAL (owner, 23 Nov 2026): win the US audience.** Every choice must serve American viewers:
 - Pick stories Americans are talking about right now: US news, US companies, CEOs, markets, sports and pop culture, and US history. A global story is fine only if it is big in the US too.
 - Use American English voice, words, units ($, miles, °F) and references.
+- **ONE VOICE EVERYWHERE (owner, 28 Nov 2026): Kokoro `af_heart` (female) for ALL Shorts, trailer Shorts AND long videos. Never am_michael or any other voice. Keep the same speed feel (about 1.05-1.1) so the channel sounds like one narrator.**
 - Upload in US evening prime time (6:00 / 7:30 / 9:00 PM ET).
 - Check the US share of views in `insights.md` / `stats.md`. Do more of what US viewers watch, and drop what they don't. All times below are **US Eastern (America/New_York)**, and the queue folder date is the US Eastern date (`TZ=America/New_York date +%F`).
 
