@@ -33,6 +33,7 @@ for d in (7, 28):
 q('daily_28d', 28, 'views,subscribersGained,subscribersLost', 'day', sort='day')
 q('traffic_7d', 7, 'views', 'insightTrafficSourceType', sort='-views')
 q('geography_7d', 7, 'views', 'country', sort='-views', maxResults=10)
+q('geography_28d', 28, 'views', 'country', sort='-views', maxResults=10)
 q('retention_by_age_gender_7d', 7, 'viewerPercentage', 'ageGroup,gender')
 os.makedirs('analytics', exist_ok=True)
 for p in (f'analytics/{today}.json', 'analytics/latest.json'):

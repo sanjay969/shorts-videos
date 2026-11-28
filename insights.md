@@ -3,7 +3,7 @@
 **Data source: API ✅** — `YT_ANALYTICS_REFRESH_TOKEN` added by Sanjay; stats workflow ran 10:06 UTC. Public views are live; Analytics API (avg view %, subs, geo) lags to ~24 Nov, so the newest Shorts have public views only.
 
 ## Channel snapshot
-- 46 subs, 41,140 total views. Last 7d (Analytics): ~14.2K views, **US 72.6%** (10,338; was 22.6%), IN 7.8%, PH 2.8%, CA 1.9%, GB 1.8%. The US-targeting is working.
+- 46 subs, 41,140 total views. Geography, careful with windows: Analytics data only reaches 24 Nov, so the API 'last 7d' = really **21–24 Nov: US 72.6%** (10,338 of ~14.2K), IN 7.8%. Studio **last 28 days: US 38.9%, India 28.0%** (Sanjay's screenshot) because mid-Nov had heavy India views. The trend is right (US rising since the US-only switch), but the channel overall is still ~39% US. Target: US >60% over 28 days.
 - Traffic 7d: Shorts feed 95% (13,577), YT search 460, channel page 60, subscriber feed 11.
 - Subs 7d ≈ 15 on ~14.2K views ≈ **1.1 subs / 1,000 views** (low; fix the subscribe prompt).
 - Viewers 7d: 25–34 M 18%, 13–17 M 17%, 35–44 22% (M+F), 18–24 M 10%.
