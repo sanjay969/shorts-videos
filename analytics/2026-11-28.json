@@ -1,0 +1,1558 @@
+{
+ "generated_utc": "2026-11-28T10:06:41.372927Z",
+ "errors": [],
+ "channel": {
+  "viewCount": "41140",
+  "subscriberCount": "46",
+  "hiddenSubscriberCount": false,
+  "videoCount": "41"
+ },
+ "videos_public": [
+  {
+   "id": "aKttDFRpuCg",
+   "title": "He Jumped From a Jet With $200,000 and Vanished",
+   "published": "2026-11-28T02:01:48Z",
+   "duration": "PT9M44S",
+   "views": 1,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "GtUzds9Ox-8",
+   "title": "No One Can Read This 600-Year-Old Book",
+   "published": "2026-11-27T09:37:38Z",
+   "duration": "PT29S",
+   "views": 713,
+   "likes": 6,
+   "comments": 0
+  },
+  {
+   "id": "BJDfXIyBmNE",
+   "title": "The JFK Witness No One Ever Found",
+   "published": "2026-11-27T09:36:48Z",
+   "duration": "PT29S",
+   "views": 266,
+   "likes": 5,
+   "comments": 0
+  },
+  {
+   "id": "1bThWQbjIa4",
+   "title": "Why She Built Stairs Into the Ceiling",
+   "published": "2026-11-27T09:35:48Z",
+   "duration": "PT31S",
+   "views": 1094,
+   "likes": 17,
+   "comments": 0
+  },
+  {
+   "id": "f8w64YmA2KA",
+   "title": "He Washed Dishes at Denny's. Now He Runs Nvidia",
+   "published": "2026-11-27T09:35:07Z",
+   "duration": "PT30S",
+   "views": 987,
+   "likes": 9,
+   "comments": 0
+  },
+  {
+   "id": "w8yOncZIrSw",
+   "title": "Nvidia's CEO Quit, Then Came Back in 11 Days",
+   "published": "2026-11-27T09:33:37Z",
+   "duration": "PT30S",
+   "views": 5,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "VRKBvkMlwn0",
+   "title": "Macy's Let Its Giant Balloons Fly Away",
+   "published": "2026-11-26T23:17:12Z",
+   "duration": "PT27S",
+   "views": 1043,
+   "likes": 16,
+   "comments": 0
+  },
+  {
+   "id": "gL7PGV1eOUI",
+   "title": "Black Friday Was Named by Angry Cops",
+   "published": "2026-11-26T03:46:16Z",
+   "duration": "PT30S",
+   "views": 1210,
+   "likes": 30,
+   "comments": 0
+  },
+  {
+   "id": "-wP4No1l0wc",
+   "title": "A Crying Kid Started the Turkey Pardon",
+   "published": "2026-11-26T00:00:57Z",
+   "duration": "PT25S",
+   "views": 918,
+   "likes": 15,
+   "comments": 0
+  },
+  {
+   "id": "SecdUa-ai6Y",
+   "title": "115 People Vanished and Left Only One Word",
+   "published": "2026-11-25T05:56:31Z",
+   "duration": "PT9M38S",
+   "views": 5,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "R-dVnvXFZhY",
+   "title": "Nvidia Gained Almost $1 Trillion in One Day",
+   "published": "2026-11-25T01:42:19Z",
+   "duration": "PT28S",
+   "views": 1225,
+   "likes": 13,
+   "comments": 1
+  },
+  {
+   "id": "uta1Ader5SM",
+   "title": "A Doctor Stole Einstein's Brain for 43 Years",
+   "published": "2026-11-24T02:00:31Z",
+   "duration": "PT29S",
+   "views": 1526,
+   "likes": 24,
+   "comments": 0
+  },
+  {
+   "id": "c5kuP38fqKU",
+   "title": "115 Colonists Vanished and Left One Word",
+   "published": "2026-11-24T00:30:31Z",
+   "duration": "PT27S",
+   "views": 1374,
+   "likes": 24,
+   "comments": 2
+  },
+  {
+   "id": "1kfidDVWTVw",
+   "title": "What Thanksgiving Dinner Really Does to You",
+   "published": "2026-11-23T23:00:31Z",
+   "duration": "PT28S",
+   "views": 3089,
+   "likes": 45,
+   "comments": 0
+  },
+  {
+   "id": "iHvBQoR0ue0",
+   "title": "He Opened King Tut's Tomb and Died Within Months",
+   "published": "2026-11-22T22:52:24Z",
+   "duration": "PT9M1S",
+   "views": 3,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "w_bAL64-n8M",
+   "title": "The Time Traveler Who Came Back for a 1975 Computer",
+   "published": "2026-11-22T13:30:56Z",
+   "duration": "PT1M1S",
+   "views": 25,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "KE_ab8u98hA",
+   "title": "The TV Dinner Was Born From 260 Tons of Leftover Turkey",
+   "published": "2026-11-22T13:30:51Z",
+   "duration": "PT1M",
+   "views": 1481,
+   "likes": 44,
+   "comments": 0
+  },
+  {
+   "id": "fYeBXgHZAxc",
+   "title": "Agatha Christie Vanished for 11 Days and Never Explained Why",
+   "published": "2026-11-22T13:30:48Z",
+   "duration": "PT1M",
+   "views": 1260,
+   "likes": 31,
+   "comments": 4
+  },
+  {
+   "id": "3pqEJ8mLsiA",
+   "title": "The Curse of King Tut Skipped the Man Who Opened the Tomb",
+   "published": "2026-11-21T13:23:53Z",
+   "duration": "PT1M",
+   "views": 1377,
+   "likes": 32,
+   "comments": 0
+  },
+  {
+   "id": "VSx7Sw84KV4",
+   "title": "The Ghost Ship Found Sailing With No One On Board",
+   "published": "2026-11-21T13:23:53Z",
+   "duration": "PT1M",
+   "views": 1236,
+   "likes": 30,
+   "comments": 0
+  },
+  {
+   "id": "jmQm80pvvx4",
+   "title": "The First Pilots in History Were a Sheep, a Duck and a Rooster",
+   "published": "2026-11-21T13:23:33Z",
+   "duration": "PT59S",
+   "views": 8,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "2oSlRLq-mcI",
+   "title": "The Man Who Jumped Out of a Plane With $200,000",
+   "published": "2026-11-20T19:28:55Z",
+   "duration": "PT1M1S",
+   "views": 1285,
+   "likes": 25,
+   "comments": 0
+  },
+  {
+   "id": "GXvDPcpOkHU",
+   "title": "The US Navy Ship That Vanished With 306 People \ud83d\udea2\u2753",
+   "published": "2026-11-20T13:34:06Z",
+   "duration": "PT57S",
+   "views": 103,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "ijnKYbVsMAE",
+   "title": "This Town Has Been On Fire Since 1962 \ud83d\udd25 #shorts",
+   "published": "2026-11-20T13:31:56Z",
+   "duration": "PT56S",
+   "views": 1236,
+   "likes": 22,
+   "comments": 0
+  },
+  {
+   "id": "aVBDJT-Bqxw",
+   "title": "1.5 Billion Game That Took 8 Years \ud83d\ude33",
+   "published": "2026-11-19T14:38:27Z",
+   "duration": "PT1M3S",
+   "views": 1229,
+   "likes": 34,
+   "comments": 2
+  },
+  {
+   "id": "ObUXq52xsds",
+   "title": "The Ship That Watched Titanic Sink \ud83d\udea2",
+   "published": "2026-11-19T14:37:14Z",
+   "duration": "PT55S",
+   "views": 1328,
+   "likes": 21,
+   "comments": 1
+  },
+  {
+   "id": "Njl5w5xBTBA",
+   "title": "AMUL ki Kahani: Gaon ke Kisaanon ne 3 Giants ko kaise haraya? \ud83c\uddee\ud83c\uddf3",
+   "published": "2026-11-18T13:52:13Z",
+   "duration": "PT7M59S",
+   "views": 7,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "id": "q0j5FGQiFP8",
+   "title": "Nestl\u00e9 ne bola \"Natives ke bas ka nahi\" | Amul",
+   "published": "2026-11-18T12:36:38Z",
+   "duration": "PT45S",
+   "views": 957,
+   "likes": 4,
+   "comments": 0
+  },
+  {
+   "id": "vojRniKdSck",
+   "title": "Grammar galat, phir bhi India ka sabse hit ad? | Amul",
+   "published": "2026-11-18T12:35:41Z",
+   "duration": "PT57S",
+   "views": 281,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "lVCM2OBPApc",
+   "title": "Same Day, 2 Versions \ud83d\ude36 Bas Baat Karne Ka Tareeka Badla #shorts",
+   "published": "2026-11-18T12:31:06Z",
+   "duration": "PT1M57S",
+   "views": 860,
+   "likes": 8,
+   "comments": 2
+  },
+  {
+   "id": "nivfleIosKk",
+   "title": "What if everyone in India jumps at thesame time?",
+   "published": "2026-11-17T13:59:17Z",
+   "duration": "PT39S",
+   "views": 1569,
+   "likes": 19,
+   "comments": 0
+  },
+  {
+   "id": "olMc2awPccs",
+   "title": "What if you jump on the Sun's surface?",
+   "published": "2026-11-17T13:57:56Z",
+   "duration": "PT38S",
+   "views": 1254,
+   "likes": 12,
+   "comments": 0
+  },
+  {
+   "id": "OhbgCXc2wB4",
+   "title": "What if you get stung by 100 bees? \ud83d\udc1d #indianfood #whatif #ytshorts",
+   "published": "2026-11-17T13:56:18Z",
+   "duration": "PT38S",
+   "views": 1486,
+   "likes": 17,
+   "comments": 0
+  },
+  {
+   "id": "U5CqD3rldzc",
+   "title": "What If You Eat Only Maggi For 30 Days \ud83e\udd2f",
+   "published": "2026-11-16T14:27:10Z",
+   "duration": "PT42S",
+   "views": 1363,
+   "likes": 14,
+   "comments": 0
+  },
+  {
+   "id": "SVXTnDzmIkk",
+   "title": "when a crocodile attacks on you",
+   "published": "2026-11-15T17:20:58Z",
+   "duration": "PT35S",
+   "views": 1235,
+   "likes": 11,
+   "comments": 2
+  },
+  {
+   "id": "cxbLm6ND_E8",
+   "title": "be healthy",
+   "published": "2026-11-15T17:08:58Z",
+   "duration": "PT41S",
+   "views": 1210,
+   "likes": 14,
+   "comments": 0
+  },
+  {
+   "id": "dvjw3Sotilc",
+   "title": "Garba Jane Nikle The, Baarish Ne Bigaad Diya Plan \ud83d\ude05 | Bhopal Vlog | Bhopal Garba 2025 Cancelled \ud83d\ude2d | ",
+   "published": "2025-09-28T07:53:51Z",
+   "duration": "PT8M24S",
+   "views": 16,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "id": "MortE31P1yc",
+   "title": "Inside My Office | Complete Workplace Tour in Bhopal 2025",
+   "published": "2025-09-27T14:17:15Z",
+   "duration": "PT3M46S",
+   "views": 51,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "id": "YUXmGQsO3ZA",
+   "title": "A funny comedy short with a twist of music and madness! Don\u2019t forget to like, share, and subscribe",
+   "published": "2025-08-03T05:03:37Z",
+   "duration": "PT19S",
+   "views": 5489,
+   "likes": 55,
+   "comments": 3
+  },
+  {
+   "id": "uJEekyvaf-I",
+   "title": "\u201cLunch ka sapna dekha\u2026 boss ne kaam de diya! \ud83d\udc80\ud83c\udf71\u201d#officelife #dailyvlog #office #boss",
+   "published": "2025-06-19T09:37:10Z",
+   "duration": "PT9S",
+   "views": 2104,
+   "likes": 5,
+   "comments": 1
+  },
+  {
+   "id": "1s4jc0FC0VM",
+   "title": "Subah 7 Baje Uth Kar Office vlog #dailyvlog #morningroutine #officelife #middleclassvlog #realvlog",
+   "published": "2025-06-17T11:25:36Z",
+   "duration": "PT40S",
+   "views": 775,
+   "likes": 4,
+   "comments": 0
+  }
+ ],
+ "by_video_7d": {
+  "cols": [
+   "video",
+   "views",
+   "engagedViews",
+   "estimatedMinutesWatched",
+   "averageViewDuration",
+   "averageViewPercentage",
+   "subscribersGained",
+   "likes",
+   "shares",
+   "comments"
+  ],
+  "rows": [
+   [
+    "1kfidDVWTVw",
+    3024,
+    1658,
+    571,
+    18,
+    66.92,
+    3,
+    45,
+    0,
+    0
+   ],
+   [
+    "KE_ab8u98hA",
+    1480,
+    736,
+    551,
+    42,
+    71.25,
+    1,
+    44,
+    0,
+    0
+   ],
+   [
+    "uta1Ader5SM",
+    1455,
+    837,
+    272,
+    17,
+    61.12,
+    3,
+    24,
+    0,
+    0
+   ],
+   [
+    "3pqEJ8mLsiA",
+    1377,
+    790,
+    467,
+    33,
+    55.61000000000001,
+    0,
+    32,
+    0,
+    0
+   ],
+   [
+    "c5kuP38fqKU",
+    1360,
+    793,
+    209,
+    13,
+    51.57000000000001,
+    3,
+    23,
+    0,
+    1
+   ],
+   [
+    "fYeBXgHZAxc",
+    1258,
+    663,
+    464,
+    38,
+    64.42,
+    1,
+    31,
+    0,
+    2
+   ],
+   [
+    "VSx7Sw84KV4",
+    1236,
+    646,
+    476,
+    38,
+    64.35,
+    2,
+    30,
+    0,
+    0
+   ],
+   [
+    "R-dVnvXFZhY",
+    1218,
+    604,
+    207,
+    18,
+    66.63,
+    2,
+    13,
+    0,
+    1
+   ],
+   [
+    "gL7PGV1eOUI",
+    1121,
+    616,
+    309,
+    28,
+    95.81,
+    0,
+    29,
+    1,
+    0
+   ],
+   [
+    "-wP4No1l0wc",
+    205,
+    72,
+    24,
+    17,
+    69.58,
+    0,
+    3,
+    0,
+    0
+   ],
+   [
+    "ObUXq52xsds",
+    122,
+    68,
+    50,
+    33,
+    61.74000000000001,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    "ijnKYbVsMAE",
+    97,
+    52,
+    25,
+    23,
+    42.63,
+    0,
+    2,
+    0,
+    0
+   ],
+   [
+    "aVBDJT-Bqxw",
+    72,
+    44,
+    24,
+    31,
+    50.67,
+    0,
+    2,
+    0,
+    0
+   ],
+   [
+    "2oSlRLq-mcI",
+    62,
+    34,
+    23,
+    38,
+    63.68000000000001,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "w_bAL64-n8M",
+    24,
+    12,
+    6,
+    29,
+    48.95,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "q0j5FGQiFP8",
+    22,
+    9,
+    4,
+    19,
+    42.95,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "OhbgCXc2wB4",
+    16,
+    10,
+    1,
+    10,
+    26.41,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "GXvDPcpOkHU",
+    14,
+    5,
+    1,
+    11,
+    20.67,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "vojRniKdSck",
+    13,
+    5,
+    1,
+    17,
+    30.870000000000005,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "U5CqD3rldzc",
+    12,
+    5,
+    2,
+    33,
+    80.52,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "jmQm80pvvx4",
+    8,
+    3,
+    1,
+    27,
+    46.8,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    "nivfleIosKk",
+    8,
+    5,
+    2,
+    29,
+    76.38,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "olMc2awPccs",
+    8,
+    4,
+    2,
+    31,
+    83.38,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "SVXTnDzmIkk",
+    5,
+    1,
+    0,
+    35,
+    100.75,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "SecdUa-ai6Y",
+    4,
+    3,
+    1,
+    30,
+    5.32,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    "YUXmGQsO3ZA",
+    3,
+    1,
+    0,
+    22,
+    119.58,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "iHvBQoR0ue0",
+    3,
+    1,
+    1,
+    112,
+    20.72,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "1s4jc0FC0VM",
+    2,
+    1,
+    0,
+    40,
+    101.95,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "Njl5w5xBTBA",
+    2,
+    1,
+    0,
+    3,
+    0.79,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "cxbLm6ND_E8",
+    2,
+    1,
+    0,
+    42,
+    102.54,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "dvjw3Sotilc",
+    2,
+    2,
+    0,
+    27,
+    5.39,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    "lVCM2OBPApc",
+    2,
+    1,
+    0,
+    6,
+    5.13,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    "uJEekyvaf-I",
+    2,
+    1,
+    0,
+    9,
+    110.99,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "by_video_28d": {
+  "cols": [
+   "video",
+   "views",
+   "engagedViews",
+   "estimatedMinutesWatched",
+   "averageViewDuration",
+   "averageViewPercentage",
+   "subscribersGained",
+   "likes",
+   "shares",
+   "comments"
+  ],
+  "rows": [
+   [
+    "1kfidDVWTVw",
+    3024,
+    1658,
+    571,
+    18,
+    66.92,
+    3,
+    45,
+    0,
+    0
+   ],
+   [
+    "nivfleIosKk",
+    1569,
+    876,
+    395,
+    24,
+    62.43,
+    0,
+    19,
+    0,
+    0
+   ],
+   [
+    "KE_ab8u98hA",
+    1480,
+    736,
+    551,
+    42,
+    71.25,
+    1,
+    44,
+    0,
+    0
+   ],
+   [
+    "OhbgCXc2wB4",
+    1480,
+    794,
+    330,
+    22,
+    58.89,
+    3,
+    17,
+    0,
+    0
+   ],
+   [
+    "uta1Ader5SM",
+    1455,
+    837,
+    272,
+    17,
+    61.12,
+    3,
+    24,
+    0,
+    0
+   ],
+   [
+    "3pqEJ8mLsiA",
+    1377,
+    790,
+    467,
+    33,
+    55.61000000000001,
+    0,
+    32,
+    0,
+    0
+   ],
+   [
+    "U5CqD3rldzc",
+    1363,
+    644,
+    315,
+    26,
+    62.419999999999995,
+    2,
+    14,
+    2,
+    0
+   ],
+   [
+    "c5kuP38fqKU",
+    1360,
+    793,
+    209,
+    13,
+    51.57000000000001,
+    3,
+    23,
+    0,
+    1
+   ],
+   [
+    "ObUXq52xsds",
+    1327,
+    654,
+    408,
+    31,
+    57.29,
+    3,
+    20,
+    0,
+    1
+   ],
+   [
+    "2oSlRLq-mcI",
+    1285,
+    648,
+    555,
+    42,
+    70.1,
+    4,
+    25,
+    0,
+    0
+   ],
+   [
+    "fYeBXgHZAxc",
+    1258,
+    663,
+    464,
+    38,
+    64.42,
+    1,
+    31,
+    0,
+    2
+   ],
+   [
+    "olMc2awPccs",
+    1253,
+    607,
+    259,
+    22,
+    59.34,
+    3,
+    12,
+    0,
+    0
+   ],
+   [
+    "VSx7Sw84KV4",
+    1236,
+    646,
+    476,
+    38,
+    64.35,
+    2,
+    30,
+    0,
+    0
+   ],
+   [
+    "ijnKYbVsMAE",
+    1236,
+    574,
+    285,
+    26,
+    47.42,
+    4,
+    22,
+    0,
+    0
+   ],
+   [
+    "SVXTnDzmIkk",
+    1232,
+    671,
+    250,
+    21,
+    61.39,
+    2,
+    11,
+    0,
+    1
+   ],
+   [
+    "aVBDJT-Bqxw",
+    1229,
+    674,
+    365,
+    30,
+    47.68,
+    3,
+    34,
+    0,
+    1
+   ],
+   [
+    "R-dVnvXFZhY",
+    1218,
+    604,
+    207,
+    18,
+    66.63,
+    2,
+    13,
+    0,
+    1
+   ],
+   [
+    "cxbLm6ND_E8",
+    1209,
+    662,
+    266,
+    22,
+    55.93,
+    0,
+    14,
+    0,
+    0
+   ],
+   [
+    "gL7PGV1eOUI",
+    1121,
+    616,
+    309,
+    28,
+    95.81,
+    0,
+    29,
+    1,
+    0
+   ],
+   [
+    "q0j5FGQiFP8",
+    957,
+    410,
+    163,
+    20,
+    45.52,
+    0,
+    4,
+    0,
+    0
+   ],
+   [
+    "lVCM2OBPApc",
+    860,
+    488,
+    544,
+    55,
+    47.79,
+    0,
+    8,
+    0,
+    1
+   ],
+   [
+    "vojRniKdSck",
+    281,
+    117,
+    49,
+    22,
+    38.87,
+    0,
+    2,
+    0,
+    0
+   ],
+   [
+    "-wP4No1l0wc",
+    205,
+    72,
+    24,
+    17,
+    69.58,
+    0,
+    3,
+    0,
+    0
+   ],
+   [
+    "GXvDPcpOkHU",
+    103,
+    39,
+    18,
+    25,
+    44.47,
+    0,
+    2,
+    0,
+    0
+   ],
+   [
+    "w_bAL64-n8M",
+    24,
+    12,
+    6,
+    29,
+    48.95,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "jmQm80pvvx4",
+    8,
+    3,
+    1,
+    27,
+    46.8,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    "uJEekyvaf-I",
+    8,
+    4,
+    0,
+    8,
+    92.75,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "1s4jc0FC0VM",
+    6,
+    4,
+    2,
+    31,
+    77.55,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "Njl5w5xBTBA",
+    5,
+    4,
+    6,
+    94,
+    19.74,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "YUXmGQsO3ZA",
+    5,
+    2,
+    0,
+    16,
+    84.27,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "SecdUa-ai6Y",
+    4,
+    3,
+    1,
+    30,
+    5.32,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    "iHvBQoR0ue0",
+    3,
+    1,
+    1,
+    112,
+    20.72,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "dvjw3Sotilc",
+    2,
+    2,
+    0,
+    27,
+    5.39,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    "MortE31P1yc",
+    1,
+    1,
+    3,
+    205,
+    90.93,
+    0,
+    0,
+    0,
+    0
+   ]
+  ]
+ },
+ "daily_28d": {
+  "cols": [
+   "day",
+   "views",
+   "subscribersGained",
+   "subscribersLost"
+  ],
+  "rows": [
+   [
+    "2026-10-31",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-01",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-02",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-03",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-04",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-05",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-06",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-07",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-08",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-09",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-10",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-11",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-12",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-13",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-14",
+    0,
+    0,
+    0
+   ],
+   [
+    "2026-11-15",
+    2358,
+    2,
+    0
+   ],
+   [
+    "2026-11-16",
+    1206,
+    1,
+    0
+   ],
+   [
+    "2026-11-17",
+    3876,
+    6,
+    3
+   ],
+   [
+    "2026-11-18",
+    1897,
+    1,
+    0
+   ],
+   [
+    "2026-11-19",
+    2861,
+    6,
+    1
+   ],
+   [
+    "2026-11-20",
+    2787,
+    9,
+    1
+   ],
+   [
+    "2026-11-21",
+    2628,
+    2,
+    1
+   ],
+   [
+    "2026-11-22",
+    2964,
+    3,
+    2
+   ],
+   [
+    "2026-11-23",
+    5490,
+    8,
+    4
+   ],
+   [
+    "2026-11-24",
+    1589,
+    3,
+    0
+   ],
+   [
+    "2026-11-25",
+    1572,
+    0,
+    0
+   ]
+  ]
+ },
+ "traffic_7d": {
+  "cols": [
+   "insightTrafficSourceType",
+   "views"
+  ],
+  "rows": [
+   [
+    "SHORTS",
+    13577
+   ],
+   [
+    "YT_SEARCH",
+    460
+   ],
+   [
+    "YT_OTHER_PAGE",
+    104
+   ],
+   [
+    "YT_CHANNEL",
+    60
+   ],
+   [
+    "EXT_URL",
+    18
+   ],
+   [
+    "SUBSCRIBER",
+    11
+   ],
+   [
+    "NO_LINK_OTHER",
+    1
+   ],
+   [
+    "RELATED_VIDEO",
+    1
+   ],
+   [
+    "PLAYLIST",
+    1
+   ],
+   [
+    "SOUND_PAGE",
+    1
+   ]
+  ]
+ },
+ "geography_7d": {
+  "cols": [
+   "country",
+   "views"
+  ],
+  "rows": [
+   [
+    "US",
+    10338
+   ],
+   [
+    "IN",
+    1105
+   ],
+   [
+    "PH",
+    394
+   ],
+   [
+    "CA",
+    269
+   ],
+   [
+    "GB",
+    259
+   ],
+   [
+    "ID",
+    142
+   ],
+   [
+    "AU",
+    124
+   ],
+   [
+    "DE",
+    54
+   ],
+   [
+    "MY",
+    46
+   ],
+   [
+    "MX",
+    34
+   ]
+  ]
+ },
+ "retention_by_age_gender_7d": {
+  "cols": [
+   "ageGroup",
+   "gender",
+   "viewerPercentage"
+  ],
+  "rows": [
+   [
+    "age13-17",
+    "female",
+    6.9
+   ],
+   [
+    "age13-17",
+    "male",
+    17.2
+   ],
+   [
+    "age18-24",
+    "female",
+    3.3
+   ],
+   [
+    "age18-24",
+    "male",
+    10.2
+   ],
+   [
+    "age25-34",
+    "female",
+    7.8
+   ],
+   [
+    "age25-34",
+    "male",
+    18.1
+   ],
+   [
+    "age35-44",
+    "female",
+    10.4
+   ],
+   [
+    "age35-44",
+    "male",
+    11.4
+   ],
+   [
+    "age45-54",
+    "female",
+    3.8
+   ],
+   [
+    "age45-54",
+    "male",
+    6.9
+   ],
+   [
+    "age55-64",
+    "female",
+    1.2
+   ],
+   [
+    "age55-64",
+    "male",
+    1.8
+   ],
+   [
+    "age65-",
+    "female",
+    0.5
+   ],
+   [
+    "age65-",
+    "male",
+    0.4
+   ]
+  ]
+ }
+}
